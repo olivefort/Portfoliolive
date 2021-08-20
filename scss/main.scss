@@ -1,0 +1,351 @@
+/*Nav*/
+.main-nav button {
+    position: relative;
+    font: 0/0 a;
+    color: transparent;
+    border: 0;
+    text-shadow: none;
+    width: 3rem;
+    height: 2.4rem;
+    padding: 1rem 0;
+    background-color: black;
+    background-clip: content-box;
+    transition: .3s;
+}
+
+.main-nav button::before,
+.main-nav button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 0.4rem;
+    background-color: black;
+    transition: .3s;
+    transform-origin: left;
+}
+
+.main-nav button::before {
+    top: 0;
+}
+
+.main-nav button::after {
+    bottom: 0;
+}
+
+.main-nav button[aria-expanded=true] {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.main-nav button[aria-expanded=true]::before {
+    transform: rotate(43deg);
+}
+
+.main-nav button[aria-expanded=true]::after {
+    transform: rotate(-43deg);
+}
+
+.main-nav .menu {
+    position: absolute;
+    z-index: 100;
+    top: 110%;
+    left: 0;
+    right: 10%;
+    display: block;
+    transform: translateX(-100%);
+    transition: .3s;
+    width: 10rem;
+}
+
+.main-nav .menu:not([hidden]) {
+    transform: translateX(0)
+}
+
+.main-nav a {
+    display: block;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.current-menu-item,
+.menu a:hover,
+.menu a:focus {
+    color: red;
+    background-color: #fff;
+}
+.fixed{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+/*Home*/
+.home-hero{
+    background-image: url(../pics/hero-background.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+}
+.hero-content h1{
+    font-size: 2em;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+      typing 3s steps(12, end),
+      blink-caret .75s step-end infinite;
+  }  
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }  
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+} 
+
+.imgtec{
+    width: 2rem;
+    height: 2rem;
+}
+
+$prog-bar-dure: 5000ms;
+$prog-bar-delay: 1000ms;
+$html: #E34F26;
+$css: #0277BD;
+$js: #F5DD1B;
+$php: #777BB3;
+$sass: #BE608B;
+$wp: #21759B;
+$tw: #53BAB5;
+$lav: #E74430;
+$lag: #39B0FF;
+$rea: #00CCFF;
+$vue: #41B883;
+$sql: #E58E00;
+
+
+.progress{
+    &__bar{        
+        transform: scaleX(0.5);
+        transform-origin: left;
+        animation: progress-bar $prog-bar-dure $prog-bar-delay alternate both;
+        &--html{
+            background-color: $html;
+        }
+        &--css{
+            background-color: $css;
+        }
+        &--js{
+            background-color: $js;
+        }
+        &--php{
+            background-color: $php;
+        }
+        &--sass{
+            background-color: $sass;
+        }
+        &--wp{
+            background-color: $wp;
+        }
+        &--tw{
+            background-color: $tw;
+        }
+        &--lav{
+            background-color: $lav;
+        }
+        &--lag{
+            background-color: $lag;
+        }
+        &--rea{
+            background-color: $rea;
+        }
+        &--vue{
+            background-color: $vue;
+        }
+        &--sql{
+            background-color: $sql;
+        }
+    }
+}
+
+@keyframes progress-bar{
+    0% {
+        transform: scaleX(0);
+    }
+    // 22% {
+    //     transform: scaleX(.24);
+    // }
+    // 37% {
+    //     transform: scaleX(.38);
+    // }
+    // 56% {
+    //     transform: scaleX(.44);
+    // }
+    // 68% {
+    //     transform: scaleX(.55);
+    // }
+    // 81% {
+    //     transform: scaleX(.82);
+    // }
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+
+// .pf{
+//     &__cv,&__sss,&__dw,&__st{ 
+     
+//         &--img{
+//         width: 20rem;
+//         border-radius: 100rem;
+//         border: 0px solid #000000;
+//         cursor: pointer;
+//             &:hover{
+//                 animation: rad 2000ms 0ms ease-in-out both;
+//             }
+//         }
+//     }
+// }
+// @keyframes rad {
+//     100% {
+//         border-radius: 10px;
+//         border: 0px solid #000000;
+//         transition : border-radius;
+//     }
+// }
+
+
+
+.pf__cv--img, 
+.pf__sss--img,
+.pf__st--img,
+.pf__dw--img{
+        width: 20rem;
+        border-radius: 100rem;
+        border: 0px solid #000000;
+        cursor: pointer;
+}
+.pf__cv:before,
+.pf__sss:before,
+.pf__dw:before,
+.pf__st:before,
+.pf__sss:after,
+.pf__dw:after,
+.pf__st:after,
+.pf__cv:after{
+    content: '';
+    display: table;
+}
+
+.trans {
+    transition: border-radius 1500ms;
+    
+}
+.pf__cv--img:hover,
+.pf__sss--img:hover,
+.pf__st--img:hover,
+.pf__dw--img:hover{
+    border-radius: 10px;
+    transition-delay: 500ms;
+}
+
+.modale{
+    animation: fadeIn ease 2s;
+}
+.modal{
+    top: 150rem;
+}
+
+
+.closed{
+    position: absolute;
+    bottom: 48rem;
+    right: 3.5rem;
+}
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+        right: -200px;
+    }
+    100% {
+        opacity:1;
+        right: 0px;
+    }
+}
+
+.imgmod{
+    width: 15rem;
+    height: 10rem;
+}
+/*-resp 640px-*/
+@media (min-width: 40em) {
+    .imgmod{
+        width: 25rem;
+        height: 25rem;
+    }
+}
+
+.texta{
+    min-height: 10rem;
+}
+
+
+
+
+
+
+/*-resp 768px-*/
+@media (min-width: 48em) {
+      
+}
+/*-resp 1024px-*/
+@media (min-width: 64em) {
+    .imgmod{
+        width: 40rem;
+        height: 40rem;
+    }  
+    .menu {
+        display: flex;
+    }
+
+    .main-nav button {
+        display: none;
+    }
+
+    .main-nav .menu {
+        position: static;
+        display: flex;
+        transform: translateX(0);
+        transition: .3s;
+    }
+}
+/*-resp 1280px-*/
+@media (min-width: 80em) {
+    .desc{
+        min-height: 60px;
+    }
+    
+}
+/*-resp 1360px-*/
+@media (min-width: 85em) {
+    .modale{
+        margin: 20rem !important;
+    }
+}
