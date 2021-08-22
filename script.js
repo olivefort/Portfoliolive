@@ -51,7 +51,8 @@ addEventListener("scroll", scrolled, false);
 //Modal
 const clik = document.getElementsByClassName('trans');
 const modal = document.getElementsByClassName('modal');
-// const modalcv = document.getElementById('modalcv');
+// const modalapp = document.getElementById('app');
+// const mod = document.getElementById('modap');
 const closed = document.getElementsByClassName('closed');
 const dark = document.getElementById('dark');
 
@@ -59,7 +60,7 @@ const dark = document.getElementById('dark');
 
 for(let i=0; i<clik.length; i++){
     clik[i].addEventListener('click',function(){
-        console.log("index : "+i);
+        console.log("indexx : "+i);
         modal[i].style.display = 'block';
         dark.style.display= 'block';
     })    
@@ -73,3 +74,13 @@ for(let i=0; i<closed.length; i++){
         dark.style.display = 'none';
     })    
 }
+
+// modalapp.addEventListener('click',function(){
+//     mod.style.display = 'block';
+//     dark.style.display= 'block';
+// })
+
+// closed.addEventListener('click',function(){
+//     mod.style.display = 'none';
+//     dark.style.display = 'none';
+// })

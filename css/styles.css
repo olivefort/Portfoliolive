@@ -83,6 +83,18 @@
   left: 0;
 }
 
+.bg {
+  position: fixed;
+  top: 35%;
+  left: 0;
+  z-index: -5;
+  width: 100%;
+}
+
+.bg img {
+  width: 100%;
+}
+
 /*Home*/
 .home-hero {
   background-image: url(../pics/hero-background.png);
@@ -182,10 +194,18 @@
     transform: scaleX(1);
   }
 }
+.pf__cv,
+.pf__sss,
+.pf__dw,
+.pf__st {
+  min-height: 17rem;
+}
+
 .pf__cv--img,
 .pf__sss--img,
 .pf__st--img,
-.pf__dw--img {
+.pf__dw--img,
+.pf__gt--img {
   width: 20rem;
   border-radius: 100rem;
   border: 0px solid #000000;
@@ -196,10 +216,12 @@
 .pf__sss:before,
 .pf__dw:before,
 .pf__st:before,
+.pf__gt:before,
 .pf__sss:after,
 .pf__dw:after,
 .pf__st:after,
-.pf__cv:after {
+.pf__cv:after,
+.pf__gt:after {
   content: "";
   display: table;
 }
@@ -211,7 +233,8 @@
 .pf__cv--img:hover,
 .pf__sss--img:hover,
 .pf__st--img:hover,
-.pf__dw--img:hover {
+.pf__dw--img:hover,
+.pf__gt--img:hover {
   border-radius: 10px;
   transition-delay: 500ms;
 }
@@ -224,10 +247,14 @@
   top: 150rem;
 }
 
+.modalapp {
+  top: 230rem;
+}
+
 .closed {
   position: absolute;
-  bottom: 48rem;
-  right: 3.5rem;
+  top: -5%;
+  right: 15%;
 }
 
 @keyframes fadeIn {
