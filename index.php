@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/twstyles.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Tailwind CSS Demo</title>
+    <title>PortFoliOlive</title>
 </head>
-<body class="bg-gray-100">
+<body id="body" class="bg-gray-200" onscroll="hdp()">
     <div class="h-full w-full bg-black bg-opacity-50 z-20 hidden fixed" id="dark"></div> 
-    <div class="bg"><img src="pics/mydesk.png"/></div>   
+    <div class="bg top-80 md:top-20"><img src="pics/mydesk.png"/></div>   
     <main id="main-content" class="container-front grid grid-cols-6">
-        <section class="home-hero col-span-6 grid grid-cols-6">
-            <div class="cont col-span-6">
+        <section id="hdp" class="home-hero col-span-6 grid grid-cols-6">
+            <div class="cont col-span-6 md:col-start-1 md:col-end-3 md:self-center">
                 <div class="hero-content">
                     <h1 class="hero-title" id="hero-title" data-label="Olive Fort">Olivier Fort</h1>               
                 </div>
@@ -22,259 +22,256 @@
         <section class="navigation col-span-6">
             <header id="head">
                 <nav id="navbar" class="main-nav flex justify-between items-center flex-row">
-                    <button aria-expanded="false" aria-controls="main-menu" class="togle">Menu</button>
-                    <div>
-                        <div>
-                            <ul id="main-menu" class="menu bg-gray-200 text-center" hidden>
-                                <li class=""><a href="#pres">Présentation</a></li>
-                                <li class=""><a href="#compe">Compétence</a></li>
-                                <li class=""><a href="#portfo">Portfolio</a></li>
-                                <li class=""><a href="#cont">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="text-4xl font-bold">OLIVIER FORT</div>
-                    </div>
+                    <button aria-expanded="false" aria-controls="main-menu" class="togle">Menu</button>                    
+                    <ul id="main-menu" class="menu bg-gray-200 text-center" hidden>
+                        <li class="text-base lg:text-xl"><a href="#pres">Présentation</a></li>
+                        <li class="text-base lg:text-xl"><a href="#compe">Compétence</a></li>
+                        <li class="text-base lg:text-xl"><a href="#portfo">Portfolio</a></li>
+                        <li class="text-base lg:text-xl"><a href="#cont">Contact</a></li>
+                    </ul>                        
+                    <div class="text-4xl font-bold">OLIVIER FORT</div>                    
                 </nav>
             </header>
         </section>
-        <section id="pres" class="presentation bg-white col-span-6 grid grid-cols-6 py-8 px-4">
-            <h2 class="col-span-6 justify-self-center mb-2 text-3xl font-bold z-10">Presentation</h2>
+        <section id="pres" class="presentation bg-white col-span-6 grid grid-cols-6 py-24 px-4">
+            <h2 class="col-span-6 justify-self-center mb-2 text-3xl font-bold z-10 lg:text-4xl">Presentation</h2>
             <div class="border border-black border-solid col-span-6 w-20 justify-self-center my-10"></div>
             <div class="text-5xl text-gray-300 absolute font-bold text-opacity-50 text-center col-span-6 left-0 right-0">PRESENTATION</div>
             <div class="col-span-6 text-center text-xl">Bonjour, moi c'est Olivier, 40 ans de Tours, jeune diplomé en developpement web et web mobile.<br> Je suis passionné par le domaine informatique depuis de nombreuses années. Aujourd'hui mon intérêt se porte sur le développement web.<br> De nature sociable, je suis à l'écoute, autonome et organisé dans la réalisation de mes travaux et projets.</div>
         </section>
-        <section id="compe" class="competence grid grid-cols-6 col-span-6 bg-gray-100 py-8 px-4">
+        <section id="compe" class="competence grid grid-cols-6 col-span-6 bg-gray-100 py-24 px-4">
             <div class="cont col-span-6">
-                <h2 class="col-span-6 justify-self-center mb-2 text-3xl font-bold z-10">Compétence</h2>
+                <h2 class="col-span-6 justify-self-center mb-2 text-3xl font-bold z-10 lg:text-4xl">Compétence</h2>
                 <div class="border border-black border-solid col-span-6 w-20 justify-self-center my-10"></div>
                 <div class="text-5xl text-gray-300 absolute font-bold text-opacity-50 text-center col-span-6 left-0 right-0">COMPETENCE</div>
-                <div class="grid grid-cols-6">
-                    <div class="col-span-3">
-                        <div class="relative pt-1 mx-4">
-                            <div class="flex mb-2 items-center justify-between">
-                                <img class="w-8 h-8" src="pics/html.png"/>  
-                                <div>
-                                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-600 bg-red-200">HTML</span>
-                                </div>
-                                <div class="text-right">
-                                    <span class="text-xs font-semibold inline-block text-red-600">90%</span>
-                                </div>                    
+            </div>
+            <div class="col-span-6 grid grid-cols-6 sm:mx-4 lg:mx-10">
+                <div class="col-span-3">
+                    <div class="relative pt-1 mx-4">
+                        <div class="flex mb-2 items-center justify-between">
+                            <img class="w-8 h-8" src="pics/html.png"/>  
+                            <div>
+                                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-600 bg-red-200">HTML</span>
                             </div>
-                            <div class="progress overflow-hidden h-5 mb-4 text-xs flex rounded bg-red-200">                    
-                                <div style="width:90%" class="progress__bar progress__bar--html shadow-none flex flex-col text-center whitespace-nowrap justify-center"></div>
-                            </div>
+                            <div class="text-right">
+                                <span class="text-xs font-semibold inline-block text-red-600">90%</span>
+                            </div>                    
                         </div>
-                        <div class="relative pt-1 mx-4">
-                            <div class="flex mb-2 items-center justify-between">
-                                <img class="w-8 h-8" src="pics/css.png"/>  
-                                <div>
-                                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200">CSS</span>
-                                </div>
-                                <div class="text-right">
-                                    <span class="text-xs font-semibold inline-block text-blue-600">85%</span>
-                                </div>                    
-                            </div>
-                            <div class="progress overflow-hidden h-5 mb-4 text-xs flex rounded bg-blue-200">                    
-                                <div style="width:85%" class="progress__bar progress__bar--css shadow-none flex flex-col text-center whitespace-nowrap justify-center"></div>
-                            </div>
-                        </div>
-                        <div class="relative pt-1 mx-4">
-                            <div class="flex mb-2 items-center justify-between">
-                                <img class="w-8 h-8" src="pics/js.png"/>  
-                                <div>
-                                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-yellow-500 bg-yellow-200">JS</span>
-                                </div>
-                                <div class="text-right">
-                                    <span class="text-xs font-semibold inline-block text-yellow-600">70%</span>
-                                </div>                    
-                            </div>
-                            <div class="progress overflow-hidden h-5 mb-4 text-xs flex rounded bg-yellow-200">                    
-                                <div style="width:70%" class="progress__bar progress__bar--js shadow-none flex flex-col text-center whitespace-nowrap justify-center"></div>
-                            </div>
-                        </div>
-                        <div class="relative pt-1 mx-4">
-                            <div class="flex mb-2 items-center justify-between">
-                                <img class="w-12 h-8" src="pics/php.png"/>  
-                                <div>
-                                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-purple-600 bg-purple-200">PHP</span>
-                                </div>
-                                <div class="text-right">
-                                    <span class="text-xs font-semibold inline-block text-purple-600">55%</span>
-                                </div>                    
-                            </div>
-                            <div class="progress overflow-hidden h-5 mb-4 text-xs flex rounded bg-purple-200">                    
-                                <div style="width:55%" class="progress__bar progress__bar--php shadow-none flex flex-col text-center whitespace-nowrap justify-center"></div>
-                            </div>
-                        </div>
-                        <div class="relative pt-1 mx-4">
-                            <div class="flex mb-2 items-center justify-between">
-                                <img class="w-8 h-8" src="pics/sass.png"/>  
-                                <div>
-                                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200">SASS</span>
-                                </div>
-                                <div class="text-right">
-                                    <span class="text-xs font-semibold inline-block text-pink-600">60%</span>
-                                </div>                    
-                            </div>
-                            <div class="progress overflow-hidden h-5 mb-4 text-xs flex rounded bg-pink-200">                    
-                                <div style="width:60%" class="progress__bar progress__bar--sass shadow-none flex flex-col text-center whitespace-nowrap justify-center"></div>
-                            </div>
-                        </div>                
-                        <div class="relative pt-1 mx-4">
-                            <div class="flex mb-2 items-center justify-between">
-                                <img class="w-8 h-8" src="pics/wp.png"/>  
-                                <div>
-                                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-800 bg-indigo-200">WORDPRESS</span>
-                                </div>
-                                <div class="text-right">
-                                    <span class="text-xs font-semibold inline-block text-indigo-600">70%</span>
-                                </div>                    
-                            </div>
-                            <div class="progress overflow-hidden h-5 mb-4 text-xs flex rounded bg-indigo-200">                    
-                                <div style="width:70%" class="progress__bar progress__bar--wp shadow-none flex flex-col text-center whitespace-nowrap justify-center"></div>
-                            </div>
+                        <div class="progress overflow-hidden h-5 mb-4 text-xs flex rounded bg-red-200">                    
+                            <div style="width:90%" class="progress__bar progress__bar--html shadow-none flex flex-col text-center whitespace-nowrap justify-center"></div>
                         </div>
                     </div>
-                    <div class="col-span-3">
-                        <div class="relative pt-1 mx-4">
-                            <div class="flex mb-2 items-center justify-between">
-                                <img class="w-8 h-8" src="pics/tw.png"/>  
-                                <div>
-                                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200">TAILWIND</span>
-                                </div>
-                                <div class="text-right">
-                                    <span class="text-xs font-semibold inline-block text-green-600">70%</span>
-                                </div>                    
+                    <div class="relative pt-1 mx-4">
+                        <div class="flex mb-2 items-center justify-between">
+                            <img class="w-8 h-8" src="pics/css.png"/>  
+                            <div>
+                                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200">CSS</span>
                             </div>
-                            <div class="progress overflow-hidden h-5 mb-4 text-xs flex rounded bg-green-200">                    
-                                <div style="width:70%" class="progress__bar progress__bar--tw shadow-none flex flex-col text-center whitespace-nowrap justify-center"></div>
-                            </div>
+                            <div class="text-right">
+                                <span class="text-xs font-semibold inline-block text-blue-600">85%</span>
+                            </div>                    
                         </div>
-                        <div class="relative pt-1 mx-4">
-                            <div class="flex mb-2 items-center justify-between">
-                                <img class="w-12 h-8" src="pics/lav.png"/>  
-                                <div>
-                                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-600 bg-red-200">LARAVEL</span>
-                                </div>
-                                <div class="text-right">
-                                    <span class="text-xs font-semibold inline-block text-red-600">55%</span>
-                                </div>                    
-                            </div>
-                            <div class="progress overflow-hidden h-5 mb-4 text-xs flex rounded bg-red-200">                    
-                                <div style="width:55%" class="progress__bar progress__bar--lav shadow-none flex flex-col text-center whitespace-nowrap justify-center"></div>
-                            </div>
+                        <div class="progress overflow-hidden h-5 mb-4 text-xs flex rounded bg-blue-200">                    
+                            <div style="width:85%" class="progress__bar progress__bar--css shadow-none flex flex-col text-center whitespace-nowrap justify-center"></div>
                         </div>
-                        <div class="relative pt-1 mx-4">
-                            <div class="flex mb-2 items-center justify-between">
-                                <img class="w-8 h-8" src="pics/rea.png"/>  
-                                <div>
-                                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200">REACT</span>
-                                </div>
-                                <div class="text-right">
-                                    <span class="text-xs font-semibold inline-block text-blue-600">50%</span>
-                                </div>                    
+                    </div>
+                    <div class="relative pt-1 mx-4">
+                        <div class="flex mb-2 items-center justify-between">
+                            <img class="w-8 h-8" src="pics/js.png"/>  
+                            <div>
+                                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-yellow-500 bg-yellow-200">JS</span>
                             </div>
-                            <div class="progress overflow-hidden h-5 mb-4 text-xs flex rounded bg-blue-200">                    
-                                <div style="width:50%" class="progress__bar progress__bar--rea shadow-none flex flex-col text-center whitespace-nowrap justify-center"></div>
-                            </div>
+                            <div class="text-right">
+                                <span class="text-xs font-semibold inline-block text-yellow-600">70%</span>
+                            </div>                    
                         </div>
-                        <div class="relative pt-1 mx-4">
-                            <div class="flex mb-2 items-center justify-between">
-                                <img class="w-8 h-8" src="pics/vue.png"/>  
-                                <div>
-                                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200">VUE</span>
-                                </div>
-                                <div class="text-right">
-                                    <span class="text-xs font-semibold inline-block text-green-600">40%</span>
-                                </div>                    
-                            </div>
-                            <div class="progress overflow-hidden h-5 mb-4 text-xs flex rounded bg-green-200">                    
-                                <div style="width:40%" class="progress__bar progress__bar--vue shadow-none flex flex-col text-center whitespace-nowrap justify-center"></div>
-                            </div>
+                        <div class="progress overflow-hidden h-5 mb-4 text-xs flex rounded bg-yellow-200">                    
+                            <div style="width:70%" class="progress__bar progress__bar--js shadow-none flex flex-col text-center whitespace-nowrap justify-center"></div>
                         </div>
-                        <div class="relative pt-1 mx-4">
-                            <div class="flex mb-2 items-center justify-between">
-                                <img class="w-12 h-8" src="pics/sql.png"/>  
-                                <div>
-                                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-yellow-600 bg-yellow-200">MYSQL</span>
-                                </div>
-                                <div class="text-right">
-                                    <span class="text-xs font-semibold inline-block text-yellow-600">80%</span>
-                                </div>                    
+                    </div>
+                    <div class="relative pt-1 mx-4">
+                        <div class="flex mb-2 items-center justify-between">
+                            <img class="w-12 h-8" src="pics/php.png"/>  
+                            <div>
+                                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-purple-600 bg-purple-200">PHP</span>
                             </div>
-                            <div class="progress overflow-hidden h-5 mb-4 text-xs flex rounded bg-yellow-200">                    
-                                <div style="width:80%" class="progress__bar progress__bar--sql shadow-none flex flex-col text-center whitespace-nowrap justify-center"></div>
-                            </div>
+                            <div class="text-right">
+                                <span class="text-xs font-semibold inline-block text-purple-600">55%</span>
+                            </div>                    
                         </div>
-                        <div class="relative pt-1 mx-4">
-                            <div class="flex mb-2 items-center justify-between">
-                                <img class="w-8 h-8" src="pics/lag.png"/>  
-                                <div>
-                                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200">LARAGON</span>
-                                </div>
-                                <div class="text-right">
-                                    <span class="text-xs font-semibold inline-block text-blue-600">40%</span>
-                                </div>                    
+                        <div class="progress overflow-hidden h-5 mb-4 text-xs flex rounded bg-purple-200">                    
+                            <div style="width:55%" class="progress__bar progress__bar--php shadow-none flex flex-col text-center whitespace-nowrap justify-center"></div>
+                        </div>
+                    </div>
+                    <div class="relative pt-1 mx-4">
+                        <div class="flex mb-2 items-center justify-between">
+                            <img class="w-8 h-8" src="pics/sass.png"/>  
+                            <div>
+                                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200">SASS</span>
                             </div>
-                            <div class="progress overflow-hidden h-5 mb-4 text-xs flex rounded bg-blue-200">                    
-                                <div style="width:40%" class="progress__bar progress__bar--lag shadow-none flex flex-col text-center whitespace-nowrap justify-center"></div>
+                            <div class="text-right">
+                                <span class="text-xs font-semibold inline-block text-pink-600">60%</span>
+                            </div>                    
+                        </div>
+                        <div class="progress overflow-hidden h-5 mb-4 text-xs flex rounded bg-pink-200">                    
+                            <div style="width:60%" class="progress__bar progress__bar--sass shadow-none flex flex-col text-center whitespace-nowrap justify-center"></div>
+                        </div>
+                    </div>                
+                    <div class="relative pt-1 mx-4">
+                        <div class="flex mb-2 items-center justify-between">
+                            <img class="w-8 h-8" src="pics/wp.png"/>  
+                            <div>
+                                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-800 bg-indigo-200">WORDPRESS</span>
                             </div>
+                            <div class="text-right">
+                                <span class="text-xs font-semibold inline-block text-indigo-600">70%</span>
+                            </div>                    
+                        </div>
+                        <div class="progress overflow-hidden h-5 mb-4 text-xs flex rounded bg-indigo-200">                    
+                            <div style="width:70%" class="progress__bar progress__bar--wp shadow-none flex flex-col text-center whitespace-nowrap justify-center"></div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="col-span-3">
+                    <div class="relative pt-1 mx-4">
+                        <div class="flex mb-2 items-center justify-between">
+                            <img class="w-8 h-8" src="pics/tw.png"/>  
+                            <div>
+                                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200">TAILWIND</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-xs font-semibold inline-block text-green-600">70%</span>
+                            </div>                    
+                        </div>
+                        <div class="progress overflow-hidden h-5 mb-4 text-xs flex rounded bg-green-200">                    
+                            <div style="width:70%" class="progress__bar progress__bar--tw shadow-none flex flex-col text-center whitespace-nowrap justify-center"></div>
+                        </div>
+                    </div>
+                    <div class="relative pt-1 mx-4">
+                        <div class="flex mb-2 items-center justify-between">
+                            <img class="w-12 h-8" src="pics/lav.png"/>  
+                            <div>
+                                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-600 bg-red-200">LARAVEL</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-xs font-semibold inline-block text-red-600">55%</span>
+                            </div>                    
+                        </div>
+                        <div class="progress overflow-hidden h-5 mb-4 text-xs flex rounded bg-red-200">                    
+                            <div style="width:55%" class="progress__bar progress__bar--lav shadow-none flex flex-col text-center whitespace-nowrap justify-center"></div>
+                        </div>
+                    </div>
+                    <div class="relative pt-1 mx-4">
+                        <div class="flex mb-2 items-center justify-between">
+                            <img class="w-8 h-8" src="pics/rea.png"/>  
+                            <div>
+                                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200">REACT</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-xs font-semibold inline-block text-blue-600">50%</span>
+                            </div>                    
+                        </div>
+                        <div class="progress overflow-hidden h-5 mb-4 text-xs flex rounded bg-blue-200">                    
+                            <div style="width:50%" class="progress__bar progress__bar--rea shadow-none flex flex-col text-center whitespace-nowrap justify-center"></div>
+                        </div>
+                    </div>
+                    <div class="relative pt-1 mx-4">
+                        <div class="flex mb-2 items-center justify-between">
+                            <img class="w-8 h-8" src="pics/vue.png"/>  
+                            <div>
+                                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200">VUE</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-xs font-semibold inline-block text-green-600">40%</span>
+                            </div>                    
+                        </div>
+                        <div class="progress overflow-hidden h-5 mb-4 text-xs flex rounded bg-green-200">                    
+                            <div style="width:40%" class="progress__bar progress__bar--vue shadow-none flex flex-col text-center whitespace-nowrap justify-center"></div>
+                        </div>
+                    </div>
+                    <div class="relative pt-1 mx-4">
+                        <div class="flex mb-2 items-center justify-between">
+                            <img class="w-12 h-8" src="pics/sql.png"/>  
+                            <div>
+                                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-yellow-600 bg-yellow-200">MYSQL</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-xs font-semibold inline-block text-yellow-600">80%</span>
+                            </div>                    
+                        </div>
+                        <div class="progress overflow-hidden h-5 mb-4 text-xs flex rounded bg-yellow-200">                    
+                            <div style="width:80%" class="progress__bar progress__bar--sql shadow-none flex flex-col text-center whitespace-nowrap justify-center"></div>
+                        </div>
+                    </div>
+                    <div class="relative pt-1 mx-4">
+                        <div class="flex mb-2 items-center justify-between">
+                            <img class="w-8 h-8" src="pics/lag.png"/>  
+                            <div>
+                                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200">LARAGON</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-xs font-semibold inline-block text-blue-600">40%</span>
+                            </div>                    
+                        </div>
+                        <div class="progress overflow-hidden h-5 mb-4 text-xs flex rounded bg-blue-200">                    
+                            <div style="width:40%" class="progress__bar progress__bar--lag shadow-none flex flex-col text-center whitespace-nowrap justify-center"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
         </section>
-        <section class="mydesk col-span-6 grid grid-cols-6 h-48">
+        <section class="mydesk col-span-6 grid grid-cols-6 h-48 md:h-56">
             <!-- <img class="col-span-6" src="pics/mydesk.png"/> -->
         </section>
-        <section id="portfo" class="portfolio col-span-6 grid grid-cols-6 justify-center bg-gray-100 py-8 px-4">
-            <h2 class="col-span-6 justify-self-center mb-2 text-3xl font-bold z-10">Portfolio</h2>
+        <section id="portfo" class="portfolio col-span-6 grid grid-cols-6 justify-center bg-gray-100 py-24 px-4">
+            <h2 class="col-span-6 justify-self-center mb-2 text-3xl font-bold z-10 lg:text-4xl">Portfolio</h2>
             <div class="border border-black border-solid col-span-6 w-20 justify-self-center my-10"></div>
             <div class="text-5xl text-gray-300 absolute font-bold text-opacity-50 text-center col-span-6 left-0 right-0">PORTFOLIO</div>
             <div class="text-xl col-span-6 text-center">
                 <p>Voici les principaux travaux que j'ai pu réaliser avant, pendant, et après ma formation en 2020.</p>
                 <p>Les informations concernant la réalisation de ce portfolio sont indiqué dans la partie "à propos" en bas de page.</p>
             </div>                        
-            <div class="pf__cv col-span-3 flex flex-col items-center justify-between mx-2">
-                <h3 class="font-bold text-xl text-center h-14 flex items-center sm:h-8">CV</h3>
+            <div class="pf__cv col-span-3 flex flex-col items-center justify-evenly mx-2 my-2 sm:mx-8 sm:my-4">
+                <h3 class="font-bold text-xl text-center h-14 flex items-center sm:h-8 lg:text-2xl sm:mb-4">CV</h3>
                 <img class="pf__cv--img trans" src="pics/vanilla-cv.png"/>     
             </div>
-            <div class="pf__st col-span-3 flex flex-col items-center justify-between mx-2">
-                <h3 class="font-bold text-xl text-center h-14 flex items-center sm:h-8">Studiz</h3>
+            <div class="pf__st col-span-3 flex flex-col items-center justify-evenly mx-2 sm:mx-8 my-4">
+                <h3 class="font-bold text-xl text-center h-14 flex items-center sm:h-8 lg:text-2xl sm:mb-4">Studiz</h3>
                 <img class="pf__st--img trans" src="pics/react-studiz.png"/>                       
             </div>                
-            <div class="pf__sss col-span-3 flex flex-col items-center justify-between mx-2">
-                <h3 class="font-bold text-xl text-center h-14 flex items-center sm:h-8">Saint Seiya Sanctuary</h3>
+            <div class="pf__sss col-span-3 flex flex-col items-center justify-evenly mx-2 sm:mx-8 my-4">
+                <h3 class="font-bold text-xl text-center h-14 flex items-center sm:h-8 lg:text-2xl sm:mb-4">Saint Seiya Sanctuary</h3>
                 <img class="pf__sss--img trans" src="pics/wp-sss.png"/>                               
             </div>
-            <div class="pf__dw col-span-3 flex flex-col items-center justify-between mx-2">
-                <h3 class="font-bold text-xl text-center h-14 flex items-center sm:h-8">DWWM 2020-1</h3>
+            <div class="pf__dw col-span-3 flex flex-col items-center justify-evenly mx-2 sm:mx-8 my-4">
+                <h3 class="font-bold text-xl text-center h-14 flex items-center sm:h-8 lg:text-2xl sm:mb-4">DWWM 2020-1</h3>
                 <img class="pf__dw--img trans" src="pics/wp-dwwm.png"/>                                                       
                 </div>
             </div>            
-            <div class="text-xl col-span-6 text-center justify-center items-center">
+            <div class="text-xl col-span-6 text-center justify-center items-center my-6">
                 <p>Vous trouverez dans mon Github d'autres réalisations de type application que j'ai dévelloppé</p>
             </div>
             <div class="pf__gt col-start-2 col-span-4 flex flex-col items-center">                
-                <a href="https://github.com/olivefort" target="_blank"><img class="pf__gt--img" src="pics/gt.png"/></a>                                           
+                <a href="https://github.com/olivefort" target="_blank"><img class="pf__gt--img gith" src="pics/gt.png"/></a>                                           
             </div>                       
         </section>
+        <div id="scroll"><div></div></div>
         <section>
             <div class="modal h-full w-full hidden z-30 absolute">
                 <div class="closed cursor-pointer">
                     <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/></svg>
                 </div>
-                <div class="modale bg-white flex flex-col m-10 p-6">
+                <div class="modale bg-white flex flex-col m-14 lg:m-16 p-6">
                     <div class="modTitle flex flex-row justify-center items-center">
                         <h3 class="text-3xl text-center font-bold">Mon CV<h3>                        
                     </div>                    
                     <div class="border-t border-solid border-gray-200 h-1 overflow-visible after m-2"></div>
                         <div class="flex flex-col justify-center items-center lg:flex-row">
                             <div class="flex flex-col justify-between items-center lg:w-1/2">                                        
-                                <img class="imgmod my-4" src="pics/cv-1.png"/>
+                                <img class="my-4" src="pics/cv-1.png"/>
                                 <h4 class="text-3xl mb-2 font-semibold">Production</h4> 
                                 <div class="flex flex-col items-start justify-center">                                
-                                    <ul class="desc text-sm md:text-xl">
+                                    <ul class="desc text-sm sm:text-base md:text-xl">
                                         <li class="list-disc">HTML/CSS/JS</li>
                                         <li class="list-disc">Site responsive</li>
                                         <li class="list-disc">Github</li>
@@ -282,9 +279,9 @@
                                 </div>                        
                             </div>
                             <div class="flex flex-col justify-between items-center lg:w-1/2">                                    
-                            <img class="imgmod my-4" src="pics/cv-2.png"/>
+                            <img class="my-4" src="pics/cv-2.png"/>
                             <h4 class="text-3xl mb-2 font-semibold">Infos</h4>
-                            <div class="desc text-left sm:mx-16 lg:my-0 lg:mx-20 text-sm md:text-xl">
+                            <div class="desc text-left sm:mx-16 lg:my-0 lg:mx-8 text-sm md:text-xl">
                                 Petit projet d'un CV centré sur le développement web en HTML/CSS et quelques lignes de JS réalisé avant ma formation DWWM de 2020 consultable via Github.
                             </div>
                         </div>
@@ -298,14 +295,14 @@
                 <div class="closed cursor-pointer">
                     <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/></svg>
                 </div>
-                <div class="modale bg-white flex flex-col m-10 p-6">
+                <div class="modale bg-white flex flex-col m-14 lg:m-16 p-6">
                     <div class="modTitle flex flex-row justify-center items-center">
                         <h3 class="text-3xl text-center font-bold">STUDIZ</h3>                        
                     </div>                    
                     <div class="border-t border-solid border-gray-200 h-1 overflow-visible after m-2"></div>
                         <div class="flex flex-col justify-center items-center lg:flex-row">
                             <div class="flex flex-col justify-between items-center lg:w-1/2">                                        
-                                <img class="imgmod my-4" src="pics/react-1.png"/>
+                                <img class="my-4" src="pics/react-1.png"/>
                                 <h4 class="text-3xl mb-2 font-semibold">Production</h4> 
                                 <div class="flex flex-col items-start justify-center">                                
                                     <ul class="desc text-sm md:text-xl">
@@ -316,44 +313,44 @@
                                 </div>                        
                             </div>
                             <div class="flex flex-col justify-between items-center lg:w-1/2">                                    
-                            <img class="imgmod my-4" src="pics/react-2.png"/>
+                            <img class="my-4" src="pics/react-2.png"/>
                             <h4 class="text-3xl mb-2 font-semibold">Infos</h4>
-                            <div class="desc text-left sm:mx-16 lg:my-0 lg:mx-20 text-sm md:text-xl">
-                                Petit projet d'un CV centré sur le développement web en HTML/CSS et quelques lignes de JS réalisé avant ma formation DWWM de 2020 consultable via Github.
+                            <div class="desc text-left sm:mx-16 lg:my-0 lg:mx-8 text-sm md:text-xl">
+                                Studiz est un projet de développement d'une plateforme d'échange pour les étudiants, ma participation bénévole est orienté vers le front-end. Ce projet est encore en cours de réalisation
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-col justify-center items-center bg-gray-200 mt-4 p-2 hover:bg-gray-400 cursor-pointer">
+                    <!-- <div class="flex flex-col justify-center items-center bg-gray-200 mt-4 p-2 hover:bg-gray-400 cursor-pointer">
                         <a href="#" target="_blank" class="text-xl">Visiter le site</a>
-                    </div>
+                    </div> -->
                 </div>            
             </div>
             <div class="modal h-full w-full hidden z-30 absolute">
                 <div class="closed cursor-pointer">
                     <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/></svg>
                 </div>
-                <div class="modale bg-white flex flex-col m-10 p-6">
+                <div class="modale bg-white flex flex-col m-14 lg:m-16 p-6">
                     <div class="modTitle flex flex-row justify-center items-center">
                         <h3 class="text-3xl text-center font-bold">SAINT SEIYA SANCTUARY</h3>                        
                     </div>                    
                     <div class="border-t border-solid border-gray-200 h-1 overflow-visible after m-2"></div>
-                        <div class="flex flex-col justify-center items-center lg:flex-row">
-                            <div class="flex flex-col justify-between items-center lg:w-1/2">                                        
-                                <img class="imgmod my-4" src="pics/wp-1.png"/>
-                                <h4 class="text-3xl mb-2 font-semibold">Production</h4> 
-                                <div class="flex flex-col items-start justify-center">                                
-                                    <ul class="desc text-sm md:text-xl">
-                                        <li class="list-disc">WODPRESS/CSS/JS</li>
-                                        <li class="list-disc">Site responsive</li>
-                                        <li class="list-disc">Github</li>
-                                    </ul>
-                                </div>                        
-                            </div>
-                            <div class="flex flex-col justify-between items-center lg:w-1/2">                                    
-                            <img class="imgmod my-4" src="pics/wp-2.png"/>
+                    <div class="flex flex-col justify-center items-center lg:flex-row">
+                        <div class="flex flex-col justify-between items-center lg:w-1/2">                                        
+                            <img class="my-4" src="pics/wp-1.png"/>
+                            <h4 class="text-3xl mb-2 font-semibold">Production</h4> 
+                            <div class="flex flex-col items-start justify-center">                                
+                                <ul class="desc text-sm md:text-xl">
+                                    <li class="list-disc">WODPRESS/PHP/CSS/JS</li>
+                                    <li class="list-disc">Site responsive</li>
+                                    <li class="list-disc">Github</li>
+                                </ul>
+                            </div>                        
+                        </div>
+                        <div class="flex flex-col justify-between items-center lg:w-1/2">                                    
+                            <img class="my-4" src="pics/wp-2.png"/>
                             <h4 class="text-3xl mb-2 font-semibold">Infos</h4>
-                            <div class="desc text-left sm:mx-16 lg:my-0 lg:mx-20 text-sm md:text-xl">
-                                Petit projet d'un CV centré sur le développement web en HTML/CSS et quelques lignes de JS réalisé avant ma formation DWWM de 2020 consultable via Github.
+                            <div class="desc text-left sm:mx-16 lg:my-0 lg:mx-8 text-sm md:text-xl">
+                                Saint Seiya Sanctuary est mon premier projet personnel à grande échelle. Réalisé sur Wordpress, ce premier site a été réaliser sur plusieurs mois.
                             </div>
                         </div>
                     </div>
@@ -366,28 +363,28 @@
                 <div class="closed cursor-pointer">
                     <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/></svg>
                 </div>
-                <div class="modale bg-white flex flex-col m-10 p-6">
+                <div class="modale bg-white flex flex-col m-14 lg:m-16 p-6">
                     <div class="modTitle flex flex-row justify-center items-center">
                         <h3 class="text-3xl text-center font-bold">DWWM 2020-1</h3>                        
                     </div>                    
                     <div class="border-t border-solid border-gray-200 h-1 overflow-visible after m-2"></div>
                         <div class="flex flex-col justify-center items-center lg:flex-row">
                             <div class="flex flex-col justify-between items-center lg:w-1/2">                                        
-                                <img class="imgmod my-4" src="pics/wp-3.png"/>
+                                <img class="my-4" src="pics/wp-3.png"/>
                                 <h4 class="text-3xl mb-2 font-semibold">Production</h4> 
                                 <div class="flex flex-col items-start justify-center">                                
                                     <ul class="desc text-sm md:text-xl">
-                                        <li class="list-disc">HTML/CSS/JS</li>
+                                        <li class="list-disc">WORDPRESS/PHP/HTML/CSS/JS</li>
                                         <li class="list-disc">Site responsive</li>
                                         <li class="list-disc">Github</li>
                                     </ul>
                                 </div>                        
                             </div>
                             <div class="flex flex-col justify-between items-center lg:w-1/2">                                    
-                            <img class="imgmod my-4" src="pics/wp-4.png"/>
+                            <img class="my-4" src="pics/wp-4.png"/>
                             <h4 class="text-3xl mb-2 font-semibold">Infos</h4>
-                            <div class="desc text-left sm:mx-16 lg:my-0 lg:mx-20 text-sm md:text-xl">
-                                Petit projet d'un CV centré sur le développement web en HTML/CSS et quelques lignes de JS réalisé avant ma formation DWWM de 2020 consultable via Github.
+                            <div class="desc text-left sm:mx-16 lg:my-0 lg:mx-8 text-sm md:text-xl">
+                                Ce petit site a été développé sur Wordpress pendant ma formation pour une évaluation. Ce site n'étant pas en ligne, il est néanmoins stocké dans mon Github.
                             </div>
                         </div>
                     </div>
@@ -406,20 +403,20 @@
                     </div>                    
                     <div class="border-t border-solid border-gray-200 h-1 overflow-visible after m-2"></div>
                         <div class="flex flex-col justify-center items-center lg:flex-row">
-                            <p>Portfolio de Olivier Fort</p>
-                            <p>Version 1.1</p>
-                            <p>Technologie utilisées : </p>
-                            <p>HTML / PHP / SCSS / JS / TAILWIND / GITHUB</p>
+                            <p>Portfolio de Olivier Fort</br>
+                            Version 1.1</br>
+                            Technologie utilisées : </br>
+                            HTML / PHP / SCSS / JS / TAILWIND / GITHUB</p>
                         </div>
                     </div>
                 </div>            
             </div>
         </section>
-        <section class="mydesk col-span-6 grid grid-cols-6 h-48">
+        <section class="mydesk col-span-6 grid grid-cols-6 h-48 md:h-56">
             <!-- <img class="col-span-6" src="pics/mydesk.png"/> -->
         </section>
-        <section id="cont" class="contact bg-white col-span-6 grid grid-cols-6 justify-center py-8 px-4">
-            <h2 class="col-span-6 justify-self-center mb-2 text-3xl font-bold z-10">Contact</h2>
+        <section id="cont" class="contact bg-white col-span-6 grid grid-cols-6 justify-center py-24 px-4">
+            <h2 class="col-span-6 justify-self-center mb-2 text-3xl font-bold z-10 lg:text-4xl">Contact</h2>
             <div class="border border-black border-solid col-span-6 w-20 justify-self-center my-10"></div>
             <div class="text-5xl text-gray-300 absolute font-bold text-opacity-50 text-center left-0 right-0">CONTACT</div>
             <?php
@@ -482,6 +479,9 @@
             </form>            
         </section>
     </main>
+    <div id="arrow" class="arrow z-40 hidden cursor-pointer">
+        <svg width="50px" height="50px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title>ionicons-v5-a</title><polyline points="112 244 256 100 400 244" style="fill:none;stroke:#9ca3af;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"/><line x1="256" y1="120" x2="256" y2="412" style="fill:none;stroke:#9ca3af;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"/></svg>
+            </div>  
     <footer class="footer grid grid-cols-6 bg-gray-100">
         <nav class="footer-nav col-span-6 flex flex-col items-center">
             <ul class="flex flex-row items-center h-8 text-sm">
@@ -496,6 +496,6 @@
             <p class="cop text-xs"> © 2021 Olivier Fort, Tous droits réservés</p>
         </nav>
     </footer>    
-    <script src="script.js"></script>
 </body>
+<script src="script.js"></script>
 </html>
