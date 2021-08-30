@@ -288,7 +288,7 @@
                             </div>
                         </div>
                         <div class="flex flex-col justify-center items-center bg-gray-200 mt-4 p-2 hover:bg-gray-400 cursor-pointer">
-                            <a href="https://olivefort.github.io/cv/" target="_blank" class="text-xl">Visiter le site</a>
+                            <a href="https://olivefort.github.io/CV/" target="_blank" class="text-xl">Visiter le site</a>
                         </div>
                     </div>
                 </div>            
