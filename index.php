@@ -25,11 +25,11 @@
                     <button aria-expanded="false" aria-controls="main-menu" class="togle">Menu</button>                    
                     <ul id="main-menu" class="menu bg-gray-200 text-center" hidden>
                         <li class="text-base lg:text-xl"><a href="#pres">Présentation</a></li>
-                        <li class="text-base lg:text-xl"><a href="#compe">Compétence</a></li>
+                        <li class="text-base lg:text-xl"><a href="#compe">Compétences</a></li>
                         <li class="text-base lg:text-xl"><a href="#portfo">Portfolio</a></li>
                         <li class="text-base lg:text-xl"><a href="#cont">Contact</a></li>
                     </ul>                        
-                    <div class="text-4xl font-bold">OLIVIER FORT</div>                    
+                    <div class="text-2xl lg:text-4xl font-bold">OLIVIER FORT</div>                    
                 </nav>
             </header>
         </section>
@@ -41,9 +41,9 @@
         </section>
         <section id="compe" class="competence grid grid-cols-6 col-span-6 bg-gray-100 py-24 px-4">
             <div class="cont col-span-6">
-                <h2 class="col-span-6 justify-self-center mb-2 text-3xl font-bold z-10 lg:text-4xl">Compétence</h2>
+                <h2 class="col-span-6 justify-self-center mb-2 text-3xl font-bold z-10 lg:text-4xl">Compétences</h2>
                 <div class="border border-black border-solid col-span-6 w-20 justify-self-center my-10"></div>
-                <div class="text-5xl text-gray-300 absolute font-bold text-opacity-50 text-center col-span-6 left-0 right-0">COMPETENCE</div>
+                <div class="text-5xl text-gray-300 absolute font-bold text-opacity-50 text-center col-span-6 left-0 right-0">COMPETENCES</div>
             </div>
             <div class="col-span-6 grid grid-cols-6 sm:mx-4 lg:mx-10">
                 <div class="col-span-3">
@@ -249,7 +249,7 @@
                 </div>
             </div>            
             <div class="text-xl col-span-6 text-center justify-center items-center my-6">
-                <p>Vous trouverez dans mon Github d'autres réalisations de type application que j'ai dévelloppé</p>
+                <p>Vous trouverez dans mon Github d'autres réalisations de type application que j'ai développé</p>
             </div>
             <div class="pf__gt col-start-2 col-span-4 flex flex-col items-center">                
                 <a href="https://github.com/olivefort" target="_blank"><img class="pf__gt--img gith" src="pics/gt.png"/></a>                                           
@@ -258,155 +258,165 @@
         <div id="scroll"><div></div></div>
         <section>
             <div class="modal h-full w-full hidden z-30 absolute">
-                <div class="closed cursor-pointer">
-                    <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/></svg>
-                </div>
-                <div class="modale bg-white flex flex-col m-14 lg:m-16 p-6">
-                    <div class="modTitle flex flex-row justify-center items-center">
-                        <h3 class="text-3xl text-center font-bold">Mon CV<h3>                        
-                    </div>                    
-                    <div class="border-t border-solid border-gray-200 h-1 overflow-visible after m-2"></div>
-                        <div class="flex flex-col justify-center items-center lg:flex-row">
-                            <div class="flex flex-col justify-between items-center lg:w-1/2">                                        
-                                <img class="my-4" src="pics/cv-1.png"/>
-                                <h4 class="text-3xl mb-2 font-semibold">Production</h4> 
-                                <div class="flex flex-col items-start justify-center">                                
-                                    <ul class="desc text-sm sm:text-base md:text-xl">
-                                        <li class="list-disc">HTML/CSS/JS</li>
-                                        <li class="list-disc">Site responsive</li>
-                                        <li class="list-disc">Github</li>
-                                    </ul>
-                                </div>                        
-                            </div>
-                            <div class="flex flex-col justify-between items-center lg:w-1/2">                                    
-                            <img class="my-4" src="pics/cv-2.png"/>
-                            <h4 class="text-3xl mb-2 font-semibold">Infos</h4>
-                            <div class="desc text-left sm:mx-16 lg:my-0 lg:mx-8 text-sm md:text-xl">
-                                Petit projet d'un CV centré sur le développement web en HTML/CSS et quelques lignes de JS réalisé avant ma formation DWWM de 2020 consultable via Github.
+                <div class="flex flex-col items-center justify-center bg-white m-14">
+                    <div class="closed cursor-pointer flex flex-row justify-end w-full mr-4 mt-2">
+                        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/></svg>
+                    </div>
+                    <div class="modale  flex flex-col lg:m-16 p-6">
+                        <div class="modTitle flex flex-row justify-center items-center">
+                            <h3 class="text-3xl text-center font-bold">Mon CV<h3>                        
+                        </div>                    
+                        <div class="border-t border-solid border-gray-200 h-1 overflow-visible after m-2"></div>
+                            <div class="flex flex-col justify-center items-center lg:flex-row">
+                                <div class="flex flex-col justify-between items-center lg:w-1/2">                                        
+                                    <img class="my-4" src="pics/cv-1.png"/>
+                                    <h4 class="text-3xl mb-2 font-semibold">Production</h4> 
+                                    <div class="flex flex-col items-start justify-center">                                
+                                        <ul class="desc text-sm sm:text-base md:text-xl">
+                                            <li class="list-disc">HTML/CSS/JS</li>
+                                            <li class="list-disc">Site responsive</li>
+                                            <li class="list-disc">Github</li>
+                                        </ul>
+                                    </div>                        
+                                </div>
+                                <div class="flex flex-col justify-between items-center lg:w-1/2">                                    
+                                <img class="my-4" src="pics/cv-2.png"/>
+                                <h4 class="text-3xl mb-2 font-semibold">Infos</h4>
+                                <div class="desc text-left sm:mx-16 lg:my-0 lg:mx-8 text-sm md:text-xl">
+                                    Petit projet d'un CV centré sur le développement web en HTML/CSS et quelques lignes de JS réalisé avant ma formation DWWM de 2020 consultable via Github.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="flex flex-col justify-center items-center bg-gray-200 mt-4 p-2 hover:bg-gray-400 cursor-pointer">
-                        <a href="https://olivefort.github.io/cv/" target="_blank" class="text-xl">Visiter le site</a>
+                        <div class="flex flex-col justify-center items-center bg-gray-200 mt-4 p-2 hover:bg-gray-400 cursor-pointer">
+                            <a href="https://olivefort.github.io/cv/" target="_blank" class="text-xl">Visiter le site</a>
+                        </div>
                     </div>
                 </div>            
             </div>
             <div class="modal h-full w-full hidden z-30 absolute">
-                <div class="closed cursor-pointer">
-                    <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/></svg>
-                </div>
-                <div class="modale bg-white flex flex-col m-14 lg:m-16 p-6">
-                    <div class="modTitle flex flex-row justify-center items-center">
-                        <h3 class="text-3xl text-center font-bold">STUDIZ</h3>                        
-                    </div>                    
-                    <div class="border-t border-solid border-gray-200 h-1 overflow-visible after m-2"></div>
-                        <div class="flex flex-col justify-center items-center lg:flex-row">
-                            <div class="flex flex-col justify-between items-center lg:w-1/2">                                        
-                                <img class="my-4" src="pics/react-1.png"/>
-                                <h4 class="text-3xl mb-2 font-semibold">Production</h4> 
-                                <div class="flex flex-col items-start justify-center">                                
-                                    <ul class="desc text-sm md:text-xl">
-                                        <li class="list-disc">REACT/BOOTSTRAP</li>
-                                        <li class="list-disc">Site responsive</li>
-                                        <li class="list-disc">Github</li>
-                                    </ul>
-                                </div>                        
-                            </div>
-                            <div class="flex flex-col justify-between items-center lg:w-1/2">                                    
-                            <img class="my-4" src="pics/react-2.png"/>
-                            <h4 class="text-3xl mb-2 font-semibold">Infos</h4>
-                            <div class="desc text-left sm:mx-16 lg:my-0 lg:mx-8 text-sm md:text-xl">
-                                Studiz est un projet de développement d'une plateforme d'échange pour les étudiants, ma participation bénévole est orienté vers le front-end. Ce projet est encore en cours de réalisation
-                            </div>
-                        </div>
+                <div class="flex flex-col items-center justify-center bg-white m-14">
+                    <div class="closed cursor-pointer flex flex-row justify-end w-full mr-4 mt-2">
+                        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/></svg>
                     </div>
-                    <!-- <div class="flex flex-col justify-center items-center bg-gray-200 mt-4 p-2 hover:bg-gray-400 cursor-pointer">
-                        <a href="#" target="_blank" class="text-xl">Visiter le site</a>
-                    </div> -->
-                </div>            
-            </div>
-            <div class="modal h-full w-full hidden z-30 absolute">
-                <div class="closed cursor-pointer">
-                    <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/></svg>
-                </div>
-                <div class="modale bg-white flex flex-col m-14 lg:m-16 p-6">
-                    <div class="modTitle flex flex-row justify-center items-center">
-                        <h3 class="text-3xl text-center font-bold">SAINT SEIYA SANCTUARY</h3>                        
-                    </div>                    
-                    <div class="border-t border-solid border-gray-200 h-1 overflow-visible after m-2"></div>
-                    <div class="flex flex-col justify-center items-center lg:flex-row">
-                        <div class="flex flex-col justify-between items-center lg:w-1/2">                                        
-                            <img class="my-4" src="pics/wp-1.png"/>
-                            <h4 class="text-3xl mb-2 font-semibold">Production</h4> 
-                            <div class="flex flex-col items-start justify-center">                                
-                                <ul class="desc text-sm md:text-xl">
-                                    <li class="list-disc">WODPRESS/PHP/CSS/JS</li>
-                                    <li class="list-disc">Site responsive</li>
-                                    <li class="list-disc">Github</li>
-                                </ul>
-                            </div>                        
-                        </div>
-                        <div class="flex flex-col justify-between items-center lg:w-1/2">                                    
-                            <img class="my-4" src="pics/wp-2.png"/>
-                            <h4 class="text-3xl mb-2 font-semibold">Infos</h4>
-                            <div class="desc text-left sm:mx-16 lg:my-0 lg:mx-8 text-sm md:text-xl">
-                                Saint Seiya Sanctuary est mon premier projet personnel à grande échelle. Réalisé sur Wordpress, ce premier site a été réaliser sur plusieurs mois.
+                    <div class="modale flex flex-col lg:m-16 p-6">
+                        <div class="modTitle flex flex-row justify-center items-center">
+                            <h3 class="text-3xl text-center font-bold">STUDIZ</h3>                        
+                        </div>                    
+                        <div class="border-t border-solid border-gray-200 h-1 overflow-visible after m-2"></div>
+                            <div class="flex flex-col justify-center items-center lg:flex-row">
+                                <div class="flex flex-col justify-between items-center lg:w-1/2">                                        
+                                    <img class="my-4" src="pics/react-1.png"/>
+                                    <h4 class="text-3xl mb-2 font-semibold">Production</h4> 
+                                    <div class="flex flex-col items-start justify-center">                                
+                                        <ul class="desc text-sm md:text-xl">
+                                            <li class="list-disc">REACT/BOOTSTRAP</li>
+                                            <li class="list-disc">Site responsive</li>
+                                            <li class="list-disc">Github</li>
+                                        </ul>
+                                    </div>                        
+                                </div>
+                                <div class="flex flex-col justify-between items-center lg:w-1/2">                                    
+                                <img class="my-4" src="pics/react-2.png"/>
+                                <h4 class="text-3xl mb-2 font-semibold">Infos</h4>
+                                <div class="desc text-left sm:mx-16 lg:my-0 lg:mx-8 text-sm md:text-xl">
+                                    Studiz est un projet de développement d'une plateforme d'échange pour les étudiants, ma participation bénévole est orienté vers le front-end. Ce projet est encore en cours de réalisation
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="flex flex-col justify-center items-center bg-gray-200 mt-4 p-2 hover:bg-gray-400 cursor-pointer">
-                        <a href="http://www.saintseiyasanctuary.fr/" target="_blank" class="text-xl">Visiter le site</a>
+                        <!-- <div class="flex flex-col justify-center items-center bg-gray-200 mt-4 p-2 hover:bg-gray-400 cursor-pointer">
+                            <a href="#" target="_blank" class="text-xl">Visiter le site</a>
+                        </div> -->
                     </div>
                 </div>            
             </div>
             <div class="modal h-full w-full hidden z-30 absolute">
-                <div class="closed cursor-pointer">
-                    <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/></svg>
-                </div>
-                <div class="modale bg-white flex flex-col m-14 lg:m-16 p-6">
-                    <div class="modTitle flex flex-row justify-center items-center">
-                        <h3 class="text-3xl text-center font-bold">DWWM 2020-1</h3>                        
-                    </div>                    
-                    <div class="border-t border-solid border-gray-200 h-1 overflow-visible after m-2"></div>
+                <div class="flex flex-col items-center justify-center bg-white m-14">
+                    <div class="closed cursor-pointer flex flex-row justify-end w-full mr-4 mt-2">
+                        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/></svg>
+                    </div>
+                    <div class="modale flex flex-col lg:m-16 p-6">
+                        <div class="modTitle flex flex-row justify-center items-center">
+                            <h3 class="text-3xl text-center font-bold">SAINT SEIYA SANCTUARY</h3>                        
+                        </div>                    
+                        <div class="border-t border-solid border-gray-200 h-1 overflow-visible after m-2"></div>
                         <div class="flex flex-col justify-center items-center lg:flex-row">
                             <div class="flex flex-col justify-between items-center lg:w-1/2">                                        
-                                <img class="my-4" src="pics/wp-3.png"/>
+                                <img class="my-4" src="pics/wp-1.png"/>
                                 <h4 class="text-3xl mb-2 font-semibold">Production</h4> 
                                 <div class="flex flex-col items-start justify-center">                                
                                     <ul class="desc text-sm md:text-xl">
-                                        <li class="list-disc">WORDPRESS/PHP/HTML/CSS/JS</li>
+                                        <li class="list-disc">WODPRESS/PHP/CSS/JS</li>
                                         <li class="list-disc">Site responsive</li>
                                         <li class="list-disc">Github</li>
                                     </ul>
                                 </div>                        
                             </div>
                             <div class="flex flex-col justify-between items-center lg:w-1/2">                                    
-                            <img class="my-4" src="pics/wp-4.png"/>
-                            <h4 class="text-3xl mb-2 font-semibold">Infos</h4>
-                            <div class="desc text-left sm:mx-16 lg:my-0 lg:mx-8 text-sm md:text-xl">
-                                Ce petit site a été développé sur Wordpress pendant ma formation pour une évaluation. Ce site n'étant pas en ligne, il est néanmoins stocké dans mon Github.
+                                <img class="my-4" src="pics/wp-2.png"/>
+                                <h4 class="text-3xl mb-2 font-semibold">Infos</h4>
+                                <div class="desc text-left sm:mx-16 lg:my-0 lg:mx-8 text-sm md:text-xl">
+                                    Saint Seiya Sanctuary est mon premier projet personnel à grande échelle. Réalisé sur Wordpress, ce premier site a été réaliser sur plusieurs mois.
+                                </div>
                             </div>
                         </div>
+                        <div class="flex flex-col justify-center items-center bg-gray-200 mt-4 p-2 hover:bg-gray-400 cursor-pointer">
+                            <a href="http://www.saintseiyasanctuary.fr/" target="_blank" class="text-xl">Visiter le site</a>
+                        </div>
                     </div>
-                    <div class="flex flex-col justify-center items-center bg-gray-200 mt-4 p-2 hover:bg-gray-400 cursor-pointer">
-                        <a href="#" target="_blank" class="text-xl">Visiter le site</a>
+                </div>            
+            </div>
+            <div class="modal h-full w-full hidden z-30 absolute">
+                <div class="flex flex-col items-center justify-center bg-white m-14">
+                    <div class="closed cursor-pointer flex flex-row justify-end w-full mr-4 mt-2">
+                        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/></svg>
+                    </div>
+                    <div class="modale flex flex-col lg:m-16 p-6">
+                        <div class="modTitle flex flex-row justify-center items-center">
+                            <h3 class="text-3xl text-center font-bold">DWWM 2020-1</h3>                        
+                        </div>                    
+                        <div class="border-t border-solid border-gray-200 h-1 overflow-visible after m-2"></div>
+                            <div class="flex flex-col justify-center items-center lg:flex-row">
+                                <div class="flex flex-col justify-between items-center lg:w-1/2">                                        
+                                    <img class="my-4" src="pics/wp-3.png"/>
+                                    <h4 class="text-3xl mb-2 font-semibold">Production</h4> 
+                                    <div class="flex flex-col items-start justify-center">                                
+                                        <ul class="desc text-sm md:text-xl">
+                                            <li class="list-disc">WORDPRESS/PHP/HTML/CSS/JS</li>
+                                            <li class="list-disc">Site responsive</li>
+                                            <li class="list-disc">Github</li>
+                                        </ul>
+                                    </div>                        
+                                </div>
+                                <div class="flex flex-col justify-between items-center lg:w-1/2">                                    
+                                <img class="my-4" src="pics/wp-4.png"/>
+                                <h4 class="text-3xl mb-2 font-semibold">Infos</h4>
+                                <div class="desc text-left sm:mx-16 lg:my-0 lg:mx-8 text-sm md:text-xl">
+                                    Ce petit site a été développé sur Wordpress pendant ma formation pour une évaluation. Ce site n'étant pas en ligne, il est néanmoins stocké dans mon Github.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-center bg-gray-200 mt-4 p-2 hover:bg-gray-400 cursor-pointer">
+                            <a href="https://github.com/olivefort/Dwwm20201/tree/main/wp-content/themes/dwwm2020" target="_blank" class="text-xl">Voir le Github</a>
+                        </div>
                     </div>
                 </div>            
             </div>
             <div class="modal modalapp h-full w-full hidden z-30 absolute">
-                <div class="closed cursor-pointer">
-                    <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/></svg>
-                </div>
-                <div class="modale bg-white flex flex-col m-10 p-6">
-                    <div class="modTitle flex flex-row justify-center items-center">
-                        <h3 class="text-3xl text-center font-bold">A PROPOS</h3>                        
-                    </div>                    
-                    <div class="border-t border-solid border-gray-200 h-1 overflow-visible after m-2"></div>
-                        <div class="flex flex-col justify-center items-center lg:flex-row">
-                            <p>Portfolio de Olivier Fort</br>
-                            Version 1.1</br>
-                            Technologie utilisées : </br>
-                            HTML / PHP / SCSS / JS / TAILWIND / GITHUB</p>
+                <div class="flex flex-col items-center justify-center bg-white m-14">
+                    <div class="closed cursor-pointer flex flex-row justify-end w-full mr-4 mt-2">
+                        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/></svg>
+                    </div>
+                    <div class="modale flex flex-col m-10 p-6">
+                        <div class="modTitle flex flex-row justify-center items-center">
+                            <h3 class="text-3xl text-center font-bold">A PROPOS</h3>                        
+                        </div>                    
+                        <div class="border-t border-solid border-gray-200 h-1 overflow-visible after m-2"></div>
+                            <div class="flex flex-col justify-center items-center lg:flex-row">
+                                <p>Portfolio de Olivier Fort</br>
+                                Version 1.1</br>
+                                Technologies utilisées : </br>
+                                HTML / PHP / SCSS / JS / TAILWIND / GITHUB</p>
+                            </div>
                         </div>
                     </div>
                 </div>            
@@ -473,7 +483,7 @@
                     <textarea name="message" id="message" class="bg-gray-100 border-gray-200 border rounded-sm texta"></textarea>
                 </div>
                 <div>
-                    <button id="submit" name="btnsubmit" type="submit" value="Envoyer" class="bg-gray-100 border-gray-200 border rounded-sm">Envoyer</button>
+                    <button id="submit" name="btnsubmit" type="submit" value="Envoyer" class="bg-gray-100 border-gray-200 border rounded-sm w-full py-2 my-2 hover:bg-gray-300">Envoyer</button>
                 </div>
                 <?php if(isset($msg)){echo $msg;}?>
             </form>            

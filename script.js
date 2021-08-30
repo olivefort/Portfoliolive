@@ -63,7 +63,13 @@ for(let i=0; i<clik.length; i++){
         console.log("indexx : "+i);
         modal[i].style.display = 'block';
         dark.style.display= 'block';
-    })    
+    })
+    // window.onclick = function(event){
+    //     if (event.target == modal){
+    //         modal[i].style.display = 'none';
+    //     }
+    //     event.preventDefault();
+    // }    
 }
 
 
@@ -75,6 +81,9 @@ for(let i=0; i<closed.length; i++){
         menu.hidden;
     })    
 }
+
+
+
 
 // modalapp.addEventListener('click',function(){
 //     mod.style.display = 'block';
@@ -117,3 +126,17 @@ function hdp(){
 document.getElementById('body').addEventListener('scroll', e => {
     console.log(e.target.scrollTop)
 })
+
+var anim = document.querySelectorAll('.progress');
+var elem = document.getElementById('compe');
+// var exec = setInterval(maFonction,1000);
+function maFonction(){
+    var positionUser = window.scrollY;
+    var positionElement = elem.scrollTop;
+    if(positionElement >= positionUser){
+        // clearInterval(exec);
+        anim.style.animationPlayState = 'running';
+    }else{
+        anim.style.animationPlayState = 'paused';
+    }
+}

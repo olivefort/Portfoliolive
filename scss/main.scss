@@ -72,7 +72,7 @@
 .current-menu-item,
 .menu a:hover,
 .menu a:focus {
-    color: red;
+    color: #b5b6b8;
     background-color: #fff;
 }
 .fixed{
@@ -154,7 +154,13 @@ $sql: #E58E00;
     &__bar{        
         transform: scaleX(0.5);
         transform-origin: left;
-        animation: progress-bar $prog-bar-dure $prog-bar-delay alternate both;
+        // animation: progress-bar $prog-bar-dure $prog-bar-delay alternate both;
+        animation-name: progress-bar;
+        animation-duration: $prog-bar-dure;
+        animation-delay: $prog-bar-delay;
+        animation-fill-mode: both;
+        animation-direction: alternate;
+        // animation-play-state: paused;
         &--html{
             background-color: $html;
         }
@@ -295,9 +301,11 @@ $sql: #E58E00;
 }
 .modal{
     top: 150rem;
+    left: 0;
 }
 .modalapp{
-    top: 230rem;
+    top: 260rem;
+    left: 0;
 }
 
 // #scroll {
@@ -311,11 +319,11 @@ $sql: #E58E00;
 //     height: 2000px;
 //   }
 
-.closed{
-    position: absolute;
-    top: -5%;
-    right: 15%;
-}
+// .closed{
+//     position: fixed;
+//     top: 2rem;
+//     left: 30rem;
+// }
 @keyframes fadeIn {
     0% {
         opacity:0;
@@ -392,7 +400,5 @@ body{
 }
 /*-resp 1360px-*/
 @media (min-width: 85em) {
-    .modale{
-        margin: 20rem !important;
-    }
+    
 }

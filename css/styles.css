@@ -72,7 +72,7 @@
 .current-menu-item,
 .menu a:hover,
 .menu a:focus {
-  color: red;
+  color: #b5b6b8;
   background-color: #fff;
 }
 
@@ -146,7 +146,11 @@
 .progress__bar {
   transform: scaleX(0.5);
   transform-origin: left;
-  animation: progress-bar 5000ms 1000ms alternate both;
+  animation-name: progress-bar;
+  animation-duration: 5000ms;
+  animation-delay: 1000ms;
+  animation-fill-mode: both;
+  animation-direction: alternate;
 }
 .progress__bar--html {
   background-color: #E34F26;
@@ -245,16 +249,12 @@
 
 .modal {
   top: 150rem;
+  left: 0;
 }
 
 .modalapp {
-  top: 230rem;
-}
-
-.closed {
-  position: absolute;
-  top: -5%;
-  right: 15%;
+  top: 260rem;
+  left: 0;
 }
 
 @keyframes fadeIn {
@@ -324,10 +324,5 @@ body {
   }
 }
 /*-resp 1360px-*/
-@media (min-width: 85em) {
-  .modale {
-    margin: 20rem !important;
-  }
-}
 
 /*# sourceMappingURL=styles.css.map */
