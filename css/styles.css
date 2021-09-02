@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 /*Nav*/
 .main-nav button {
   position: relative;
@@ -138,6 +139,180 @@
     border-color: orange;
   }
 }
+.radio {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 100rem;
+  background: transparent;
+  animation-name: noir;
+  animation-duration: 0.2s;
+  animation-delay: 14.5s;
+  animation-fill-mode: forwards;
+}
+
+.cross {
+  color: transparent;
+  animation-name: xnoir;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  font-size: 0.9rem;
+}
+.cross__fe {
+  animation-delay: 15.5s;
+}
+.cross__fs {
+  animation-delay: 16.5s;
+}
+
+.ff {
+  position: relative;
+  width: max-content;
+  font-family: "Source Code Pro", monospace;
+  font-size: clamp(1rem, 3vw+1rem, 4rem);
+  margin-left: 0.5rem;
+  z-index: 5;
+}
+
+.ff::before,
+.ff::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.ff::before {
+  background: #d1d5db;
+}
+
+.ff::after {
+  width: 0.125em;
+  background: transparent;
+}
+
+.ff__n::before {
+  animation-name: write;
+  animation-duration: 0.7s;
+  animation-timing-function: steps(4);
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
+.ff__n::after {
+  animation: write 0.7s steps(4) 0.8s forwards, noir 750ms steps(4) 3;
+}
+.ff__p::before {
+  animation: write 1.3s steps(7) 2.2s forwards;
+}
+.ff__p::after {
+  animation: write 1.3s steps(7) 2.2s forwards, noir 750ms steps(7) 2.2s 4;
+}
+.ff__a::before {
+  animation: write 1s steps(2) 5.5s forwards;
+}
+.ff__a::after {
+  animation: write 1s steps(2) 5.5s forwards, noir 750ms steps(2) 5.5s 3;
+}
+.ff__l::before {
+  animation: write 1.3s steps(5) 8s forwards;
+}
+.ff__l::after {
+  animation: write 1.3s steps(5) 8s forwards, noir 750ms steps(5) 8s 3;
+}
+.ff__d::before {
+  animation: write 3s steps(15) 10s forwards;
+}
+.ff__d::after {
+  animation: write 3s steps(15) 10s forwards, noir 750ms steps(15) 10s 4;
+}
+.ff__o::before {
+  animation: write 1.5s steps(4) 13s forwards;
+}
+.ff__o::after {
+  animation: write 1.5s steps(4) 13s forwards, noir 750ms steps(4) 13s 4;
+}
+.ff__q1::before {
+  animation: write 1.5s steps(8) 17.5s forwards;
+}
+.ff__q1::after {
+  animation: write 1.5s steps(8) 17.5s forwards, noir 750ms steps(8) 17.5s 3;
+}
+.ff__q2::before {
+  animation: write 1.5s steps(8) 19.5s forwards;
+}
+.ff__q2::after {
+  animation: write 1.5s steps(8) 19.5s forwards, noir 750ms steps(8) 19.5s 3;
+}
+.ff__q3::before {
+  animation: write 1.5s steps(8) 21.5s forwards;
+}
+.ff__q3::after {
+  animation: write 1.5s steps(8) 21.5s forwards, noir 750ms steps(8) 21.5s 3;
+}
+.ff__q4::before {
+  animation: write 1.5s steps(10) 23.5s forwards;
+}
+.ff__q4::after {
+  animation: write 1.5s steps(10) 23.5s forwards, noir 750ms steps(10) 23.5s 3;
+}
+.ff__q5::before {
+  animation: write 1.5s steps(7) 25.5s forwards;
+}
+.ff__q5::after {
+  animation: write 1.5s steps(7) 25.5s forwards, noir 750ms steps(7) 25.5s 3;
+}
+.ff__area::before {
+  animation: write 5s steps(281) 28s forwards;
+}
+.ff__area::after {
+  animation: write 5s steps(281) 28s forwards, noir 750ms steps(281) 28s infinite;
+}
+
+@keyframes write {
+  to {
+    left: 100%;
+  }
+}
+@keyframes noir {
+  to {
+    background: black;
+  }
+}
+@keyframes xnoir {
+  to {
+    color: black;
+  }
+}
+.cn {
+  left: -2.5rem;
+}
+
+.cp {
+  left: -4.4rem;
+}
+
+.ca {
+  left: -1.4rem;
+}
+
+.cl {
+  left: -3.2rem;
+}
+
+.cd {
+  left: -9.2rem;
+}
+
+.co {
+  left: -2.6rem;
+}
+
+.cq4 {
+  left: -6.2rem;
+}
+
+.cq5 {
+  left: -4.4rem;
+}
+
 .imgtec {
   width: 2rem;
   height: 2rem;
@@ -151,9 +326,10 @@
   animation-delay: 1000ms;
   animation-fill-mode: both;
   animation-direction: alternate;
+  animation-play-state: paused;
 }
 .progress__bar--html {
-  background-color: #E34F26;
+  background-color: #e34f26;
 }
 .progress__bar--css {
   background-color: #0277BD;

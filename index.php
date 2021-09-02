@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>PortFoliOlive</title>
 </head>
-<body id="body" class="bg-gray-200" onscroll="hdp()">
+<body id="body" class="bg-gray-200">
     <div class="h-full w-full bg-black bg-opacity-50 z-20 hidden fixed" id="dark"></div> 
     <div class="bg top-80 md:top-20"><img src="pics/mydesk.png"/></div>   
     <main id="main-content" class="container-front grid grid-cols-6">
@@ -18,16 +18,17 @@
                 </div>
                 <h2 class="hero-title">Développeur web et web mobile junior</h2>             
             </div>
+            <div class="arow"></div>
         </section>
         <section class="navigation col-span-6">
             <header id="head">
                 <nav id="navbar" class="main-nav flex justify-between items-center flex-row">
                     <button aria-expanded="false" aria-controls="main-menu" class="togle">Menu</button>                    
                     <ul id="main-menu" class="menu bg-gray-200 text-center" hidden>
-                        <li class="text-base lg:text-xl"><a href="#pres">Présentation</a></li>
-                        <li class="text-base lg:text-xl"><a href="#compe">Compétences</a></li>
-                        <li class="text-base lg:text-xl"><a href="#portfo">Portfolio</a></li>
-                        <li class="text-base lg:text-xl"><a href="#cont">Contact</a></li>
+                        <li class="menunav text-base lg:text-xl"><a href="#pres">Présentation</a></li>
+                        <li class="menunav text-base lg:text-xl"><a href="#compe">Compétences</a></li>
+                        <li class="menunav text-base lg:text-xl"><a href="#portfo">Portfolio</a></li>
+                        <li class="menunav text-base lg:text-xl"><a href="#cont">Contact</a></li>
                     </ul>                        
                     <div class="text-2xl lg:text-4xl font-bold">OLIVIER FORT</div>                    
                 </nav>
@@ -37,7 +38,94 @@
             <h2 class="col-span-6 justify-self-center mb-2 text-3xl font-bold z-10 lg:text-4xl">Presentation</h2>
             <div class="border border-black border-solid col-span-6 w-20 justify-self-center my-10"></div>
             <div class="text-5xl text-gray-300 absolute font-bold text-opacity-50 text-center col-span-6 left-0 right-0">PRESENTATION</div>
-            <div class="col-span-6 text-center text-xl">Bonjour, moi c'est Olivier, 40 ans de Tours, jeune diplomé en developpement web et web mobile.<br> Je suis passionné par le domaine informatique depuis de nombreuses années. Aujourd'hui mon intérêt se porte sur le développement web.<br> De nature sociable, je suis à l'écoute, autonome et organisé dans la réalisation de mes travaux et projets.</div>
+            <div class="col-span-6 text-center text-xl">Bonjour, moi c'est Olivier, 40 ans de Tours, jeune diplomé en developpement web et web mobile.<br> Je suis passionné par le domaine informatique depuis de nombreuses années. Aujourd'hui mon intérêt se porte sur le développement web.<br> De nature sociable, je suis à l'écoute, autonome et organisé dans la réalisation de mes travaux et projets.</br> Pour télécharger ou voir mon CV c'est <a class="text-gray-500" href="CVOlivierFort2021.pdf" download>ici.</a></div>
+        </section>
+        <section class="bg-white col-span-6 grid grid-cols-6">            
+            <div class="flex flex-row col-span-2 my-1">Nom : 
+                <span class="ff ff__n">Fort</span>
+                <div class="cn border border-solid border-gray-300 bg-gray-300 rounded h-6 w-40 relative"></div>
+            </div>
+            <div class="flex flex-row col-span-2 my-1">Prénom : 
+                <span class="ff ff__p">Olivier</span>
+                <div class="cp border border-solid border-gray-300 bg-gray-300 rounded h-6 w-40 relative"></div>
+            </div>
+            <div class="flex flex-row col-span-2 my-1">Age : 
+                <span class="ff ff__a">40</span>
+                <div class="ca border border-solid border-gray-300 bg-gray-300 rounded h-6 w-20 relative"></div>
+            </div>        
+            <div class="flex flex-row col-span-2 my-1">Localisation : 
+                <span class="ff ff__l">Tours</span>
+                <div class="cl border border-solid border-gray-300 bg-gray-300 rounded h-6 w-40 relative"></div>
+            </div>
+            <div class="flex flex-row col-span-2 my-1">Diplome : 
+                <span class="ff ff__d whitespace-nowrap">Développeur Web</span>
+                <div class="cd border border-solid border-gray-300 bg-gray-300 rounded h-6 w-40 relative"></div>
+            </div>
+            <div class="flex flex-row whitespace-nowrap col-span-2 my-1">Année d'obtention : 
+                <span class="ff ff__o">2020</span>
+                <div class="co border border-solid border-gray-300 bg-gray-300 rounded h-6 w-20 relative"></div>
+            </div>            
+            <div class="flex flex-col">
+                Vous êtes :
+                <div class="flex flex-row items-center text-center">
+                    <div class="border border-solid border-black h-4 w-4 rounded-full flex flex-row items-center justify-center mx-2">
+                        <span class="radio"></span>
+                    </div>
+                    <span>Développeur Junior</span>
+                </div>
+                <div class="flex flex-row items-center text-center">
+                    <div class="border border-solid border-black h-4 w-4 rounded-full flex flex-row items-center justify-center mx-2"></div>
+                    <span>Développeur Sénior</span>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                Vous êtes plutôt:
+                <div class="flex flex-row items-center text-center">
+                    <div class="border border-solid border-black h-4 w-4 flex flex-row items-center justify-center mx-2">
+                        <span class="cross cross__fe">X</span>
+                    </div>
+                    <span>Front-End</span>
+                </div>
+                <div class="flex flex-row items-center text-center">
+                    <div class="border border-solid border-black h-4 w-4 flex flex-row items-center justify-center mx-2"></div>
+                    <span>Back-End</span>
+                </div>
+                <div class="flex flex-row items-center text-center">
+                    <div class="border border-solid border-black h-4 w-4 flex flex-row items-center justify-center mx-2">
+                        <span class="cross cross__fs">X</span>
+                    </div>
+                    <span>Full-Stack</span>
+                </div>
+            </div>
+            <div class="flex flex-col col-span-2">Si vous deviez vous donner 5 qualitées : 
+                <div class="flex flex-row m-1">
+                    <span class="ff ff__q1">autonome</span>
+                    <div class="border border-solid border-gray-300 bg-gray-300 rounded h-6 w-28 relative -left-20"></div>
+                </div>
+                <div class="flex flex-row m-1">
+                    <span class="ff ff__q2">organisé</span>
+                    <div class="border border-solid border-gray-300 bg-gray-300 rounded h-6 w-28 relative -left-20"></div>
+                </div>
+                <div class="flex flex-row m-1">
+                    <span class="ff ff__q3">sociable</span>
+                    <div class="border border-solid border-gray-300 bg-gray-300 rounded h-6 w-28 relative -left-20"></div>
+                </div>
+                <div class="flex flex-row m-1">
+                    <span class="ff ff__q4">à l'écoute</span>
+                    <div class="cq4 border border-solid border-gray-300 bg-gray-300 rounded h-6 w-28 relative"></div>
+                </div>
+                <div class="flex flex-row m-1">
+                    <span class="ff ff__q5">curieux</span>
+                    <div class="cq5 border border-solid border-gray-300 bg-gray-300 rounded h-6 w-28 relative -left-16"></div>
+                </div>
+            </div> 
+            <div class="flex flex-col col-span-2">
+                Citer vos interêts en quelques lignes
+                <div class="flex flex-row">
+                    <span class="ff ff__area">Je suis passionné par le domaine informatique depuis de nombreuses années, je suis une personne très active dans différentes associations culturel et musical, je suis un fan des chats et tout ce qui se rapproche de la culture japonaise. J'aime aussi les randonnées à pied ou à vélo</span>
+                    <div class="border border-solid border-gray-300 bg-gray-300 rounded h-40 w-full relative -left-32"></div>
+                </div>
+            </div>
         </section>
         <section id="compe" class="competence grid grid-cols-6 col-span-6 bg-gray-100 py-24 px-4">
             <div class="cont col-span-6">
@@ -495,13 +583,13 @@
     <footer class="footer grid grid-cols-6 bg-gray-100">
         <nav class="footer-nav col-span-6 flex flex-col items-center">
             <ul class="flex flex-row items-center h-8 text-sm">
-                <li class="px-4 trans" id="app"><p class="cursor-pointer">A Propos</p></li>
+                <li class="px-4 trans hover:underline" id="app"><p class="cursor-pointer">A Propos</p></li>
                 <li class="border-solid border-r-2 border-black h-4"></li>
-                <li class="px-4"><a href="https://www.linkedin.com/in/olivier-fort/" target="_blank">Linkedin</a></li>
+                <li class="px-4 hover:underline"><a href="https://www.linkedin.com/in/olivier-fort/" target="_blank">Linkedin</a></li>
                 <li class="border-solid border-r-2 border-black h-4"></li>
-                <li class="px-4"><a href="https://github.com/olivefort" target="_blank">Github</a></li>
+                <li class="px-4 hover:underline"><a href="https://github.com/olivefort" target="_blank">Github</a></li>
                 <li class="border-solid border-r-2 border-black h-4"></li>
-                <li class="px-4"><a href="mailto:olive.fort@gmail.com" target="_blank">Mail</a></li>
+                <li class="px-4 hover:underline"><a href="mailto:olive.fort@gmail.com" target="_blank">Mail</a></li>
             </ul>
             <p class="cop text-xs"> © 2021 Olivier Fort, Tous droits réservés</p>
         </nav>

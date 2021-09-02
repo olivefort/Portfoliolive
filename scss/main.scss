@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+
 /*Nav*/
 .main-nav button {
     position: relative;
@@ -128,6 +131,248 @@
     from, to { border-color: transparent }
     50% { border-color: orange; }
 } 
+.arow{
+    width: 0;
+    height: 0;
+    border-right: 16px solid transparent;
+    border-left: 16px solid transparent;
+    border-top: 20px solid white;
+}
+
+// .ff{
+//     font-size: 1em;
+//     overflow: hidden;
+//     border-right: .15em solid transparent;
+//     white-space: nowrap;
+//     margin: 0 auto;
+//     letter-spacing: .1em;
+//     &__n{
+//         width: 2.5rem;
+//         animation: 
+//             insertn 3s steps(4, end),
+//             chariotn .75s step-end 4;
+
+//         @keyframes insertn {
+//             from { width: 0}
+//             to { width: 20%}
+//         }
+//         @keyframes chariotn {
+//             from, to {border-color: transparent;}
+//             50% { border-color: black;}
+//             // 100% { border-color: transparent;}
+//         }
+//     }
+//     &__p{
+//         width: 3.8rem;
+//         animation: 
+//             insertp 3.5s steps(7, end),
+//             chariotp .75s step-end 8;
+//         animation-delay: 3s;
+//         animation-fill-mode: forwards;
+//         // animation-iteration-count: 10;
+//         @keyframes insertp {
+//             from { width: 0}
+//             to { width: 35%}
+//         }
+//         @keyframes chariotp {
+//             from, to {border-color: transparent;}
+//             50% { border-color: black;}
+//         }
+//     }
+// }
+
+.radio{
+    width: .5rem;
+    height: .5rem;
+    border-radius: 100rem;
+    background: transparent;
+    animation-name: noir;
+    animation-duration: .2s;
+    animation-delay: 14.5s;
+    animation-fill-mode: forwards;
+}
+.cross{
+    color: transparent;
+    animation-name: xnoir;
+    animation-duration: .2s;    
+    animation-fill-mode: forwards;
+    font-size: .9rem;
+    &__fe{
+        animation-delay: 15.5s;
+    }
+    &__fs{
+        animation-delay: 16.5s;
+    }
+    
+}
+
+
+.ff{
+    position: relative;
+    width: max-content;
+    font-family: "Source Code Pro", monospace;
+    font-size: clamp(1rem, 3vw+1rem, 4rem);
+    margin-left: .5rem;
+    z-index: 5;
+}
+.ff::before,
+.ff::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+.ff::before{
+    background: #d1d5db;
+}
+.ff::after{
+    width: 0.125em;
+    background: transparent;
+}
+.ff{
+    &__n::before{
+        animation-name: write;
+        animation-duration: .7s;
+        animation-timing-function: steps(4);
+        animation-delay: 0.8s;
+        animation-fill-mode: forwards;
+    }
+    &__n::after{
+        animation: 
+            write .7s steps(4) 0.8s forwards, 
+            noir 750ms steps(4) 3;
+    }
+    &__p::before{
+        animation: write 1.3s steps(7) 2.2s forwards;
+    }
+    &__p::after{
+        animation: 
+            write 1.3s steps(7) 2.2s forwards, 
+            noir 750ms steps(7) 2.2s 4;
+    }
+    &__a::before{
+        animation: write 1s steps(2) 5.5s forwards;
+    }
+    &__a::after{
+        animation: 
+            write 1s steps(2) 5.5s forwards, 
+            noir 750ms steps(2) 5.5s 3;
+    }
+    &__l::before{
+        animation: write 1.3s steps(5) 8s forwards;
+    }
+    &__l::after{
+        animation: 
+            write 1.3s steps(5) 8s forwards, 
+            noir 750ms steps(5) 8s 3;
+    }
+    &__d::before{
+        animation: write 3s steps(15) 10s forwards;
+    }
+    &__d::after{
+        animation: 
+            write 3s steps(15) 10s forwards, 
+            noir 750ms steps(15) 10s 4;
+    }
+    &__o::before{
+        animation: write 1.5s steps(4) 13s forwards;
+    }
+    &__o::after{
+        animation: 
+            write 1.5s steps(4) 13s forwards, 
+            noir 750ms steps(4) 13s 4;
+    }
+    &__q1::before{
+        animation: write 1.5s steps(8) 17.5s forwards;
+    }
+    &__q1::after{
+        animation: 
+            write 1.5s steps(8) 17.5s forwards, 
+            noir 750ms steps(8) 17.5s 3;
+    }
+    &__q2::before{
+        animation: write 1.5s steps(8) 19.5s forwards;
+    }
+    &__q2::after{
+        animation: 
+            write 1.5s steps(8) 19.5s forwards, 
+            noir 750ms steps(8) 19.5s 3;
+    }
+    &__q3::before{
+        animation: write 1.5s steps(8) 21.5s forwards;
+    }
+    &__q3::after{
+        animation: 
+            write 1.5s steps(8) 21.5s forwards, 
+            noir 750ms steps(8) 21.5s 3;
+    }
+    &__q4::before{
+        animation: write 1.5s steps(10) 23.5s forwards;
+    }
+    &__q4::after{
+        animation: 
+            write 1.5s steps(10) 23.5s forwards, 
+            noir 750ms steps(10) 23.5s 3;
+    }
+    &__q5::before{
+        animation: write 1.5s steps(7) 25.5s forwards;
+    }
+    &__q5::after{
+        animation: 
+            write 1.5s steps(7) 25.5s forwards, 
+            noir 750ms steps(7) 25.5s 3;
+    }
+    &__area::before{
+        animation: write 5s steps(281) 28s forwards;
+    }
+    &__area::after{
+        animation: 
+            write 5s steps(281) 28s forwards, 
+            noir 750ms steps(281) 28s infinite;
+    }
+
+    
+}
+@keyframes write {
+    to {
+        left: 100%;
+    }
+}
+@keyframes noir {
+    to {
+        background: black
+    }
+}
+@keyframes xnoir {
+    to {
+        color: black
+    }
+}
+
+.cn{
+    left: -2.5rem;
+}
+.cp{
+    left: -4.4rem;
+}
+.ca{
+    left: -1.4rem;
+}
+.cl{
+    left: -3.2rem;
+}
+.cd{
+    left: -9.2rem;
+}
+.co{
+    left: -2.6rem;
+}
+.cq4{
+    left: -6.2rem;
+}
+.cq5{
+    left: -4.4rem;
+}
+
 
 .imgtec{
     width: 2rem;
@@ -136,7 +381,7 @@
 
 $prog-bar-dure: 5000ms;
 $prog-bar-delay: 1000ms;
-$html: #E34F26;
+$html: #e34f26;
 $css: #0277BD;
 $js: #F5DD1B;
 $php: #777BB3;
@@ -160,7 +405,7 @@ $sql: #E58E00;
         animation-delay: $prog-bar-delay;
         animation-fill-mode: both;
         animation-direction: alternate;
-        // animation-play-state: paused;
+        animation-play-state: paused;
         &--html{
             background-color: $html;
         }
@@ -284,9 +529,9 @@ $sql: #E58E00;
 
 .trans,
 .gith {
-    transition: border-radius 1500ms;
-    
+    transition: border-radius 1500ms;    
 }
+
 .pf__cv--img:hover,
 .pf__sss--img:hover,
 .pf__st--img:hover,
@@ -307,6 +552,7 @@ $sql: #E58E00;
     top: 260rem;
     left: 0;
 }
+
 
 // #scroll {
 //     overflow: scroll;
