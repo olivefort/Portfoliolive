@@ -558,6 +558,7 @@
                         </html>';
                         mail("olive.fort@gmail.com", "Message du Portfolio !", $message, $header);  
                         $msg="Votre mail a bien été envoyé !";
+                        
                     }else{
                         $msg="Merci de remplir tout les champs !";
                     }
@@ -589,7 +590,7 @@
                     <textarea name="message" id="message" class="bg-gray-100 border-gray-200 border rounded-sm texta"></textarea>
                 </div>
                 <div>
-                    <button id="submit" name="btnsubmit" type="submit" value="Envoyer" class="bg-gray-100 border-gray-200 border rounded-sm w-full py-2 my-2 hover:bg-gray-300">Envoyer</button>
+                    <button id="submit" name="btnsubmit" type="submit" value="Envoyer" class="bg-gray-100 border-gray-200 border rounded-sm w-full py-2 my-2 hover:bg-gray-300"><a href="#cont">Envoyer</a></button>
                 </div>
                 <?php if(isset($msg)){echo $msg;}?>
             </form>            
