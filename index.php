@@ -18,55 +18,62 @@
                 </div>
                 <h2 class="hero-title">Développeur web et web mobile junior</h2>             
             </div>
-            <div class="arow"></div>
+            <div class="arowdown col-span-6">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </section>
         <section class="navigation col-span-6">
             <header id="head">
                 <nav id="navbar" class="main-nav flex justify-between items-center flex-row">
                     <button aria-expanded="false" aria-controls="main-menu" class="togle">Menu</button>                    
                     <ul id="main-menu" class="menu bg-gray-200 text-center" hidden>
-                        <li class="menunav text-base lg:text-xl"><a href="#pres">Présentation</a></li>
-                        <li class="menunav text-base lg:text-xl"><a href="#compe">Compétences</a></li>
-                        <li class="menunav text-base lg:text-xl"><a href="#portfo">Portfolio</a></li>
-                        <li class="menunav text-base lg:text-xl"><a href="#cont">Contact</a></li>
+                        <li id="menupres" class="menunav text-base lg:text-xl"><a>Présentation</a></li>
+                        <li id="menucomp" class="menunav text-base lg:text-xl"><a>Compétences</a></li>
+                        <li id="menuportfo" class="menunav text-base lg:text-xl"><a>Portfolio</a></li>
+                        <li id="menucont" class="menunav text-base lg:text-xl"><a>Contact</a></li>
                     </ul>                        
                     <div class="text-2xl lg:text-4xl font-bold">OLIVIER FORT</div>                    
                 </nav>
             </header>
         </section>
-        <section id="pres" class="presentation bg-white col-span-6 grid grid-cols-6 py-24 px-4">
+        <!-- <section id="pres" class="presentation bg-white col-span-6 grid grid-cols-6 py-24 px-4">
             <h2 class="col-span-6 justify-self-center mb-2 text-3xl font-bold z-10 lg:text-4xl">Presentation</h2>
             <div class="border border-black border-solid col-span-6 w-20 justify-self-center my-10"></div>
             <div class="text-5xl text-gray-300 absolute font-bold text-opacity-50 text-center col-span-6 left-0 right-0">PRESENTATION</div>
             <div class="col-span-6 text-center text-xl">Bonjour, moi c'est Olivier, 40 ans de Tours, jeune diplomé en developpement web et web mobile.<br> Je suis passionné par le domaine informatique depuis de nombreuses années. Aujourd'hui mon intérêt se porte sur le développement web.<br> De nature sociable, je suis à l'écoute, autonome et organisé dans la réalisation de mes travaux et projets.</br> Pour télécharger ou voir mon CV c'est <a class="text-gray-500" href="CVOlivierFort2021.pdf" download>ici.</a></div>
-        </section>
-        <section class="bg-white col-span-6 grid grid-cols-6">            
-            <div class="flex flex-row col-span-2 my-1">Nom : 
+        </section> -->
+        <section id="pres" class="bg-white col-span-6 grid grid-cols-6 py-24 px-4">   
+            <h2 class="col-span-6 justify-self-center mb-2 text-3xl font-bold z-10 lg:text-4xl">Presentation</h2>
+            <div class="border border-black border-solid col-span-6 w-20 justify-self-center my-10"></div>
+            <div class="text-5xl text-gray-300 absolute font-bold text-opacity-50 text-center col-span-6 left-0 right-0">PRESENTATION</div>         
+            <div class="flex flex-row col-span-6 col-start-2 my-1 whitespace-nowrap">Nom : 
                 <span class="ff ff__n">Fort</span>
-                <div class="cn border border-solid border-gray-300 bg-gray-300 rounded h-6 w-40 relative"></div>
+                <div class="cn border border-solid border-gray-300 bg-gray-300 rounded h-6 w-24 relative"></div>
             </div>
-            <div class="flex flex-row col-span-2 my-1">Prénom : 
+            <div class="flex flex-row col-span-6 col-start-2 my-1 whitespace-nowrap">Prénom : 
                 <span class="ff ff__p">Olivier</span>
-                <div class="cp border border-solid border-gray-300 bg-gray-300 rounded h-6 w-40 relative"></div>
+                <div class="cp border border-solid border-gray-300 bg-gray-300 rounded h-6 w-24 relative"></div>
             </div>
-            <div class="flex flex-row col-span-2 my-1">Age : 
+            <div class="flex flex-row col-span-6 col-start-2 my-1 whitespace-nowrap">Age : 
                 <span class="ff ff__a">40</span>
-                <div class="ca border border-solid border-gray-300 bg-gray-300 rounded h-6 w-20 relative"></div>
+                <div class="ca border border-solid border-gray-300 bg-gray-300 rounded h-6 w-10 relative"></div>
             </div>        
-            <div class="flex flex-row col-span-2 my-1">Localisation : 
+            <div class="flex flex-row col-span-6 col-start-2 my-1 whitespace-nowrap">Localisation : 
                 <span class="ff ff__l">Tours</span>
-                <div class="cl border border-solid border-gray-300 bg-gray-300 rounded h-6 w-40 relative"></div>
+                <div class="cl border border-solid border-gray-300 bg-gray-300 rounded h-6 w-24 relative"></div>
             </div>
-            <div class="flex flex-row col-span-2 my-1">Diplome : 
+            <div class="flex flex-row col-span-6 col-start-2 my-1 whitespace-nowrap">Diplome : 
                 <span class="ff ff__d whitespace-nowrap">Développeur Web</span>
                 <div class="cd border border-solid border-gray-300 bg-gray-300 rounded h-6 w-40 relative"></div>
             </div>
-            <div class="flex flex-row whitespace-nowrap col-span-2 my-1">Année d'obtention : 
+            <div class="flex flex-row whitespace-nowrap col-span-6 col-start-2 my-1">Année d'obtention : 
                 <span class="ff ff__o">2020</span>
                 <div class="co border border-solid border-gray-300 bg-gray-300 rounded h-6 w-20 relative"></div>
             </div>            
-            <div class="flex flex-col">
-                Vous êtes :
+            <div class="flex flex-col col-span-3">
+                <p class="text-center">Vous êtes :</p>
                 <div class="flex flex-row items-center text-center">
                     <div class="border border-solid border-black h-4 w-4 rounded-full flex flex-row items-center justify-center mx-2">
                         <span class="radio"></span>
@@ -78,8 +85,8 @@
                     <span>Développeur Sénior</span>
                 </div>
             </div>
-            <div class="flex flex-col">
-                Vous êtes plutôt:
+            <div class="flex flex-col col-span-3">
+                <p class="text-center">Vous êtes plutôt:</p>
                 <div class="flex flex-row items-center text-center">
                     <div class="border border-solid border-black h-4 w-4 flex flex-row items-center justify-center mx-2">
                         <span class="cross cross__fe">X</span>
@@ -97,34 +104,44 @@
                     <span>Full-Stack</span>
                 </div>
             </div>
-            <div class="flex flex-col col-span-2">Si vous deviez vous donner 5 qualitées : 
-                <div class="flex flex-row m-1">
+            <div class="col-span-6">
+                <p class="text-center">Si vous deviez vous donner 5 qualitées :</p> 
+                <div class="flex flex-row m-1 ml-14">
                     <span class="ff ff__q1">autonome</span>
                     <div class="border border-solid border-gray-300 bg-gray-300 rounded h-6 w-28 relative -left-20"></div>
                 </div>
-                <div class="flex flex-row m-1">
+                <div class="flex flex-row m-1 ml-14">
                     <span class="ff ff__q2">organisé</span>
                     <div class="border border-solid border-gray-300 bg-gray-300 rounded h-6 w-28 relative -left-20"></div>
                 </div>
-                <div class="flex flex-row m-1">
+                <div class="flex flex-row m-1 ml-14">
                     <span class="ff ff__q3">sociable</span>
                     <div class="border border-solid border-gray-300 bg-gray-300 rounded h-6 w-28 relative -left-20"></div>
                 </div>
-                <div class="flex flex-row m-1">
-                    <span class="ff ff__q4">à l'écoute</span>
+                <div class="flex flex-row m-1 ml-14">
+                    <span class="ff ff__q4 whitespace-nowrap">à l'écoute</span>
                     <div class="cq4 border border-solid border-gray-300 bg-gray-300 rounded h-6 w-28 relative"></div>
                 </div>
-                <div class="flex flex-row m-1">
+                <div class="flex flex-row m-1 ml-14">
                     <span class="ff ff__q5">curieux</span>
                     <div class="cq5 border border-solid border-gray-300 bg-gray-300 rounded h-6 w-28 relative -left-16"></div>
                 </div>
             </div> 
-            <div class="flex flex-col col-span-2">
-                Citer vos interêts en quelques lignes
-                <div class="flex flex-row">
+            <!-- <div class="flex flex-col col-span-6">
+                <p class="text-center">Citer vos interêts en quelques lignes</p>
+                <div class="flex flex-row ml-14">
                     <span class="ff ff__area">Je suis passionné par le domaine informatique depuis de nombreuses années, je suis une personne très active dans différentes associations culturel et musical, je suis un fan des chats et tout ce qui se rapproche de la culture japonaise. J'aime aussi les randonnées à pied ou à vélo</span>
-                    <div class="border border-solid border-gray-300 bg-gray-300 rounded h-40 w-full relative -left-32"></div>
+                    <div class="border border-solid border-gray-300 bg-gray-300 rounded h-40 w-40 "></div>
                 </div>
+            </div> -->
+            <div class="flex flex-col items-center col-span-6">
+                <p class="text-center mb-1">Joindre votre CV :</p>
+                <div class="flex flex-col">
+                    <span class="ff ff__cvpj">c:\CVOlivierFort2021.pdf</span> 
+                    <div class="cvpj border border-solid border-gray-300 bg-gray-300 rounded h-6 w-64 relative -top-6"></div>
+                </div>                               
+                <div class="mb-1">Cliquez ici pour voir la pièce jointe :</div>
+                <button class="border border-solid border-gray-500 bg-gray-300 rounded h-6 w-36"><a class="" href="CVOlivierFort2021.pdf" download>Votre CV</a></button>                
             </div>
         </section>
         <section id="compe" class="competence grid grid-cols-6 col-span-6 bg-gray-100 py-24 px-4">
@@ -372,6 +389,7 @@
                                 <h4 class="text-3xl mb-2 font-semibold">Infos</h4>
                                 <div class="desc text-left sm:mx-16 lg:my-0 lg:mx-8 text-sm md:text-xl">
                                     Petit projet d'un CV centré sur le développement web en HTML/CSS et quelques lignes de JS réalisé avant ma formation DWWM de 2020 consultable via Github.
+                                    
                                 </div>
                             </div>
                         </div>
@@ -433,7 +451,7 @@
                                 <h4 class="text-3xl mb-2 font-semibold">Production</h4> 
                                 <div class="flex flex-col items-start justify-center">                                
                                     <ul class="desc text-sm md:text-xl">
-                                        <li class="list-disc">WODPRESS/PHP/CSS/JS</li>
+                                        <li class="list-disc">WORDPRESS/PHP/CSS/JS</li>
                                         <li class="list-disc">Site responsive</li>
                                         <li class="list-disc">Github</li>
                                     </ul>
@@ -489,7 +507,7 @@
                     </div>
                 </div>            
             </div>
-            <div class="modal modalapp h-full w-full hidden z-30 absolute">
+            <div class="modal modalapp w-full hidden z-30 absolute">
                 <div class="flex flex-col items-center justify-center bg-white m-14">
                     <div class="closed cursor-pointer flex flex-row justify-end w-full mr-4 mt-2">
                         <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/></svg>
@@ -577,9 +595,9 @@
             </form>            
         </section>
     </main>
-    <div id="arrow" class="arrow z-40 hidden cursor-pointer">
+    <div id="arrow" class="arrow z-40 cursor-pointer">
         <svg width="50px" height="50px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title>ionicons-v5-a</title><polyline points="112 244 256 100 400 244" style="fill:none;stroke:#9ca3af;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"/><line x1="256" y1="120" x2="256" y2="412" style="fill:none;stroke:#9ca3af;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"/></svg>
-            </div>  
+    </div>  
     <footer class="footer grid grid-cols-6 bg-gray-100">
         <nav class="footer-nav col-span-6 flex flex-col items-center">
             <ul class="flex flex-row items-center h-8 text-sm">

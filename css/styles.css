@@ -139,6 +139,45 @@
     border-color: orange;
   }
 }
+.arowdown {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translate(-30%, -30%);
+}
+
+.arowdown span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid orange;
+  border-right: 5px solid orange;
+  transform: rotate(45deg);
+  margin-top: -10px;
+  animation: down 2s infinite;
+}
+
+.arowdown span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.arowdown span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes down {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-10px, -10px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+}
 .radio {
   width: 0.5rem;
   height: 0.5rem;
@@ -259,11 +298,11 @@
 .ff__q5::after {
   animation: write 1.5s steps(7) 25.5s forwards, noir 750ms steps(7) 25.5s 3;
 }
-.ff__area::before {
-  animation: write 5s steps(281) 28s forwards;
+.ff__cvpj::before {
+  animation: write 0.2s steps(1) 28s forwards;
 }
-.ff__area::after {
-  animation: write 5s steps(281) 28s forwards, noir 750ms steps(281) 28s infinite;
+.ff__cvpj::after {
+  animation: write 0.2s steps(1) 28s forwards, noir 750ms steps(1) 28s infinite;
 }
 
 @keyframes write {
