@@ -1,3 +1,9 @@
+//Forcing Scrool to Top au Refresh
+window.onload = function(){
+    window.scrollTo(0, 0);
+}
+
+
 //Burger Menu
 const toggleMenu = document.querySelector('.main-nav button');
 const menu = document.querySelector('#main-menu');
@@ -31,12 +37,6 @@ function scrolled(){
     header.className = (currentScrool >= windowsHeight - header.offsetHeight) ? "fixed main-header p-3 z-40 bg-gray-200" : "main-header p-3 z-40 bg-gray-200";
 }
 addEventListener("scroll", scrolled, false);
-
-
-//Forcing Scrool to Top au Refresh
-window.onload = function(){
-    window.scrollTo(0, 0);
-}
 
 
 //Modal Ouverture
@@ -144,16 +144,16 @@ window.addEventListener('scroll', goTopArrow);
 
 
 //Lancement des animations des barres d'xp au moment ou elles s'affichent
-var anim = document.querySelectorAll('.progress__bar');
-var elem = document.getElementById('compe');
+// var anim = document.querySelectorAll('.progress__bar');
+// var compe = document.getElementById('compe');
 
 window.onscroll=function(){
     var anim = document.querySelectorAll('.progress__bar');
-    var elem = document.getElementById('compe');
-    var elementPosition = elem.offsetTop - 60;
+    var compe = document.getElementById('compe');
+    var elementPosition = compe.offsetTop - 60;
     var userPosition = document.querySelector("html").scrollTop;
-    console.log('position de l\'élément compétence : '+ elementPosition);
-    console.log('position de l\'utilisateur :' + userPosition);
+    // console.log('position de l\'élément compétence : '+ elementPosition);
+    // console.log('position de l\'utilisateur :' + userPosition);
     for(let i=0; i<anim.length; i++){
         if(userPosition >= elementPosition){
             anim[i].style.animationPlayState = 'running';
@@ -161,3 +161,22 @@ window.onscroll=function(){
     }
 }
 
+//Lancement des animations de la présentation au moment ou elle s'affiche
+// var typing = document.querySelectorAll('.animpres');
+// var pres = document.getElementById('pres');
+
+
+// window.onscroll=function(){
+//     var typing = document.querySelectorAll('.animpres');
+//     var pres = document.getElementById('pres');
+//     var elementPosition = pres.offsetTop - 60;
+//     var userPosition = document.querySelector("html").scrollTop;
+//     // console.log('position de l\'élément compétence : '+ elementPosition);
+//     // console.log('position de l\'utilisateur :' + userPosition);
+//     for(let i=0; i<typing.length; i++){
+//         if(userPosition >= elementPosition){
+//             typing[i].style.animationPlayState = 'running';
+//             typing[i]
+//         }
+//     }
+// }

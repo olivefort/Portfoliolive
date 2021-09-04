@@ -48,83 +48,95 @@
             <h2 class="col-span-6 justify-self-center mb-2 text-3xl font-bold z-10 lg:text-4xl">Presentation</h2>
             <div class="border border-black border-solid col-span-6 w-20 justify-self-center my-10"></div>
             <div class="text-5xl text-gray-300 absolute font-bold text-opacity-50 text-center col-span-6 left-0 right-0">PRESENTATION</div>         
-            <div class="flex flex-row col-span-6 col-start-2 my-1 whitespace-nowrap">Nom : 
-                <span class="ff ff__n">Fort</span>
-                <div class="cn border border-solid border-gray-300 bg-gray-300 rounded h-6 w-24 relative"></div>
+            <div class="flex flex-row col-span-6 col-start-2 sm:col-span-2 sm:col-start-2 lg:col-start-auto xl:col-start-2 xl:col-span-1 xl:justify-center my-1 -mt-3 whitespace-nowrap">Nom : 
+                <div class="flex flex-col">
+                    <span class="animpres ff ff__n">Fort</span>
+                    <div class="cn border border-solid border-gray-300 bg-gray-300 rounded h-6 w-24 relative -top-6 ml-1""></div>
+                </div>
             </div>
-            <div class="flex flex-row col-span-6 col-start-2 my-1 whitespace-nowrap">Prénom : 
-                <span class="ff ff__p">Olivier</span>
-                <div class="cp border border-solid border-gray-300 bg-gray-300 rounded h-6 w-24 relative"></div>
+            <div class="flex flex-row col-span-6 col-start-2 sm:col-span-3 sm:col-start-4 lg:col-span-2 xl:justify-center my-1 -mt-3 whitespace-nowrap">Prénom : 
+                <div class="flex flex-col">
+                    <span class="animpres ff ff__p">Olivier</span>
+                    <div class="cp border border-solid border-gray-300 bg-gray-300 rounded h-6 w-24 relative -top-6 ml-1""></div>
+                </div>
             </div>
-            <div class="flex flex-row col-span-6 col-start-2 my-1 whitespace-nowrap">Age : 
-                <span class="ff ff__a">40</span>
-                <div class="ca border border-solid border-gray-300 bg-gray-300 rounded h-6 w-10 relative"></div>
+            <div class="flex flex-row col-span-6 col-start-2 sm:col-span-2 sm:col-start-2 lg:col-span-2 lg:col-start-auto xl:justify-center xl:col-span-1 my-1 -mt-3 whitespace-nowrap">Age : 
+                <div class="flex flex-col">
+                    <span class="animpres ff ff__a">40</span>
+                    <div class="ca border border-solid border-gray-300 bg-gray-300 rounded h-6 w-10 relative -top-6 ml-1""></div>
+                </div>
             </div>        
-            <div class="flex flex-row col-span-6 col-start-2 my-1 whitespace-nowrap">Localisation : 
-                <span class="ff ff__l">Tours</span>
-                <div class="cl border border-solid border-gray-300 bg-gray-300 rounded h-6 w-24 relative"></div>
+            <div class="flex flex-row col-span-6 col-start-2 sm:col-span-3 sm:col-start-4 lg:col-span-2 lg:col-start-auto xl:col-start-2 xl:col-span-1 xl:justify-center my-1 -mt-3 whitespace-nowrap">Localisation : 
+                <div class="flex flex-col">
+                    <span class="animpres ff ff__l">Tours</span>
+                    <div class="border border-solid border-gray-300 bg-gray-300 rounded h-6 w-24 relative -top-6 ml-1"></div>
+                </div>
             </div>
-            <div class="flex flex-row col-span-6 col-start-2 my-1 whitespace-nowrap">Diplome : 
-                <span class="ff ff__d whitespace-nowrap">Développeur Web</span>
-                <div class="cd border border-solid border-gray-300 bg-gray-300 rounded h-6 w-40 relative"></div>
+            <div class="flex flex-row col-span-6 col-start-2 md:col-span-2 md:col-start-2 lg:col-start-auto xl:justify-center my-1 -mt-3 whitespace-nowrap">Diplome : 
+                <div class="flex flex-col">
+                    <span class="animpres ff ff__d whitespace-nowrap">Développeur Web</span>
+                    <div class="border border-solid border-gray-300 bg-gray-300 rounded h-6 w-40 relative -top-6 ml-1"></div>
+                </div>
             </div>
-            <div class="flex flex-row whitespace-nowrap col-span-6 col-start-2 my-1">Année d'obtention : 
-                <span class="ff ff__o">2020</span>
-                <div class="co border border-solid border-gray-300 bg-gray-300 rounded h-6 w-20 relative"></div>
+            <div class="flex flex-row whitespace-nowrap col-span-6 col-start-2 md:col-span-3 md:col-start-4 lg:col-span-2 lg:col-start-auto xl:justify-center xl:col-span-1 my-1 -mt-3">Année d'obtention : 
+                <div class="flex flex-col">
+                    <span class="animpres ff ff__o">2020</span>
+                    <div class="border border-solid border-gray-300 bg-gray-300 rounded h-6 w-14 relative -top-6 ml-1"></div>
+                </div>
             </div>            
-            <div class="flex flex-col col-span-3">
-                <p class="text-center">Vous êtes :</p>
-                <div class="flex flex-row items-center text-center">
+            <div class="flex flex-col col-span-3 mt-2 md:col-span-2 md:justify-center">
+                <p class="text-center mb-3">Vous êtes :</p>
+                <div class="flex flex-row items-center text-center ml-2 sm:ml-4 md:ml-8">
                     <div class="border border-solid border-black h-4 w-4 rounded-full flex flex-row items-center justify-center mx-2">
-                        <span class="radio"></span>
+                        <span class="animpres radio"></span>
                     </div>
                     <span>Développeur Junior</span>
                 </div>
-                <div class="flex flex-row items-center text-center">
+                <div class="flex flex-row items-center text-center ml-2 sm:ml-4 md:ml-8">
                     <div class="border border-solid border-black h-4 w-4 rounded-full flex flex-row items-center justify-center mx-2"></div>
                     <span>Développeur Sénior</span>
                 </div>
             </div>
-            <div class="flex flex-col col-span-3">
-                <p class="text-center">Vous êtes plutôt:</p>
-                <div class="flex flex-row items-center text-center">
+            <div class="flex flex-col col-span-3 mt-2 md:col-span-2 md:justify-center">
+                <p class="text-center mb-3">Vous êtes plutôt:</p>
+                <div class="flex flex-row items-center text-center ml-4 sm:ml-6 md:ml-10">
                     <div class="border border-solid border-black h-4 w-4 flex flex-row items-center justify-center mx-2">
-                        <span class="cross cross__fe">X</span>
+                        <span class="animpres cross cross__fe">X</span>
                     </div>
                     <span>Front-End</span>
                 </div>
-                <div class="flex flex-row items-center text-center">
+                <div class="flex flex-row items-center text-center ml-4 sm:ml-6 md:ml-10">
                     <div class="border border-solid border-black h-4 w-4 flex flex-row items-center justify-center mx-2"></div>
                     <span>Back-End</span>
                 </div>
-                <div class="flex flex-row items-center text-center">
+                <div class="flex flex-row items-center text-center ml-4 sm:ml-6 md:ml-10">
                     <div class="border border-solid border-black h-4 w-4 flex flex-row items-center justify-center mx-2">
-                        <span class="cross cross__fs">X</span>
+                        <span class="animpres cross cross__fs">X</span>
                     </div>
                     <span>Full-Stack</span>
                 </div>
             </div>
-            <div class="col-span-6">
-                <p class="text-center">Si vous deviez vous donner 5 qualitées :</p> 
-                <div class="flex flex-row m-1 ml-14">
-                    <span class="ff ff__q1">autonome</span>
-                    <div class="border border-solid border-gray-300 bg-gray-300 rounded h-6 w-28 relative -left-20"></div>
+            <div class="col-span-6 flex flex-col items-center mt-4 md:col-span-2 md:justify-center">
+                <p class="text-center mb-2">Si vous deviez vous donner 5 qualitées :</p> 
+                <div class="flex flex-col -mb-2">
+                    <span class="animpres ff ff__q1">autonome</span>
+                    <div class="border border-solid border-gray-300 bg-gray-300 rounded h-6 w-28 relative -top-6"></div>
                 </div>
-                <div class="flex flex-row m-1 ml-14">
-                    <span class="ff ff__q2">organisé</span>
-                    <div class="border border-solid border-gray-300 bg-gray-300 rounded h-6 w-28 relative -left-20"></div>
+                <div class="flex flex-col -mb-2">
+                    <span class="animpres ff ff__q2">organisé</span>
+                    <div class="border border-solid border-gray-300 bg-gray-300 rounded h-6 w-28 relative -top-6"></div>
                 </div>
-                <div class="flex flex-row m-1 ml-14">
-                    <span class="ff ff__q3">sociable</span>
-                    <div class="border border-solid border-gray-300 bg-gray-300 rounded h-6 w-28 relative -left-20"></div>
+                <div class="flex flex-col -mb-2">
+                    <span class="animpres ff ff__q3">sociable</span>
+                    <div class="border border-solid border-gray-300 bg-gray-300 rounded h-6 w-28 relative -top-6"></div>
                 </div>
-                <div class="flex flex-row m-1 ml-14">
-                    <span class="ff ff__q4 whitespace-nowrap">à l'écoute</span>
-                    <div class="cq4 border border-solid border-gray-300 bg-gray-300 rounded h-6 w-28 relative"></div>
+                <div class="flex flex-col -mb-2">
+                    <span class="animpres ff ff__q4 whitespace-nowrap">à l'écoute</span>
+                    <div class="border border-solid border-gray-300 bg-gray-300 rounded h-6 w-28 relative -top-6"></div>
                 </div>
-                <div class="flex flex-row m-1 ml-14">
-                    <span class="ff ff__q5">curieux</span>
-                    <div class="cq5 border border-solid border-gray-300 bg-gray-300 rounded h-6 w-28 relative -left-16"></div>
+                <div class="flex flex-col -mb-2">
+                    <span class="animpres ff ff__q5">curieux</span>
+                    <div class="border border-solid border-gray-300 bg-gray-300 rounded h-6 w-28 relative -top-6"></div>
                 </div>
             </div> 
             <!-- <div class="flex flex-col col-span-6">
@@ -134,14 +146,14 @@
                     <div class="border border-solid border-gray-300 bg-gray-300 rounded h-40 w-40 "></div>
                 </div>
             </div> -->
-            <div class="flex flex-col items-center col-span-6">
+            <div class="flex flex-col items-center col-span-6 mt-4">
                 <p class="text-center mb-1">Joindre votre CV :</p>
                 <div class="flex flex-col">
-                    <span class="ff ff__cvpj">c:\CVOlivierFort2021.pdf</span> 
+                    <span class="animpres ff ff__cvpj">c:\CVOlivierFort2021.pdf</span> 
                     <div class="cvpj border border-solid border-gray-300 bg-gray-300 rounded h-6 w-64 relative -top-6"></div>
                 </div>                               
                 <div class="mb-1">Cliquez ici pour voir la pièce jointe :</div>
-                <button class="border border-solid border-gray-500 bg-gray-300 rounded h-6 w-36"><a class="" href="CVOlivierFort2021.pdf" download>Votre CV</a></button>                
+                <button class="border border-solid border-gray-500 bg-gray-300 hover:bg-gray-400 rounded h-6 w-36 mt-2"><a class="" href="CVOlivierFort2021.pdf" download>Votre CV</a></button>                
             </div>
         </section>
         <section id="compe" class="competence grid grid-cols-6 col-span-6 bg-gray-100 py-24 px-4">
@@ -149,6 +161,11 @@
                 <h2 class="col-span-6 justify-self-center mb-2 text-3xl font-bold z-10 lg:text-4xl">Compétences</h2>
                 <div class="border border-black border-solid col-span-6 w-20 justify-self-center my-10"></div>
                 <div class="text-5xl text-gray-300 absolute font-bold text-opacity-50 text-center col-span-6 left-0 right-0">COMPETENCES</div>
+            </div>
+            <div class="col-span-6">
+                <p class="text-xl text-center mb-6">
+                    Moi et mon aisance sur certaines technologie :
+                </p>                
             </div>
             <div class="col-span-6 grid grid-cols-6 sm:mx-4 lg:mx-10">
                 <div class="col-span-3">
