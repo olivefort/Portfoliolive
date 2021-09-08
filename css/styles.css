@@ -792,6 +792,7 @@ h2 {
     display: flex;
     transform: translateX(0);
     transition: 0.3s;
+    border: none;
   }
 }
 /*-resp 1280px-*/
