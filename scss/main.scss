@@ -1,11 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
 
+//color gray
+$gray1: #f3f4f6;
+$gray2: #e5e7eb;
+$gray3: #d1d5db;
+$gray4: #9ca3af;
+$gray5: #6b7280;
+
 body{
     font-family: 'Sniglet', cursive;
+    background-color: $gray2;
+}
+
+//section title
+h2{
+    font-weight: 700;
+    z-index: 9;
+    justify-self: center;
+    margin-bottom: .5rem;
+}
+.line{
+    border: black solid 1px;
+    width: 5rem;
+    justify-self: center;
+    margin: 2.5rem 0 4rem 0;
+}
+.bgtitle{
+    font-size: 3rem;
+    color: $gray3;
+    position: absolute;
+    font-weight: 700;
+    opacity: 0.5;
+    text-align: center;
+    left: 0;
+    right: 0;
+    line-height: 1;
 }
 
 /*Nav*/
+.nav{
+    grid-column: span 6;
+}
 .main-nav button {
     position: relative;
     font: 0/0 a;
@@ -19,7 +55,6 @@ body{
     background-clip: content-box;
     transition: .3s;
 }
-
 .main-nav button::before,
 .main-nav button::after {
     content: '';
@@ -31,30 +66,24 @@ body{
     transition: .3s;
     transform-origin: left;
 }
-
 .main-nav button::before {
     top: 0;
 }
-
 .main-nav button::after {
     bottom: 0;
 }
-
 .main-nav button[aria-expanded=true] {
     background-color: rgba(255, 255, 255, 0);
 }
-
 .main-nav button[aria-expanded=true]::before {
     transform: rotate(43deg);
 }
-
 .main-nav button[aria-expanded=true]::after {
     transform: rotate(-43deg);
 }
-
 .main-nav .menu {
     position: absolute;
-    z-index: 100;
+    z-index: 10;
     top: 110%;
     left: 0;
     right: 10%;
@@ -62,12 +91,19 @@ body{
     transform: translateX(-100%);
     transition: .3s;
     width: 10rem;
+    background-color: $gray2;
+    border: $gray3 solid 1px;
+    text-align: center;
 }
-
 .main-nav .menu:not([hidden]) {
     transform: translateX(0)
 }
-
+.main-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 .main-nav a {
     display: block;
     padding: 1rem 2rem;
@@ -75,20 +111,26 @@ body{
     text-transform: uppercase;
     text-decoration: none;
 }
-
 .current-menu-item,
 .menu a:hover,
 .menu a:focus {
-    color: #b5b6b8;
-    background-color: #fff;
+    color: $gray4;
+    background-color: white;
 }
-.fixed{
+.myname{
+    margin-right: 1rem;
+    font-weight: 700;
+}
+
+//navbar fix to top
+.fix{
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
 }
 
+//img desk
 .bg{
     position: fixed;
     left: 0;
@@ -98,7 +140,9 @@ body{
 .bg img{
     width: 100%;
 }
-/*Home*/
+
+
+//home
 .home-hero{
     background-image: url(../pics/hero-background.png);
     background-size: cover;
@@ -135,6 +179,8 @@ body{
     from, to { border-color: transparent }
     50% { border-color: orange; }
 } 
+
+//fleche scroll down
 .arowdown{
     position: absolute;
     left: 50%;
@@ -151,7 +197,6 @@ body{
     margin-top: -10px;
     animation: down 2s infinite;
 }
-
 .arowdown span:nth-child(2){
     animation-delay: -0.2s;
 }
@@ -172,7 +217,121 @@ body{
     }
 }
 
+//présentation
+.pres{
+    background-color: white;
+    padding: 6rem 1rem;
+    grid-column: span 6;
+    display: grid;
+}
+.fffpart1{
+    display: flex;
+    flex-direction: row;
+    margin: -.75rem 0 .25rem 0;
+    white-space: nowrap;
+}
+.ff{
+    display: flex; 
+    &__1{
+        flex-direction: row;
+        margin: -.75rem 0 .25rem 0;
+        white-space: nowrap;
+        &__lab{
+            display: flex;
+            flex-direction: column;
+            &__field{
+                border: $gray3 solid 1px;
+                background: $gray3;
+                border-radius: 0.25rem;
+                height: 1.5rem;
+                position: relative;
+                margin-left: .25rem;
+                top: -1.5rem;
+            }
+        }
+    }
+    &__2{
+        flex-direction: column;
+        margin-top: .5rem;
+        &__title{
+            text-align: center;
+            margin-bottom: .75rem;
+        }
+        &__lab{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            &__select{
+                border: black solid 1px;
+                height: 1rem;
+                width: 1rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin: 0 .5rem;
+            }
+        }
+    }
+    &__3{
+        flex-direction: column;
+        align-items: center;
+        &__title{
+            text-align: center;
+            margin-bottom: .5rem;
+        }
+        &__label{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: -.5rem;
+            &__field{
+                border: $gray3 solid 1px;
+                background-color: $gray3;
+                border-radius: .25rem;
+                height: 1.5rem;
+                width: 7rem;
+                position: relative;
+                top: -1.5rem;
+            }
+        }
+    }
+    &__4{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+        &__title{
+            text-align: center;
+            margin-bottom: .5rem;
+        }
+        &__lab{
+            display: flex;
+            flex-direction: column;
+            &__field{
+                border: $gray3 solid 1px;
+                background-color: $gray3;
+                border-radius: .25rem;
+                width: 16rem;
+                position: relative;
+                height: 1.5rem;
+                top: -1.5rem;
+            }
+        }
+        &__buton{
+            border: $gray5 solid 1px;
+            background-color: $gray3;
+            border-radius: .25rem;
+            height: 1.5rem;
+            width: 9rem;
+            margin-top: .5rem;
+            &:hover{
+                background-color: $gray4;
+            }
+        }
+    }
+}
 
+//anim formulaire
 .radio{
     width: .5rem;
     height: .5rem;
@@ -180,7 +339,7 @@ body{
     background: transparent;
     animation-name: noir;
     animation-duration: .2s;
-    animation-delay: 15.5s;
+    animation-delay: 5s;
     animation-fill-mode: forwards;
 
 }
@@ -192,16 +351,13 @@ body{
     font-size: .9rem;
 
     &__fe{
-        animation-delay: 16.5s;
+        animation-delay: 6s;
     }
     &__fs{
-        animation-delay: 17.5s;
-    }
-    
+        animation-delay: 7s;
+    }    
 }
-
-
-.ff{
+.ffanim{
     position: relative;
     width: max-content;
     font-family: "Source Code Pro", monospace;
@@ -209,118 +365,118 @@ body{
     margin-left: .5rem;
     z-index: 5;
 }
-.ff::before,
-.ff::after{
+.ffanim::before,
+.ffanim::after{
     content: "";
     position: absolute;
     inset: 0;
 }
-.ff::before{
+.ffanim::before{
     background: #d1d5db;
 }
-.ff::after{
+.ffanim::after{
     width: 0.125em;
     background: transparent;
 }
-.ff{
+.ffanim{
     &__n::before{
         animation-name: write;
-        animation-duration: .7s;
+        animation-duration: .5s;
         animation-timing-function: steps(4);
-        animation-delay: 0.8s;
+        animation-delay: 0.5s;
         animation-fill-mode: forwards;
         // animation-play-state: paused;
     }
     &__n::after{
         animation: 
-            write .7s steps(4) 0.8s forwards, 
-            noir 750ms steps(4) 3;
+            write .5s steps(4) 0.5s forwards, 
+            noir 750ms steps(4) 2;
         // animation-play-state: paused;
     }
     &__p::before{
-        animation: write 1.3s steps(7) 2.2s forwards;
+        animation: write 0.5s steps(7) 1s forwards;
 
     }
     &__p::after{
         animation: 
-            write 1.3s steps(7) 2.2s forwards, 
-            noir 750ms steps(7) 2.2s 4;
+            write 0.5s steps(7) 1s forwards, 
+            noir 750ms steps(7) 1s 2;
 
     }
     &__a::before{
-        animation: write 1s steps(2) 5.5s forwards;
+        animation: write 0.5s steps(2) 2s forwards;
 
     }
     &__a::after{
         animation: 
-            write 1s steps(2) 5.5s forwards, 
-            noir 750ms steps(2) 5.5s 3;
+            write 0.5s steps(2) 2s forwards, 
+            noir 750ms steps(2) 2s 2;
 
     }
     &__l::before{
-        animation: write 1.3s steps(5) 8s forwards;
+        animation: write 0.5s steps(5) 3s forwards;
 
     }
     &__l::after{
         animation: 
-            write 1.3s steps(5) 8s forwards, 
-            noir 750ms steps(5) 8s 3;
+            write 0.5s steps(5) 3s forwards, 
+            noir 750ms steps(5) 3s 2;
     }
     &__d::before{
-        animation: write 3s steps(15) 10s forwards;
+        animation: write 0.5s steps(15) 4s forwards;
     }
     &__d::after{
         animation: 
-            write 3s steps(15) 10s forwards, 
-            noir 750ms steps(15) 10s 4;
+            write 0.5s steps(15) 4s forwards, 
+            noir 750ms steps(15) 4s 2;
     }
     &__o::before{
-        animation: write 1.5s steps(4) 13s forwards;
+        animation: write 0.5s steps(4) 4s forwards;
     }
     &__o::after{
         animation: 
-            write 1.5s steps(4) 13s forwards, 
-            noir 750ms steps(4) 13s 4;
+            write 0.5s steps(4) 4s forwards, 
+            noir 750ms steps(4) 4s 2;
     }
     &__q1::before{
-        animation: write 1.5s steps(8) 18.5s forwards;
+        animation: write 0.5s steps(8) 9s forwards;
     }
     &__q1::after{
         animation: 
-            write 1.5s steps(8) 18.5s forwards, 
-            noir 750ms steps(8) 18.5s 3;
+            write 0.5s steps(8) 9s forwards, 
+            noir 750ms steps(8) 9s 2;
     }
     &__q2::before{
-        animation: write 1.5s steps(8) 20.5s forwards;
+        animation: write 0.5s steps(8) 10s forwards;
     }
     &__q2::after{
         animation: 
-            write 1.5s steps(8) 20.5s forwards, 
-            noir 750ms steps(8) 20.5s 3;
+            write 0.5s steps(8) 10s forwards, 
+            noir 750ms steps(8) 10s 2;
     }
     &__q3::before{
-        animation: write 1.5s steps(8) 22.5s forwards;
+        animation: write 0.5s steps(8) 11s forwards;
     }
     &__q3::after{
         animation: 
-            write 1.5s steps(8) 22.5s forwards, 
-            noir 750ms steps(8) 22.5s 3;
+            write 0.5s steps(8) 11s forwards, 
+            noir 750ms steps(8) 11s 2;
     }
     &__q4::before{
-        animation: write 1.5s steps(10) 24.5s forwards;
+        animation: write 0.5s steps(10) 12s forwards;
     }
     &__q4::after{
         animation: 
-            write 1.5s steps(10) 24.5s forwards, 
-            noir 750ms steps(10) 24.5s 3;
+            write 0.5s steps(10) 12s forwards, 
+            noir 750ms steps(10) 12s 2;
     }
     &__q5::before{
-        animation: write 1.5s steps(7) 26.5s forwards;
+        animation: write 0.5s steps(7) 13s forwards;
     }
     &__q5::after{
         animation: 
-            write 1.5s steps(7) 26.5s forwards, 
-            noir 750ms steps(7) 26.5s 3;
+            write 0.5s steps(7) 13s forwards, 
+            noir 750ms steps(7) 13s 2;
     }
     // &__area::before{
     //     animation: write 5s steps(281) 28s forwards;
@@ -331,14 +487,13 @@ body{
     //         noir 750ms steps(281) 28s infinite;
     // }
     &__cvpj::before{
-        animation: write .2s steps(1) 30s forwards;
+        animation: write .2s steps(1)  14s forwards;
     }
     &__cvpj::after{
         animation: 
-            write 0.2s steps(1) 30s forwards, 
-            noir 750ms steps(1) 30s infinite;
-    }
-    
+            write 0.2s steps(1) 14s forwards, 
+            noir 750ms steps(1) 14s 0;
+    }    
 }
 @keyframes write {
     to {
@@ -356,6 +511,52 @@ body{
     }
 }
 
+//competence
+.compe{
+    background-color: $gray1;
+    padding: 6rem 1rem 6rem 1rem;
+    display: grid;
+    grid-column: span 6;
+    &__text{
+        text-align: center;
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+        grid-column: span 6;
+    }
+    &__xp{
+        grid-column: span 6;
+        display: grid;
+        &__part{            
+            &__tec{
+                position: relative;
+                padding-top: .25rem;
+                margin: 0 1rem;
+                &__high{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: .5rem;
+                    &--text{
+                        font-size: .75rem;
+                        font-weight: 600;
+                        display: inline-block;
+                        
+
+                    }
+                }
+                &__progress{
+                    overflow: hidden;
+                    height: 1.25rem;
+                    margin-bottom: 1rem;
+                    font-size: .75rem;
+                    display: flex;
+                    border-radius: .25rem;
+                }
+            }
+        }
+    }
+}
 .imgtec{
     width: 2rem;
     height: 2rem;
@@ -379,6 +580,12 @@ $sql: #E58E00;
 
 .progress{
     &__bar{        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        white-space: nowrap;
+        justify-content: center;
+        box-shadow: none;
         transform: scaleX(0.5);
         transform-origin: left;
         // animation: progress-bar $prog-bar-dure $prog-bar-delay alternate both;
@@ -426,7 +633,6 @@ $sql: #E58E00;
         }
     }
 }
-
 @keyframes progress-bar{
     0% {
         transform: scaleX(0);        
@@ -436,16 +642,34 @@ $sql: #E58E00;
     }
 }
 
-
+//portfolio
+.port{
+    display: grid;
+    background-color: $gray1;
+    padding: 6rem 1rem 6rem 1rem;
+    &__text{
+        text-align: center;
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+}
 .pf__cv,
 .pf__sss,
 .pf__dw,
 .pf__st{
     min-height: 17rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    &--title{
+        font-weight: 700;
+        font-size: 1.25rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
 }
-
-
-
 .pf__cv--img, 
 .pf__sss--img,
 .pf__st--img,
@@ -469,12 +693,10 @@ $sql: #E58E00;
     content: '';
     display: table;
 }
-
 .trans,
 .gith {
     transition: border-radius 1500ms;    
 }
-
 .pf__cv--img:hover,
 .pf__sss--img:hover,
 .pf__st--img:hover,
@@ -484,15 +706,28 @@ $sql: #E58E00;
     transition-delay: 500ms;
 }
 
-.modale{
-    animation: fadeIn ease 2s;
-}
-.modal{
-    top: 150rem;
+//modal
+.dark{
+    background-color: black;
+    opacity: 0.5;
+    z-index: 20;
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
     left: 0;
 }
+.modal{
+    animation: fadeIn ease 2s;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    width: 20rem;
+}
 .modalapp{
-    top: 260rem;
+    animation: fadeIn ease 2s;
+    top: 300rem;
     left: 0;
 }
 
@@ -506,57 +741,91 @@ $sql: #E58E00;
         right: 0px;
     }
 }
-
 .imgmod{
     width: 15rem;
     height: 10rem;
 }
 
+//contact
+.contact{
+    background-color: white;
+    display: grid;
+    grid-column: span 6;
+    padding: 6rem 1rem 6rem 1rem;
+    &__form{
+        display: flex;
+        flex-direction: column;
+        &__part{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: .5rem;
+            &__input{
+                background-color: $gray1;
+                border: $gray2 solid 1px;
+                border-radius: .125rem;
+                &--texta{
+                    min-height: 10rem;
+                }
+            }
+        }
+    }
+}
+
+//fleche go top
 .arrow{
     position: fixed;
     bottom: 2%;
     right: 2%;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-}
-/*-resp 640px-*/
-@media (min-width: 40em) {
-    .imgmod{
-        width: 25rem;
-        height: 25rem;
+//footer
+.foo{
+    display: grid;
+    background-color: $gray1;
+    &__nav{
+        grid-column: span 6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
-.texta{
-    min-height: 10rem;
+//responsive
+/*-resp 640px-*/
+@media (min-width: 40em) {
+    .imgmod{
+        width: 16rem;
+        height: 11rem;
+    }
+    .modal{
+        width: 30rem;
+    }
 }
-
-
-
-
-
-
 /*-resp 768px-*/
 @media (min-width: 48em) {
-      
+    .imgmod{
+        width: 18rem;
+        height: 13rem;
+    }
+    .modal{
+        width: 40rem;
+    }
 }
 /*-resp 1024px-*/
 @media (min-width: 64em) {
     .imgmod{
-        width: 40rem;
-        height: 40rem;
+        width: 20rem;
+        height: 15rem;
     }  
+    .modal{
+        width: 55rem;
+    }
     .menu {
         display: flex;
     }
-
     .main-nav button {
         display: none;
     }
-
     .main-nav .menu {
         position: static;
         display: flex;
@@ -566,10 +835,16 @@ body{
 }
 /*-resp 1280px-*/
 @media (min-width: 80em) {
+    .imgmod{
+        width: 22rem;
+        height: 17rem;
+    }  
+    .modal{
+        width: 65rem;
+    }
     .desc{
         min-height: 60px;
-    }
-    
+    }    
 }
 /*-resp 1360px-*/
 @media (min-width: 85em) {

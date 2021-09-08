@@ -2,9 +2,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Sniglet&display=swap");
 body {
   font-family: "Sniglet", cursive;
+  background-color: #e5e7eb;
+}
+
+h2 {
+  font-weight: 700;
+  z-index: 9;
+  justify-self: center;
+  margin-bottom: 0.5rem;
+}
+
+.line {
+  border: black solid 1px;
+  width: 5rem;
+  justify-self: center;
+  margin: 2.5rem 0 4rem 0;
+}
+
+.bgtitle {
+  font-size: 3rem;
+  color: #d1d5db;
+  position: absolute;
+  font-weight: 700;
+  opacity: 0.5;
+  text-align: center;
+  left: 0;
+  right: 0;
+  line-height: 1;
 }
 
 /*Nav*/
+.nav {
+  grid-column: span 6;
+}
+
 .main-nav button {
   position: relative;
   font: 0/0 a;
@@ -53,7 +84,7 @@ body {
 
 .main-nav .menu {
   position: absolute;
-  z-index: 100;
+  z-index: 10;
   top: 110%;
   left: 0;
   right: 10%;
@@ -61,10 +92,20 @@ body {
   transform: translateX(-100%);
   transition: 0.3s;
   width: 10rem;
+  background-color: #e5e7eb;
+  border: #d1d5db solid 1px;
+  text-align: center;
 }
 
 .main-nav .menu:not([hidden]) {
   transform: translateX(0);
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .main-nav a {
@@ -78,11 +119,16 @@ body {
 .current-menu-item,
 .menu a:hover,
 .menu a:focus {
-  color: #b5b6b8;
-  background-color: #fff;
+  color: #9ca3af;
+  background-color: white;
 }
 
-.fixed {
+.myname {
+  margin-right: 1rem;
+  font-weight: 700;
+}
+
+.fix {
   position: fixed;
   width: 100%;
   top: 0;
@@ -100,7 +146,6 @@ body {
   width: 100%;
 }
 
-/*Home*/
 .home-hero {
   background-image: url(../pics/hero-background.png);
   background-size: cover;
@@ -183,6 +228,121 @@ body {
     transform: rotate(45deg) translate(10px, 10px);
   }
 }
+.pres {
+  background-color: white;
+  padding: 6rem 1rem;
+  grid-column: span 6;
+  display: grid;
+}
+
+.fffpart1 {
+  display: flex;
+  flex-direction: row;
+  margin: -0.75rem 0 0.25rem 0;
+  white-space: nowrap;
+}
+
+.ff {
+  display: flex;
+}
+.ff__1 {
+  flex-direction: row;
+  margin: -0.75rem 0 0.25rem 0;
+  white-space: nowrap;
+}
+.ff__1__lab {
+  display: flex;
+  flex-direction: column;
+}
+.ff__1__lab__field {
+  border: #d1d5db solid 1px;
+  background: #d1d5db;
+  border-radius: 0.25rem;
+  height: 1.5rem;
+  position: relative;
+  margin-left: 0.25rem;
+  top: -1.5rem;
+}
+.ff__2 {
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+.ff__2__title {
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+.ff__2__lab {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.ff__2__lab__select {
+  border: black solid 1px;
+  height: 1rem;
+  width: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+}
+.ff__3 {
+  flex-direction: column;
+  align-items: center;
+}
+.ff__3__title {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.ff__3__label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -0.5rem;
+}
+.ff__3__label__field {
+  border: #d1d5db solid 1px;
+  background-color: #d1d5db;
+  border-radius: 0.25rem;
+  height: 1.5rem;
+  width: 7rem;
+  position: relative;
+  top: -1.5rem;
+}
+.ff__4 {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+.ff__4__title {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.ff__4__lab {
+  display: flex;
+  flex-direction: column;
+}
+.ff__4__lab__field {
+  border: #d1d5db solid 1px;
+  background-color: #d1d5db;
+  border-radius: 0.25rem;
+  width: 16rem;
+  position: relative;
+  height: 1.5rem;
+  top: -1.5rem;
+}
+.ff__4__buton {
+  border: #6b7280 solid 1px;
+  background-color: #d1d5db;
+  border-radius: 0.25rem;
+  height: 1.5rem;
+  width: 9rem;
+  margin-top: 0.5rem;
+}
+.ff__4__buton:hover {
+  background-color: #9ca3af;
+}
+
 .radio {
   width: 0.5rem;
   height: 0.5rem;
@@ -190,7 +350,7 @@ body {
   background: transparent;
   animation-name: noir;
   animation-duration: 0.2s;
-  animation-delay: 15.5s;
+  animation-delay: 5s;
   animation-fill-mode: forwards;
 }
 
@@ -202,13 +362,13 @@ body {
   font-size: 0.9rem;
 }
 .cross__fe {
-  animation-delay: 16.5s;
+  animation-delay: 6s;
 }
 .cross__fs {
-  animation-delay: 17.5s;
+  animation-delay: 7s;
 }
 
-.ff {
+.ffanim {
   position: relative;
   width: max-content;
   font-family: "Source Code Pro", monospace;
@@ -217,97 +377,97 @@ body {
   z-index: 5;
 }
 
-.ff::before,
-.ff::after {
+.ffanim::before,
+.ffanim::after {
   content: "";
   position: absolute;
   inset: 0;
 }
 
-.ff::before {
+.ffanim::before {
   background: #d1d5db;
 }
 
-.ff::after {
+.ffanim::after {
   width: 0.125em;
   background: transparent;
 }
 
-.ff__n::before {
+.ffanim__n::before {
   animation-name: write;
-  animation-duration: 0.7s;
+  animation-duration: 0.5s;
   animation-timing-function: steps(4);
-  animation-delay: 0.8s;
+  animation-delay: 0.5s;
   animation-fill-mode: forwards;
 }
-.ff__n::after {
-  animation: write 0.7s steps(4) 0.8s forwards, noir 750ms steps(4) 3;
+.ffanim__n::after {
+  animation: write 0.5s steps(4) 0.5s forwards, noir 750ms steps(4) 2;
 }
-.ff__p::before {
-  animation: write 1.3s steps(7) 2.2s forwards;
+.ffanim__p::before {
+  animation: write 0.5s steps(7) 1s forwards;
 }
-.ff__p::after {
-  animation: write 1.3s steps(7) 2.2s forwards, noir 750ms steps(7) 2.2s 4;
+.ffanim__p::after {
+  animation: write 0.5s steps(7) 1s forwards, noir 750ms steps(7) 1s 2;
 }
-.ff__a::before {
-  animation: write 1s steps(2) 5.5s forwards;
+.ffanim__a::before {
+  animation: write 0.5s steps(2) 2s forwards;
 }
-.ff__a::after {
-  animation: write 1s steps(2) 5.5s forwards, noir 750ms steps(2) 5.5s 3;
+.ffanim__a::after {
+  animation: write 0.5s steps(2) 2s forwards, noir 750ms steps(2) 2s 2;
 }
-.ff__l::before {
-  animation: write 1.3s steps(5) 8s forwards;
+.ffanim__l::before {
+  animation: write 0.5s steps(5) 3s forwards;
 }
-.ff__l::after {
-  animation: write 1.3s steps(5) 8s forwards, noir 750ms steps(5) 8s 3;
+.ffanim__l::after {
+  animation: write 0.5s steps(5) 3s forwards, noir 750ms steps(5) 3s 2;
 }
-.ff__d::before {
-  animation: write 3s steps(15) 10s forwards;
+.ffanim__d::before {
+  animation: write 0.5s steps(15) 4s forwards;
 }
-.ff__d::after {
-  animation: write 3s steps(15) 10s forwards, noir 750ms steps(15) 10s 4;
+.ffanim__d::after {
+  animation: write 0.5s steps(15) 4s forwards, noir 750ms steps(15) 4s 2;
 }
-.ff__o::before {
-  animation: write 1.5s steps(4) 13s forwards;
+.ffanim__o::before {
+  animation: write 0.5s steps(4) 4s forwards;
 }
-.ff__o::after {
-  animation: write 1.5s steps(4) 13s forwards, noir 750ms steps(4) 13s 4;
+.ffanim__o::after {
+  animation: write 0.5s steps(4) 4s forwards, noir 750ms steps(4) 4s 2;
 }
-.ff__q1::before {
-  animation: write 1.5s steps(8) 18.5s forwards;
+.ffanim__q1::before {
+  animation: write 0.5s steps(8) 9s forwards;
 }
-.ff__q1::after {
-  animation: write 1.5s steps(8) 18.5s forwards, noir 750ms steps(8) 18.5s 3;
+.ffanim__q1::after {
+  animation: write 0.5s steps(8) 9s forwards, noir 750ms steps(8) 9s 2;
 }
-.ff__q2::before {
-  animation: write 1.5s steps(8) 20.5s forwards;
+.ffanim__q2::before {
+  animation: write 0.5s steps(8) 10s forwards;
 }
-.ff__q2::after {
-  animation: write 1.5s steps(8) 20.5s forwards, noir 750ms steps(8) 20.5s 3;
+.ffanim__q2::after {
+  animation: write 0.5s steps(8) 10s forwards, noir 750ms steps(8) 10s 2;
 }
-.ff__q3::before {
-  animation: write 1.5s steps(8) 22.5s forwards;
+.ffanim__q3::before {
+  animation: write 0.5s steps(8) 11s forwards;
 }
-.ff__q3::after {
-  animation: write 1.5s steps(8) 22.5s forwards, noir 750ms steps(8) 22.5s 3;
+.ffanim__q3::after {
+  animation: write 0.5s steps(8) 11s forwards, noir 750ms steps(8) 11s 2;
 }
-.ff__q4::before {
-  animation: write 1.5s steps(10) 24.5s forwards;
+.ffanim__q4::before {
+  animation: write 0.5s steps(10) 12s forwards;
 }
-.ff__q4::after {
-  animation: write 1.5s steps(10) 24.5s forwards, noir 750ms steps(10) 24.5s 3;
+.ffanim__q4::after {
+  animation: write 0.5s steps(10) 12s forwards, noir 750ms steps(10) 12s 2;
 }
-.ff__q5::before {
-  animation: write 1.5s steps(7) 26.5s forwards;
+.ffanim__q5::before {
+  animation: write 0.5s steps(7) 13s forwards;
 }
-.ff__q5::after {
-  animation: write 1.5s steps(7) 26.5s forwards, noir 750ms steps(7) 26.5s 3;
+.ffanim__q5::after {
+  animation: write 0.5s steps(7) 13s forwards, noir 750ms steps(7) 13s 2;
 }
-.ff__cvpj::before {
-  animation: write 0.2s steps(1) 30s forwards;
+.ffanim__cvpj::before {
+  animation: write 0.2s steps(1) 14s forwards;
 }
-.ff__cvpj::after {
-  animation: write 0.2s steps(1) 30s forwards, noir 750ms steps(1) 30s infinite;
+.ffanim__cvpj::after {
+  animation: write 0.2s steps(1) 14s forwards, noir 750ms steps(1) 14s 0;
 }
 
 @keyframes write {
@@ -325,12 +485,60 @@ body {
     color: black;
   }
 }
+.compe {
+  background-color: #f3f4f6;
+  padding: 6rem 1rem 6rem 1rem;
+  display: grid;
+  grid-column: span 6;
+}
+.compe__text {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  grid-column: span 6;
+}
+.compe__xp {
+  grid-column: span 6;
+  display: grid;
+}
+.compe__xp__part__tec {
+  position: relative;
+  padding-top: 0.25rem;
+  margin: 0 1rem;
+}
+.compe__xp__part__tec__high {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.compe__xp__part__tec__high--text {
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-block;
+}
+.compe__xp__part__tec__progress {
+  overflow: hidden;
+  height: 1.25rem;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  display: flex;
+  border-radius: 0.25rem;
+}
+
 .imgtec {
   width: 2rem;
   height: 2rem;
 }
 
 .progress__bar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  white-space: nowrap;
+  justify-content: center;
+  box-shadow: none;
   transform: scaleX(0.5);
   transform-origin: left;
   animation-name: progress-bar;
@@ -385,11 +593,36 @@ body {
     transform: scaleX(1);
   }
 }
+.port {
+  display: grid;
+  background-color: #f3f4f6;
+  padding: 6rem 1rem 6rem 1rem;
+}
+.port__text {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
 .pf__cv,
 .pf__sss,
 .pf__dw,
 .pf__st {
   min-height: 17rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.pf__cv--title,
+.pf__sss--title,
+.pf__dw--title,
+.pf__st--title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .pf__cv--img,
@@ -431,17 +664,29 @@ body {
   transition-delay: 500ms;
 }
 
-.modale {
-  animation: fadeIn ease 2s;
-}
-
-.modal {
-  top: 150rem;
+.dark {
+  background-color: black;
+  opacity: 0.5;
+  z-index: 20;
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
   left: 0;
 }
 
+.modal {
+  animation: fadeIn ease 2s;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  width: 20rem;
+}
+
 .modalapp {
-  top: 260rem;
+  animation: fadeIn ease 2s;
+  top: 300rem;
   left: 0;
 }
 
@@ -460,34 +705,78 @@ body {
   height: 10rem;
 }
 
+.contact {
+  background-color: white;
+  display: grid;
+  grid-column: span 6;
+  padding: 6rem 1rem 6rem 1rem;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+}
+.contact__form__part {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+.contact__form__part__input {
+  background-color: #f3f4f6;
+  border: #e5e7eb solid 1px;
+  border-radius: 0.125rem;
+}
+.contact__form__part__input--texta {
+  min-height: 10rem;
+}
+
 .arrow {
   position: fixed;
   bottom: 2%;
   right: 2%;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+.foo {
+  display: grid;
+  background-color: #f3f4f6;
+}
+.foo__nav {
+  grid-column: span 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*-resp 640px-*/
 @media (min-width: 40em) {
   .imgmod {
-    width: 25rem;
-    height: 25rem;
+    width: 16rem;
+    height: 11rem;
+  }
+
+  .modal {
+    width: 30rem;
   }
 }
-.texta {
-  min-height: 10rem;
-}
-
 /*-resp 768px-*/
+@media (min-width: 48em) {
+  .imgmod {
+    width: 18rem;
+    height: 13rem;
+  }
+
+  .modal {
+    width: 40rem;
+  }
+}
 /*-resp 1024px-*/
 @media (min-width: 64em) {
   .imgmod {
-    width: 40rem;
-    height: 40rem;
+    width: 20rem;
+    height: 15rem;
+  }
+
+  .modal {
+    width: 55rem;
   }
 
   .menu {
@@ -507,6 +796,15 @@ body {
 }
 /*-resp 1280px-*/
 @media (min-width: 80em) {
+  .imgmod {
+    width: 22rem;
+    height: 17rem;
+  }
+
+  .modal {
+    width: 65rem;
+  }
+
   .desc {
     min-height: 60px;
   }

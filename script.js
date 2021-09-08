@@ -1,7 +1,7 @@
 //Forcing Scrool to Top au Refresh
-window.onload = function(){
-    window.scrollTo(0, 0);
-}
+// window.onload = function(){
+//     window.scrollTo(0, 0);
+// }
 
 
 //Burger Menu
@@ -24,7 +24,6 @@ for(let i=0;i<menunav.length;i++){
         const open = JSON.parse(toggleMenu.getAttribute('aria-expanded'));
         toggleMenu.setAttribute('aria-expanded', !open);
         menu.hidden = !menu.hidden;
-        console.log(i);
     })
 }
 
@@ -34,7 +33,7 @@ const header = document.querySelector('header');
 function scrolled(){
     const windowsHeight = window.innerHeight;
     currentScrool = document.body.scrollTop || document.documentElement.scrollTop;
-    header.className = (currentScrool >= windowsHeight - header.offsetHeight) ? "fixed main-header p-3 z-40 bg-gray-200" : "main-header p-3 z-40 bg-gray-200";
+    header.className = (currentScrool >= windowsHeight - header.offsetHeight) ? "fix main-header p-3 z-40 bg-gray-200" : "main-header p-3 z-40 bg-gray-200";
 }
 addEventListener("scroll", scrolled, false);
 
@@ -161,7 +160,7 @@ window.onscroll=function(){
     }
 }
 
-//Lancement des animations de la présentation au moment ou elle s'affiche
+//Lancement des animations de la présentation au moment ou elle s'affichent
 // var typing = document.querySelectorAll('.animpres');
 // var pres = document.getElementById('pres');
 
