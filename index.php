@@ -470,15 +470,15 @@
                         </div>
                     </div>
                 </div>            
-            </div>                  
-            <div class="modal modalapp w-full hidden z-30 absolute">
-                <div class="flex flex-col items-center justify-center bg-white m-14">
-                    <div class="closed cursor-pointer flex flex-row justify-end w-full mr-4 mt-2">
+            </div>
+            <div class="modal hidden z-30">
+                <div class="flex flex-col items-center justify-center bg-white p-2 sm:p-4">
+                    <div class="closed cursor-pointer flex flex-row justify-end w-full">
                         <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/></svg>
                     </div>
-                    <div class="modale flex flex-col m-10 p-6">
+                    <div class="flex flex-col">
                         <div class="modTitle flex flex-row justify-center items-center">
-                            <h3 class="text-3xl text-center font-bold">A PROPOS</h3>                        
+                            <h3 class="text-xl sm:text-2xl text-center font-bold -mt-6 sm:-mt-4 md:-mt-2">A PROPOS<h3>                        
                         </div>                    
                         <div class="border-t border-solid border-gray-200 h-1 overflow-visible after m-2"></div>
                             <div class="flex flex-col justify-center items-center lg:flex-row">
@@ -490,7 +490,7 @@
                         </div>
                     </div>
                 </div>            
-            </div>
+            </div>           
         </section>
         <section class="col-span-6 grid grid-cols-6 h-48 md:h-56 lg:h-64 xl:h-80 2xl:h-96">
         </section>

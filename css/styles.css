@@ -684,12 +684,6 @@ h2 {
   width: 20rem;
 }
 
-.modalapp {
-  animation: fadeIn ease 2s;
-  top: 300rem;
-  left: 0;
-}
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
