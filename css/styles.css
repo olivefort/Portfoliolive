@@ -135,15 +135,20 @@ h2 {
   left: 0;
 }
 
-.bg {
-  position: fixed;
-  left: 0;
-  z-index: -5;
-  width: 100%;
+.md1 {
+  background-image: url(../pics/mydesk1024a.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
-.bg img {
-  width: 100%;
+.md2 {
+  background-image: url(../pics/mydesk1024b.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .home-hero {
@@ -270,6 +275,7 @@ h2 {
 .ff__2__title {
   text-align: center;
   margin-bottom: 0.75rem;
+  font-weight: 600;
 }
 .ff__2__lab {
   display: flex;
@@ -294,6 +300,7 @@ h2 {
 .ff__3__title {
   text-align: center;
   margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 .ff__3__label {
   display: flex;
@@ -312,11 +319,12 @@ h2 {
 .ff__4 {
   flex-direction: column;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: -6rem;
 }
 .ff__4__title {
   text-align: center;
   margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 .ff__4__lab {
   display: flex;
@@ -342,6 +350,32 @@ h2 {
 .ff__4__buton:hover {
   background-color: #9ca3af;
 }
+.ff__5 {
+  flex-direction: column;
+}
+.ff__5__title {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.ff__5__area {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  padding: 0 0.5rem;
+}
+.ff__5__area__txt {
+  visibility: hidden;
+  z-index: 5;
+  font-family: "Source Code Pro", monospace;
+}
+.ff__5__area__field {
+  border: #d1d5db solid 1px;
+  background-color: #d1d5db;
+  border-radius: 0.25rem;
+  position: relative;
+  top: -10rem;
+}
 
 .radio {
   width: 0.5rem;
@@ -350,7 +384,7 @@ h2 {
   background: transparent;
   animation-name: noir;
   animation-duration: 0.2s;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-fill-mode: forwards;
 }
 
@@ -362,10 +396,10 @@ h2 {
   font-size: 0.9rem;
 }
 .cross__fe {
-  animation-delay: 6s;
+  animation-delay: 8s;
 }
 .cross__fs {
-  animation-delay: 7s;
+  animation-delay: 9s;
 }
 
 .ffanim {
@@ -401,73 +435,73 @@ h2 {
   animation-fill-mode: forwards;
 }
 .ffanim__n::after {
-  animation: write 0.5s steps(4) 0.5s forwards, noir 750ms steps(4) 2;
+  animation: write 0.5s steps(4) 0.5s forwards, noir 750ms steps(4) 1;
 }
 .ffanim__p::before {
-  animation: write 0.5s steps(7) 1s forwards;
+  animation: write 0.6s steps(7) 1.2s forwards;
 }
 .ffanim__p::after {
-  animation: write 0.5s steps(7) 1s forwards, noir 750ms steps(7) 1s 2;
+  animation: write 0.6s steps(7) 1.2s forwards, noir 750ms steps(7) 1.2s 2;
 }
 .ffanim__a::before {
-  animation: write 0.5s steps(2) 2s forwards;
+  animation: write 0.6s steps(2) 2.3s forwards;
 }
 .ffanim__a::after {
-  animation: write 0.5s steps(2) 2s forwards, noir 750ms steps(2) 2s 2;
+  animation: write 0.5s steps(2) 2.3s forwards, noir 750ms steps(2) 2.3s 2;
 }
 .ffanim__l::before {
-  animation: write 0.5s steps(5) 3s forwards;
+  animation: write 0.5s steps(5) 3.5s forwards;
 }
 .ffanim__l::after {
-  animation: write 0.5s steps(5) 3s forwards, noir 750ms steps(5) 3s 2;
+  animation: write 0.5s steps(5) 3.5s forwards, noir 750ms steps(5) 3.5s 2;
 }
 .ffanim__d::before {
-  animation: write 0.5s steps(15) 4s forwards;
+  animation: write 1s steps(15) 4.7s forwards;
 }
 .ffanim__d::after {
-  animation: write 0.5s steps(15) 4s forwards, noir 750ms steps(15) 4s 2;
+  animation: write 1s steps(15) 4.7s forwards, noir 750ms steps(15) 4.7s 2;
 }
 .ffanim__o::before {
-  animation: write 0.5s steps(4) 4s forwards;
+  animation: write 0.5s steps(4) 6s forwards;
 }
 .ffanim__o::after {
-  animation: write 0.5s steps(4) 4s forwards, noir 750ms steps(4) 4s 2;
+  animation: write 0.5s steps(4) 6s forwards, noir 750ms steps(4) 6s 2;
 }
 .ffanim__q1::before {
-  animation: write 0.5s steps(8) 9s forwards;
-}
-.ffanim__q1::after {
-  animation: write 0.5s steps(8) 9s forwards, noir 750ms steps(8) 9s 2;
-}
-.ffanim__q2::before {
   animation: write 0.5s steps(8) 10s forwards;
 }
-.ffanim__q2::after {
+.ffanim__q1::after {
   animation: write 0.5s steps(8) 10s forwards, noir 750ms steps(8) 10s 2;
 }
-.ffanim__q3::before {
+.ffanim__q2::before {
   animation: write 0.5s steps(8) 11s forwards;
 }
-.ffanim__q3::after {
+.ffanim__q2::after {
   animation: write 0.5s steps(8) 11s forwards, noir 750ms steps(8) 11s 2;
 }
+.ffanim__q3::before {
+  animation: write 0.5s steps(8) 12s forwards;
+}
+.ffanim__q3::after {
+  animation: write 0.5s steps(8) 12s forwards, noir 750ms steps(8) 12s 2;
+}
 .ffanim__q4::before {
-  animation: write 0.5s steps(10) 12s forwards;
+  animation: write 0.5s steps(10) 13s forwards;
 }
 .ffanim__q4::after {
-  animation: write 0.5s steps(10) 12s forwards, noir 750ms steps(10) 12s 2;
+  animation: write 0.5s steps(10) 13s forwards, noir 750ms steps(10) 13s 2;
 }
 .ffanim__q5::before {
-  animation: write 0.5s steps(7) 13s forwards;
+  animation: write 0.5s steps(7) 14s forwards;
 }
 .ffanim__q5::after {
-  animation: write 0.5s steps(7) 13s forwards, noir 750ms steps(7) 13s 2;
+  animation: write 0.5s steps(7) 14s forwards, noir 750ms steps(7) 14s 2;
 }
 .ffanim__cvpj::before {
-  animation: write 0.2s steps(1) 14s forwards;
+  animation: write 0.2s steps(1) 25s forwards;
 }
 .ffanim__cvpj::after {
-  animation: write 0.2s steps(1) 14s forwards, noir 750ms steps(1) 14s 0;
+  animation: write 0.2s steps(1) 25s forwards, noir 750ms steps(1) 25s 0;
 }
 
 @keyframes write {

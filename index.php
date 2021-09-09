@@ -9,7 +9,6 @@
 </head>
 <body id="body">
     <div class="dark h-full w-full" id="dark"></div> 
-    <div class="bg top-80 md:top-20"><img src="pics/mydesk1024.webp"/></div>   
     <main id="main-content" class="container-front grid grid-cols-6">
         <section id="hdp" class="home-hero col-span-6 grid grid-cols-6">
             <div class="cont col-span-6 md:col-start-1 md:col-end-3 md:self-center">
@@ -117,7 +116,7 @@
                 </div>
             </div>
             <div class="ff ff__3 col-span-6 mt-4 md:mt-2 md:col-span-2 md:justify-center">
-                <p class="text-center mb-2">Si vous deviez vous donner 5 qualitées :</p> 
+                <p class="ff__3__title">Si vous deviez vous donner 5 qualitées :</p> 
                 <div class="ff__3__label">
                     <span class="ffanim ffanim__q1">autonome</span>
                     <div class="ff__3__label__field"></div>
@@ -139,13 +138,13 @@
                     <div class="ff__3__label__field"></div>
                 </div>
             </div> 
-            <!-- <div class="flex flex-col col-span-6">
-                <p class="text-center">Citer vos interêts en quelques lignes</p>
-                <div class="flex flex-row ml-14">
-                    <span class="ff ff__area">Je suis passionné par le domaine informatique depuis de nombreuses années, je suis une personne très active dans différentes associations culturel et musical, je suis un fan des chats et tout ce qui se rapproche de la culture japonaise. J'aime aussi les randonnées à pied ou à vélo</span>
-                    <div class="border border-solid border-gray-300 bg-gray-300 rounded h-40 w-40 "></div>
+            <div class="ff ff__5 col-span-6">
+                <p class="ff__5__title">Citer vos interêts en quelques lignes</p>
+                <div class="ff__5__area md:mx-4 lg:mx-28 xl:mx-40">
+                    <span class="ff__5__area__txt h-40 p-1 sm:p-2">Je suis passionné par le domaine informatique depuis de nombreuses années, je suis une personne très active dans différentes associations culturel et musical. Je suis un fan des chats et tout ce qui se rapproche de la culture japonaise. J'aime aussi les randonnées à pied ou à vélo.</span>
+                    <div class="ff__5__area__field h-64 sm:h-36 lg:h-28 2xl:h-24"></div>
                 </div>
-            </div> -->
+            </div>
             <div class="ff ff__4 col-span-6">
                 <p class="ff__4__title">Joindre votre CV :</p>
                 <div class="ff__4__lab">
@@ -292,7 +291,7 @@
                 </div>
             </div>            
         </section>
-        <section class="col-span-6 grid grid-cols-6 h-48 md:h-56 lg:h-64 xl:h-80 2xl:h-96">
+        <section class="md1 col-span-6 h-64 xl:h-80 2xl:h-96">
         </section>
         <section id="portfo" class="port col-span-6 grid-cols-12">
             <h2 class="col-span-12 text-3xl lg:text-4xl">Portfolio</h2>
@@ -492,7 +491,7 @@
                 </div>            
             </div>           
         </section>
-        <section class="col-span-6 grid grid-cols-6 h-48 md:h-56 lg:h-64 xl:h-80 2xl:h-96">
+        <section class="md2 col-span-6 h-64 xl:h-80 2xl:h-96">
         </section>
         <section id="cont" class="contact grid-cols-6">
             <h2 class="col-span-6 text-3xl lg:text-4xl">Contact</h2>
@@ -502,7 +501,7 @@
                 if(isset($_POST['btnsubmit'])){
                     if(!empty($_POST['prenom']) AND !empty($_POST['nom']) AND !empty($_POST['mail']) AND !empty($_POST['sujet']) AND !empty($_POST['message'])){
                         $header="MIMe-version: 1.0\r\n";
-                        $header.='From:"d3LTa7.com"<support@d3LTa7.com>'."\n";
+                        $header.='From:"donuts.com"<support@donuts.com>'."\n";
                         $header.='Content-Type:text/html; charset="utf-8"'."\n";
                         $header.='Content-Transfer-Encoding: 8bit';
                         $message='
@@ -519,9 +518,10 @@
                                 </div>
                             </body>
                         </html>';
-                        mail("olive.fort@gmail.com", "Message du Portfolio !", $message, $header);  
+                        mail("homer.simpson@gmail.com", "des donuts !", $message, $header);  
                         $msg="Votre mail a bien été envoyé !";
-                        
+                        header("location:index.php");
+                        exit();
                     }else{
                         $msg="Merci de remplir tout les champs !";
                     }
@@ -553,7 +553,7 @@
                     <textarea name="message" id="message" class="contact__form__part__input contact__form__part__input--texta"></textarea>
                 </div>
                 <div>
-                    <button id="submit" name="btnsubmit" type="submit" value="Envoyer" class="contact__form__part__input w-full py-2 my-2 hover:bg-gray-300"><a href="#cont">Envoyer</a></button>
+                    <button id="submit" name="btnsubmit" type="submit" value="Envoyer" class="contact__form__part__input w-full py-2 my-2 hover:bg-gray-300">Envoyer</button>
                 </div>
                 <?php if(isset($msg)){echo $msg;}?>
             </form>            

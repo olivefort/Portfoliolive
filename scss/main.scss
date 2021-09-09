@@ -131,16 +131,20 @@ h2{
 }
 
 //img desk
-.bg{
-    position: fixed;
-    left: 0;
-    z-index: -5;
-    width: 100%;
+.md1{
+    background-image: url(../pics/mydesk1024a.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
-.bg img{
-    width: 100%;
+.md2{
+    background-image: url(../pics/mydesk1024b.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
-
 
 //home
 .home-hero{
@@ -256,6 +260,7 @@ h2{
         &__title{
             text-align: center;
             margin-bottom: .75rem;
+            font-weight: 600;
         }
         &__lab{
             display: flex;
@@ -280,6 +285,7 @@ h2{
         &__title{
             text-align: center;
             margin-bottom: .5rem;
+            font-weight: 600;
         }
         &__label{
             display: flex;
@@ -299,10 +305,11 @@ h2{
     &__4{
         flex-direction: column;
         align-items: center;
-        margin-top: 1rem;
+        margin-top: -6rem;
         &__title{
             text-align: center;
             margin-bottom: .5rem;
+            font-weight: 600;
         }
         &__lab{
             display: flex;
@@ -329,6 +336,32 @@ h2{
             }
         }
     }
+    &__5{
+        flex-direction: column;
+        &__title{
+            text-align: center;
+            margin-bottom: .5rem;
+            font-weight: 600;
+        }
+        &__area{
+            display: flex;
+            flex-direction: column;
+            margin-top: 1rem;
+            padding: 0 .5rem;
+            &__txt{
+                visibility: hidden;
+                z-index: 5;
+                font-family: "Source Code Pro", monospace;
+            }
+            &__field{
+                border: $gray3 solid 1px;
+                background-color: $gray3;
+                border-radius: .25rem;
+                position: relative;
+                top: -10rem;
+            }
+        }
+    }
 }
 
 //anim formulaire
@@ -339,7 +372,7 @@ h2{
     background: transparent;
     animation-name: noir;
     animation-duration: .2s;
-    animation-delay: 5s;
+    animation-delay: 7s;
     animation-fill-mode: forwards;
 
 }
@@ -351,10 +384,10 @@ h2{
     font-size: .9rem;
 
     &__fe{
-        animation-delay: 6s;
+        animation-delay: 8s;
     }
     &__fs{
-        animation-delay: 7s;
+        animation-delay: 9s;
     }    
 }
 .ffanim{
@@ -390,93 +423,93 @@ h2{
     &__n::after{
         animation: 
             write .5s steps(4) 0.5s forwards, 
-            noir 750ms steps(4) 2;
+            noir 750ms steps(4) 1;
         // animation-play-state: paused;
     }
     &__p::before{
-        animation: write 0.5s steps(7) 1s forwards;
+        animation: write .6s steps(7) 1.2s forwards;
 
     }
     &__p::after{
         animation: 
-            write 0.5s steps(7) 1s forwards, 
-            noir 750ms steps(7) 1s 2;
+            write .6s steps(7) 1.2s forwards, 
+            noir 750ms steps(7) 1.2s 2;
 
     }
     &__a::before{
-        animation: write 0.5s steps(2) 2s forwards;
+        animation: write .6s steps(2) 2.3s forwards;
 
     }
     &__a::after{
         animation: 
-            write 0.5s steps(2) 2s forwards, 
-            noir 750ms steps(2) 2s 2;
+            write .5s steps(2) 2.3s forwards, 
+            noir 750ms steps(2) 2.3s 2;
 
     }
     &__l::before{
-        animation: write 0.5s steps(5) 3s forwards;
+        animation: write .5s steps(5) 3.5s forwards;
 
     }
     &__l::after{
         animation: 
-            write 0.5s steps(5) 3s forwards, 
-            noir 750ms steps(5) 3s 2;
+            write .5s steps(5) 3.5s forwards, 
+            noir 750ms steps(5) 3.5s 2;
     }
     &__d::before{
-        animation: write 0.5s steps(15) 4s forwards;
+        animation: write 1s steps(15) 4.7s forwards;
     }
     &__d::after{
         animation: 
-            write 0.5s steps(15) 4s forwards, 
-            noir 750ms steps(15) 4s 2;
+            write 1s steps(15) 4.7s forwards, 
+            noir 750ms steps(15) 4.7s 2;
     }
     &__o::before{
-        animation: write 0.5s steps(4) 4s forwards;
+        animation: write .5s steps(4) 6s forwards;
     }
     &__o::after{
         animation: 
-            write 0.5s steps(4) 4s forwards, 
-            noir 750ms steps(4) 4s 2;
+            write .5s steps(4) 6s forwards, 
+            noir 750ms steps(4) 6s 2;
     }
     &__q1::before{
-        animation: write 0.5s steps(8) 9s forwards;
+        animation: write 0.5s steps(8) 10s forwards;
     }
     &__q1::after{
         animation: 
-            write 0.5s steps(8) 9s forwards, 
-            noir 750ms steps(8) 9s 2;
+            write .5s steps(8) 10s forwards, 
+            noir 750ms steps(8) 10s 2;
     }
     &__q2::before{
-        animation: write 0.5s steps(8) 10s forwards;
+        animation: write .5s steps(8) 11s forwards;
     }
     &__q2::after{
         animation: 
-            write 0.5s steps(8) 10s forwards, 
-            noir 750ms steps(8) 10s 2;
+            write .5s steps(8) 11s forwards, 
+            noir 750ms steps(8) 11s 2;
     }
     &__q3::before{
-        animation: write 0.5s steps(8) 11s forwards;
+        animation: write .5s steps(8) 12s forwards;
     }
     &__q3::after{
         animation: 
-            write 0.5s steps(8) 11s forwards, 
-            noir 750ms steps(8) 11s 2;
+            write .5s steps(8) 12s forwards, 
+            noir 750ms steps(8) 12s 2;
     }
     &__q4::before{
-        animation: write 0.5s steps(10) 12s forwards;
+        animation: write .5s steps(10) 13s forwards;
     }
     &__q4::after{
         animation: 
-            write 0.5s steps(10) 12s forwards, 
-            noir 750ms steps(10) 12s 2;
+            write .5s steps(10) 13s forwards, 
+            noir 750ms steps(10) 13s 2;
     }
     &__q5::before{
-        animation: write 0.5s steps(7) 13s forwards;
+        animation: write .5s steps(7) 14s forwards;
     }
     &__q5::after{
         animation: 
-            write 0.5s steps(7) 13s forwards, 
-            noir 750ms steps(7) 13s 2;
+            write 0.5s steps(7) 14s forwards, 
+            noir 750ms steps(7) 14s 2;
     }
     // &__area::before{
     //     animation: write 5s steps(281) 28s forwards;
@@ -487,12 +520,12 @@ h2{
     //         noir 750ms steps(281) 28s infinite;
     // }
     &__cvpj::before{
-        animation: write .2s steps(1)  14s forwards;
+        animation: write .2s steps(1)  25s forwards;
     }
     &__cvpj::after{
         animation: 
-            write 0.2s steps(1) 14s forwards, 
-            noir 750ms steps(1) 14s 0;
+            write .2s steps(1) 25s forwards, 
+            noir 750ms steps(1) 25s 0;
     }    
 }
 @keyframes write {
@@ -784,6 +817,7 @@ $sql: #E58E00;
         align-items: center;
     }
 }
+
 
 //responsive
 /*-resp 640px-*/

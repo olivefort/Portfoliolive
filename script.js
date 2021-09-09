@@ -160,6 +160,29 @@ window.onscroll=function(){
     }
 }
 
+
+setTimeout(animate_text, 15500);
+function animate_text(){
+    let delay = 30;
+    let del_start = 0;
+    let contents;
+    let letters;
+    let elem = document.querySelector('.ff__5__area__txt');
+    contents = elem.textContent.trim();
+    elem.textContent = "";
+    letters = contents.split("");
+    elem.style.visibility = 'visible';
+
+    letters.forEach(function(letter, index1){
+        setTimeout(function(){
+            elem.textContent += letter;
+        }, del_start + delay * index1);
+    })
+}
+
+
+
+
 //Lancement des animations de la présentation au moment ou elle s'affichent
 // var typing = document.querySelectorAll('.animpres');
 // var pres = document.getElementById('pres');
