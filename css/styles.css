@@ -207,7 +207,6 @@ h2 {
   height: 30px;
   border-bottom: 5px solid orange;
   border-right: 5px solid orange;
-  transform: rotate(45deg);
   margin-top: -10px;
   animation: down 2s infinite;
 }
@@ -231,6 +230,32 @@ h2 {
   100% {
     opacity: 0;
     transform: rotate(45deg) translate(10px, 10px);
+  }
+}
+.msgfix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f4f6;
+  position: fixed;
+  height: 5rem;
+  width: 15rem;
+  bottom: 5rem;
+  left: 0;
+  transform: translateX(-100%);
+  animation-name: urg;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+@keyframes urg {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
 .pres {

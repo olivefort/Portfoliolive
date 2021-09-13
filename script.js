@@ -141,7 +141,19 @@ btn.addEventListener('click', ()=>{
 goTopArrow();
 window.addEventListener('scroll', goTopArrow);
 
-
+// let infoAnim = document.querySelector('.msgfix');
+// let infoSend = document.getElementById('formulaire');
+// // var contact = document.getElementById('cont');
+// infoSend.addEventListener('submit', (e)=>{
+//     // infoAnim.style.animationPlayState = 'running'
+//     // window.scrollTo({
+//     //     top: 5000,
+//     //     left: 0,
+//     // })
+//     console.log('blah');
+//     // e.preventDefault();
+//     alert('hello!');
+// })
 //Lancement des animations des barres d'xp au moment ou elles s'affichent
 // var anim = document.querySelectorAll('.progress__bar');
 // var compe = document.getElementById('compe');
@@ -179,9 +191,6 @@ function animate_text(){
         }, del_start + delay * index1);
     })
 }
-
-
-
 
 //Lancement des animations de la présentation au moment ou elle s'affichent
 // var typing = document.querySelectorAll('.animpres');
