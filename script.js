@@ -141,20 +141,20 @@ btn.addEventListener('click', ()=>{
 goTopArrow();
 window.addEventListener('scroll', goTopArrow);
 
-// let infoAnim = document.querySelector('.msgfix');
-// let infoSend = document.getElementById('formulaire');
-// // var contact = document.getElementById('cont');
-// infoSend.addEventListener('submit', (e)=>{
-//     // infoAnim.style.animationPlayState = 'running'
-//     // window.scrollTo({
-//     //     top: 5000,
-//     //     left: 0,
-//     // })
-//     console.log('blah');
-//     // e.preventDefault();
-//     alert('hello!');
-// })
-//Lancement des animations des barres d'xp au moment ou elles s'affichent
+let infoAnim = document.querySelector('.msgfix');
+    let infoSend = document.getElementById('formulaire');
+    // var contact = document.getElementById('cont');
+    infoSend.addEventListener('submit', (e)=>{
+        // infoAnim.style.animationPlayState = 'running'
+        // window.scrollTo({
+        //     top: 5000,
+        //     left: 0,
+        // })
+        console.log('blah');
+        // e.preventDefault();
+        // alert('hello!');
+    })
+// Lancement des animations des barres d'xp au moment ou elles s'affichent
 // var anim = document.querySelectorAll('.progress__bar');
 // var compe = document.getElementById('compe');
 
@@ -163,8 +163,8 @@ window.onscroll=function(){
     var compe = document.getElementById('compe');
     var elementPosition = compe.offsetTop - 60;
     var userPosition = document.querySelector("html").scrollTop;
-    // console.log('position de l\'élément compétence : '+ elementPosition);
-    // console.log('position de l\'utilisateur :' + userPosition);
+    // console.log('position de l\'élément compétence(elementPosition) : '+ elementPosition);
+    //console.log('position de l\'utilisateur(userPosition) :' + userPosition);
     for(let i=0; i<anim.length; i++){
         if(userPosition >= elementPosition){
             anim[i].style.animationPlayState = 'running';
@@ -172,10 +172,23 @@ window.onscroll=function(){
     }
 }
 
+// window.onscroll=function(){
 
-setTimeout(animate_text, 15500);
+
+// var animtxt = document.querySelectorAll('.ffanim');
+// var prespos = 887;
+// var user = document.querySelector("html").scrollTop;
+// console.log(prespos);
+// console.log(user);
+// console.log(animtxt[0]);
+// if(user >= prespos){
+//     animtxt[0].style.animationPlayState = 'running';
+// }
+// }
+
+setTimeout(animate_text, 5000);
 function animate_text(){
-    let delay = 30;
+    let delay = 11;
     let del_start = 0;
     let contents;
     let letters;

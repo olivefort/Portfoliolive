@@ -10,8 +10,8 @@
     <img class="pf__cv--img trans" src="pics/vanilla-cv.png"/>     
 </div>
 <div class="pf__st col-span-12 sm:col-span-6 lg:col-span-3 mx-2 sm:mx-8 my-4">
-    <h3 class="pf__cv--title h-14 sm:h-8 lg:text-2xl sm:mb-4">Studiz</h3>
-    <img class="pf__st--img trans" src="pics/react-studiz.png"/>                       
+    <h3 class="pf__cv--title h-14 sm:h-8 lg:text-2xl sm:mb-4">Myth Cloth Shop</h3>
+    <img class="pf__st--img trans" src="pics/lara-mcs.png"/>                       
 </div>                
 <div class="pf__sss col-span-12 sm:col-span-6 lg:col-span-3 mx-2 sm:mx-8 my-4">
     <h3 class="pf__cv--title h-14 sm:h-8 lg:text-2xl sm:mb-4">Saint Seiya Sanctuary</h3>

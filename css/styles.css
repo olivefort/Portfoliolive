@@ -10,6 +10,7 @@ h2 {
   z-index: 9;
   justify-self: center;
   margin-bottom: 0.5rem;
+  white-space: nowrap;
 }
 
 .line {
@@ -152,7 +153,7 @@ h2 {
 }
 
 .home-hero {
-  background-image: url(../pics/hero.webp);
+  background-image: url(../pics/hero8.webp);
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -205,8 +206,8 @@ h2 {
   display: block;
   width: 30px;
   height: 30px;
-  border-bottom: 5px solid orange;
-  border-right: 5px solid orange;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
   margin-top: -10px;
   animation: down 2s infinite;
 }
@@ -232,24 +233,6 @@ h2 {
     transform: rotate(45deg) translate(10px, 10px);
   }
 }
-.msgfix {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #f3f4f6;
-  position: fixed;
-  height: 5rem;
-  width: 15rem;
-  bottom: 5rem;
-  left: 0;
-  transform: translateX(-100%);
-  animation-name: urg;
-  animation-delay: 3s;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  animation-play-state: paused;
-}
-
 @keyframes urg {
   0% {
     transform: translateX(0);
@@ -408,23 +391,23 @@ h2 {
   border-radius: 100rem;
   background: transparent;
   animation-name: noir;
-  animation-duration: 0.2s;
-  animation-delay: 7s;
+  animation-duration: 0.1s;
+  animation-delay: 2.1s;
   animation-fill-mode: forwards;
 }
 
 .cross {
   color: transparent;
   animation-name: xnoir;
-  animation-duration: 0.2s;
+  animation-duration: 0.1s;
   animation-fill-mode: forwards;
   font-size: 0.9rem;
 }
 .cross__fe {
-  animation-delay: 8s;
+  animation-delay: 2.3s;
 }
 .cross__fs {
-  animation-delay: 9s;
+  animation-delay: 2.5s;
 }
 
 .ffanim {
@@ -454,79 +437,79 @@ h2 {
 
 .ffanim__n::before {
   animation-name: write;
-  animation-duration: 0.5s;
+  animation-duration: 0.3s;
   animation-timing-function: steps(4);
-  animation-delay: 0.5s;
+  animation-delay: 0.1s;
   animation-fill-mode: forwards;
 }
 .ffanim__n::after {
-  animation: write 0.5s steps(4) 0.5s forwards, noir 750ms steps(4) 1;
+  animation: write 0.3s steps(4) 0.1s forwards, noir 750ms steps(4) 1;
 }
 .ffanim__p::before {
-  animation: write 0.6s steps(7) 1.2s forwards;
+  animation: write 0.3s steps(7) 0.4s forwards;
 }
 .ffanim__p::after {
-  animation: write 0.6s steps(7) 1.2s forwards, noir 750ms steps(7) 1.2s 2;
+  animation: write 0.3s steps(7) 0.4s forwards, noir 750ms steps(7) 0.4s 2;
 }
 .ffanim__a::before {
-  animation: write 0.6s steps(2) 2.3s forwards;
+  animation: write 0.3s steps(2) 0.8s forwards;
 }
 .ffanim__a::after {
-  animation: write 0.5s steps(2) 2.3s forwards, noir 750ms steps(2) 2.3s 2;
+  animation: write 0.3s steps(2) 0.8s forwards, noir 750ms steps(2) 0.8s 2;
 }
 .ffanim__l::before {
-  animation: write 0.5s steps(5) 3.5s forwards;
+  animation: write 0.3s steps(5) 1.2s forwards;
 }
 .ffanim__l::after {
-  animation: write 0.5s steps(5) 3.5s forwards, noir 750ms steps(5) 3.5s 2;
+  animation: write 0.3s steps(5) 1.2s forwards, noir 750ms steps(5) 1.2s 2;
 }
 .ffanim__d::before {
-  animation: write 1s steps(15) 4.7s forwards;
+  animation: write 0.3s steps(15) 1.6s forwards;
 }
 .ffanim__d::after {
-  animation: write 1s steps(15) 4.7s forwards, noir 750ms steps(15) 4.7s 2;
+  animation: write 0.3s steps(15) 1.6s forwards, noir 750ms steps(15) 1.6s 2;
 }
 .ffanim__o::before {
-  animation: write 0.5s steps(4) 6s forwards;
+  animation: write 0.4s steps(4) 2s forwards;
 }
 .ffanim__o::after {
-  animation: write 0.5s steps(4) 6s forwards, noir 750ms steps(4) 6s 2;
+  animation: write 0.4s steps(4) 2s forwards, noir 750ms steps(4) 2s 2;
 }
 .ffanim__q1::before {
-  animation: write 0.5s steps(8) 10s forwards;
+  animation: write 0.4s steps(8) 2.7s forwards;
 }
 .ffanim__q1::after {
-  animation: write 0.5s steps(8) 10s forwards, noir 750ms steps(8) 10s 2;
+  animation: write 0.4s steps(8) 2.7s forwards, noir 750ms steps(8) 2.7s 2;
 }
 .ffanim__q2::before {
-  animation: write 0.5s steps(8) 11s forwards;
+  animation: write 0.4s steps(8) 3.2s forwards;
 }
 .ffanim__q2::after {
-  animation: write 0.5s steps(8) 11s forwards, noir 750ms steps(8) 11s 2;
+  animation: write 0.4s steps(8) 3.2s forwards, noir 750ms steps(8) 3.2s 2;
 }
 .ffanim__q3::before {
-  animation: write 0.5s steps(8) 12s forwards;
+  animation: write 0.4s steps(8) 3.6s forwards;
 }
 .ffanim__q3::after {
-  animation: write 0.5s steps(8) 12s forwards, noir 750ms steps(8) 12s 2;
+  animation: write 0.4s steps(8) 3.6s forwards, noir 750ms steps(8) 3.6s 2;
 }
 .ffanim__q4::before {
-  animation: write 0.5s steps(10) 13s forwards;
+  animation: write 0.4s steps(10) 4.1s forwards;
 }
 .ffanim__q4::after {
-  animation: write 0.5s steps(10) 13s forwards, noir 750ms steps(10) 13s 2;
+  animation: write 0.4s steps(10) 4.1s forwards, noir 750ms steps(10) 4.1s 2;
 }
 .ffanim__q5::before {
-  animation: write 0.5s steps(7) 14s forwards;
+  animation: write 0.4s steps(7) 4.6s forwards;
 }
 .ffanim__q5::after {
-  animation: write 0.5s steps(7) 14s forwards, noir 750ms steps(7) 14s 2;
+  animation: write 0.4s steps(7) 4.6s forwards, noir 750ms steps(7) 4.6s 2;
 }
 .ffanim__cvpj::before {
-  animation: write 0.2s steps(1) 25s forwards;
+  animation: write 0.2s steps(1) 7.8s forwards;
 }
 .ffanim__cvpj::after {
-  animation: write 0.2s steps(1) 25s forwards, noir 750ms steps(1) 25s 0;
+  animation: write 0.1s steps(2) 7.8s forwards, noir 750ms steps(2) 7.8s 2;
 }
 
 @keyframes write {
@@ -711,7 +694,7 @@ h2 {
 
 .trans,
 .gith {
-  transition: border-radius 1500ms;
+  transition: border-radius 2500ms;
 }
 
 .pf__cv--img:hover,
@@ -720,7 +703,6 @@ h2 {
 .pf__dw--img:hover,
 .pf__gt--img:hover {
   border-radius: 10px;
-  transition-delay: 500ms;
 }
 
 .dark {
@@ -812,6 +794,10 @@ h2 {
 }
 /*-resp 768px-*/
 @media (min-width: 48em) {
+  .home-hero {
+    background-image: url(../pics/hero1.jpg);
+  }
+
   .imgmod {
     width: 18rem;
     height: 13rem;

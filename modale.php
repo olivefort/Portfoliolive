@@ -42,32 +42,31 @@
             </div>
             <div class="flex flex-col">
                 <div class="modTitle flex flex-row justify-center items-center">
-                    <h3 class="text-xl sm:text-2xl text-center font-bold -mt-6 sm:-mt-4 md:-mt-2">STUDIZ<h3>                        
+                    <h3 class="text-xl sm:text-2xl text-center font-bold -mt-6 sm:-mt-4 md:-mt-2">MYTH CLOTH STORE<h3>                        
                 </div>                    
                 <div class="border-t border-solid border-gray-200 h-1 overflow-visible after m-1 sm:m-2 md:m-3"></div>
                     <div class="flex flex-col justify-center items-center md:flex-row">
                         <div class="flex flex-col justify-between items-center md:w-1/2">                                        
-                            <img class="my-1 sm:my-2 imgmod" src="pics/react-1.png"/>
+                            <img class="my-1 sm:my-2 imgmod" src="pics/lara-1.png"/>
                             <h4 class="text-xl md:text-2xl font-semibold sm:mb-2">Production</h4> 
                             <div class="flex flex-col items-start justify-center">                                
                                 <ul class="text-xs sm:text-base md:text-lg">
-                                    <li class="list-disc">REACT/BOOTSTRAP</li>
-                                    <li class="list-disc">Site responsive</li>
+                                    <li class="list-disc">LARAVEL</li>
                                     <li class="list-disc">Github</li>
                                 </ul>
                             </div>                        
                         </div>
                         <div class="flex flex-col justify-between items-center md:w-1/2">                                    
-                        <img class="my-1 sm:my-2 imgmod" src="pics/react-2.png"/>
+                        <img class="my-1 sm:my-2 imgmod" src="pics/lara-2.png"/>
                         <h4 class="text-xl md:text-2xl font-semibold sm:mb-2">Infos</h4>
                         <div class="text-left text-xs sm:text-base sm:px-4 md:text-lg">
-                        Studiz est un projet de développement d'une plateforme d'échange pour les étudiants, ma participation bénévole est orienté vers le front-end. Ce projet est encore en cours de réalisation.                               
+                        Myth Cloth Store est une boutique fictive réalisée pendant ma formation. Sur ce site, un utilisateur peut s'inscrire, s'autentifier, réaliser des achats, puis payer à l'aide d'un paiement fictif par Stripe.                            
                         </div>
                     </div>
                 </div>
-                <!-- <div class="flex flex-col justify-center items-center bg-gray-200 mt-2 sm:mt-4 p-1 md:p-2 hover:bg-gray-400 cursor-pointer">
-                    <a href="https://olivefort.github.io/CV/" target="_blank" class="text-base md:text-lg">Visiter le site</a>
-                </div> -->
+                <div class="flex flex-col justify-center items-center bg-gray-200 mt-2 sm:mt-4 p-1 md:p-2 hover:bg-gray-400 cursor-pointer">
+                    <a href="https://github.com/olivefort/Myth-Cloth-Store" target="_blank" class="text-base md:text-lg">Visiter le Github</a>
+                </div>
             </div>
         </div>            
     </div>
