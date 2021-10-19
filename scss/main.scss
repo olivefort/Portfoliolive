@@ -111,6 +111,7 @@ h2{
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
+    cursor: pointer;
 }
 .current-menu-item,
 .menu a:hover,
@@ -255,7 +256,7 @@ h2{
 //présentation
 .pres{
     background-color: white;
-    padding: 6rem 1rem;
+    padding: 7rem 1rem;
     grid-column: span 6;
     display: grid;
 }
@@ -396,6 +397,9 @@ h2{
 }
 
 //anim formulaire
+.cr{
+    animation-play-state: paused;
+}
 .radio{
     width: .5rem;
     height: .5rem;
@@ -405,6 +409,7 @@ h2{
     animation-duration: .1s;
     animation-delay: 2.1s;
     animation-fill-mode: forwards;
+    
 
 }
 .cross{
@@ -429,6 +434,13 @@ h2{
     margin-left: .5rem;
     z-index: 5;
 }
+.ffanim.is-in-viewport::before{
+    animation-play-state: running;
+}
+.ffanim.is-in-viewport::after{
+    animation-play-state: running;
+}
+
 .ffanim::before,
 .ffanim::after{
     content: "";
@@ -449,94 +461,95 @@ h2{
         animation-timing-function: steps(4);
         animation-delay: 0.1s;
         animation-fill-mode: forwards;
+        animation-play-state: paused;
     }
     &__n::after{
         animation: 
-            write 0.3s steps(4) 0.1s forwards, 
-            noir 750ms steps(4) 1;
+            write 0.3s steps(4) 0.1s forwards paused, 
+            noir 750ms steps(4) 1 paused;
     }
     &__p::before{
-        animation: write 0.3s steps(7) 0.4s forwards;
+        animation: write 0.3s steps(7) 0.4s forwards paused;
 
     }
     &__p::after{
         animation: 
-            write 0.3s steps(7) 0.4s forwards, 
-            noir 750ms steps(7) 0.4s 2;
+            write 0.3s steps(7) 0.4s forwards paused, 
+            noir 750ms steps(7) 0.4s 2 paused;
     }
     &__a::before{
-        animation: write .3s steps(2) .8s forwards;
+        animation: write .3s steps(2) .8s forwards paused;
 
     }
     &__a::after{
         animation: 
-            write .3s steps(2) .8s forwards, 
-            noir 750ms steps(2) .8s 2;
+            write .3s steps(2) .8s forwards paused, 
+            noir 750ms steps(2) .8s 2 paused;
     }
     &__l::before{
-        animation: write .3s steps(5) 1.2s forwards;
+        animation: write .3s steps(5) 1.2s forwards paused;
 
     }
     &__l::after{
         animation: 
-            write .3s steps(5) 1.2s forwards, 
-            noir 750ms steps(5) 1.2s 2;
+            write .3s steps(5) 1.2s forwards paused, 
+            noir 750ms steps(5) 1.2s 2 paused;
     }
     &__d::before{
-        animation: write .3s steps(15) 1.6s forwards;
+        animation: write .3s steps(15) 1.6s forwards paused;
     }
     &__d::after{
         animation: 
-            write .3s steps(15) 1.6s forwards, 
-            noir 750ms steps(15) 1.6s 2;
+            write .3s steps(15) 1.6s forwards paused, 
+            noir 750ms steps(15) 1.6s 2 paused;
     }
     &__o::before{
-        animation: write .4s steps(4) 2s forwards;
+        animation: write .4s steps(4) 2s forwards paused;
     }
     &__o::after{
         animation: 
-            write .4s steps(4) 2s forwards, 
-            noir 750ms steps(4) 2s 2;
+            write .4s steps(4) 2s forwards paused, 
+            noir 750ms steps(4) 2s 2 paused;
     }
     &__q1::before{
-        animation: write 0.4s steps(8) 2.7s forwards;
+        animation: write 0.4s steps(8) 2.7s forwards paused;
     }
     &__q1::after{
         animation: 
-            write .4s steps(8) 2.7s forwards, 
-            noir 750ms steps(8) 2.7s 2;
+            write .4s steps(8) 2.7s forwards paused, 
+            noir 750ms steps(8) 2.7s 2 paused;
     }
     &__q2::before{
-        animation: write .4s steps(8) 3.2s forwards;
+        animation: write .4s steps(8) 3.2s forwards paused;
     }
     &__q2::after{
         animation: 
-            write .4s steps(8) 3.2s forwards, 
-            noir 750ms steps(8) 3.2s 2;
+            write .4s steps(8) 3.2s forwards paused, 
+            noir 750ms steps(8) 3.2s 2 paused;
     }
     &__q3::before{
-        animation: write .4s steps(8) 3.6s forwards;
+        animation: write .4s steps(8) 3.6s forwards paused;
     }
     &__q3::after{
         animation: 
-            write .4s steps(8) 3.6s forwards, 
-            noir 750ms steps(8) 3.6s 2;
+            write .4s steps(8) 3.6s forwards paused, 
+            noir 750ms steps(8) 3.6s 2 paused;
     }
     &__q4::before{
-        animation: write .4s steps(10) 4.1s forwards;
+        animation: write .4s steps(10) 4.1s forwards paused;
     }
     &__q4::after{
         animation: 
-            write .4s steps(10) 4.1s forwards, 
-            noir 750ms steps(10) 4.1s 2;
+            write .4s steps(10) 4.1s forwards paused, 
+            noir 750ms steps(10) 4.1s 2 paused;
     }
     &__q5::before{
-        animation: write .4s steps(7) 4.6s forwards;
+        animation: write .4s steps(7) 4.6s forwards paused;
     }
     &__q5::after{
         animation: 
-            write .4s steps(7) 4.6s forwards, 
-            noir 750ms steps(7) 4.6s 2;
+            write .4s steps(7) 4.6s forwards paused, 
+            noir 750ms steps(7) 4.6s 2 paused;
     }
     // &__area::before{
     //     animation: write 5s steps(281) 28s forwards;
@@ -547,12 +560,12 @@ h2{
     //         noir 750ms steps(281) 28s infinite;
     // }
     &__cvpj::before{
-        animation: write .2s steps(1) 7.8s forwards;
+        animation: write .2s steps(1) 7.8s forwards paused;
     }
     &__cvpj::after{
         animation: 
-            write .1s steps(2) 7.8s forwards, 
-            noir 750ms steps(2) 7.8s 2;
+            write .1s steps(2) 7.8s forwards paused, 
+            noir 750ms steps(2) 7.8s 2 paused;
     }    
 }
 @keyframes write {

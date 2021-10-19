@@ -115,6 +115,7 @@ h2 {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .current-menu-item,
@@ -243,7 +244,7 @@ h2 {
 }
 .pres {
   background-color: white;
-  padding: 6rem 1rem;
+  padding: 7rem 1rem;
   grid-column: span 6;
   display: grid;
 }
@@ -385,6 +386,10 @@ h2 {
   top: -10rem;
 }
 
+.cr {
+  animation-play-state: paused;
+}
+
 .radio {
   width: 0.5rem;
   height: 0.5rem;
@@ -419,6 +424,14 @@ h2 {
   z-index: 5;
 }
 
+.ffanim.is-in-viewport::before {
+  animation-play-state: running;
+}
+
+.ffanim.is-in-viewport::after {
+  animation-play-state: running;
+}
+
 .ffanim::before,
 .ffanim::after {
   content: "";
@@ -441,75 +454,76 @@ h2 {
   animation-timing-function: steps(4);
   animation-delay: 0.1s;
   animation-fill-mode: forwards;
+  animation-play-state: paused;
 }
 .ffanim__n::after {
-  animation: write 0.3s steps(4) 0.1s forwards, noir 750ms steps(4) 1;
+  animation: write 0.3s steps(4) 0.1s forwards paused, noir 750ms steps(4) 1 paused;
 }
 .ffanim__p::before {
-  animation: write 0.3s steps(7) 0.4s forwards;
+  animation: write 0.3s steps(7) 0.4s forwards paused;
 }
 .ffanim__p::after {
-  animation: write 0.3s steps(7) 0.4s forwards, noir 750ms steps(7) 0.4s 2;
+  animation: write 0.3s steps(7) 0.4s forwards paused, noir 750ms steps(7) 0.4s 2 paused;
 }
 .ffanim__a::before {
-  animation: write 0.3s steps(2) 0.8s forwards;
+  animation: write 0.3s steps(2) 0.8s forwards paused;
 }
 .ffanim__a::after {
-  animation: write 0.3s steps(2) 0.8s forwards, noir 750ms steps(2) 0.8s 2;
+  animation: write 0.3s steps(2) 0.8s forwards paused, noir 750ms steps(2) 0.8s 2 paused;
 }
 .ffanim__l::before {
-  animation: write 0.3s steps(5) 1.2s forwards;
+  animation: write 0.3s steps(5) 1.2s forwards paused;
 }
 .ffanim__l::after {
-  animation: write 0.3s steps(5) 1.2s forwards, noir 750ms steps(5) 1.2s 2;
+  animation: write 0.3s steps(5) 1.2s forwards paused, noir 750ms steps(5) 1.2s 2 paused;
 }
 .ffanim__d::before {
-  animation: write 0.3s steps(15) 1.6s forwards;
+  animation: write 0.3s steps(15) 1.6s forwards paused;
 }
 .ffanim__d::after {
-  animation: write 0.3s steps(15) 1.6s forwards, noir 750ms steps(15) 1.6s 2;
+  animation: write 0.3s steps(15) 1.6s forwards paused, noir 750ms steps(15) 1.6s 2 paused;
 }
 .ffanim__o::before {
-  animation: write 0.4s steps(4) 2s forwards;
+  animation: write 0.4s steps(4) 2s forwards paused;
 }
 .ffanim__o::after {
-  animation: write 0.4s steps(4) 2s forwards, noir 750ms steps(4) 2s 2;
+  animation: write 0.4s steps(4) 2s forwards paused, noir 750ms steps(4) 2s 2 paused;
 }
 .ffanim__q1::before {
-  animation: write 0.4s steps(8) 2.7s forwards;
+  animation: write 0.4s steps(8) 2.7s forwards paused;
 }
 .ffanim__q1::after {
-  animation: write 0.4s steps(8) 2.7s forwards, noir 750ms steps(8) 2.7s 2;
+  animation: write 0.4s steps(8) 2.7s forwards paused, noir 750ms steps(8) 2.7s 2 paused;
 }
 .ffanim__q2::before {
-  animation: write 0.4s steps(8) 3.2s forwards;
+  animation: write 0.4s steps(8) 3.2s forwards paused;
 }
 .ffanim__q2::after {
-  animation: write 0.4s steps(8) 3.2s forwards, noir 750ms steps(8) 3.2s 2;
+  animation: write 0.4s steps(8) 3.2s forwards paused, noir 750ms steps(8) 3.2s 2 paused;
 }
 .ffanim__q3::before {
-  animation: write 0.4s steps(8) 3.6s forwards;
+  animation: write 0.4s steps(8) 3.6s forwards paused;
 }
 .ffanim__q3::after {
-  animation: write 0.4s steps(8) 3.6s forwards, noir 750ms steps(8) 3.6s 2;
+  animation: write 0.4s steps(8) 3.6s forwards paused, noir 750ms steps(8) 3.6s 2 paused;
 }
 .ffanim__q4::before {
-  animation: write 0.4s steps(10) 4.1s forwards;
+  animation: write 0.4s steps(10) 4.1s forwards paused;
 }
 .ffanim__q4::after {
-  animation: write 0.4s steps(10) 4.1s forwards, noir 750ms steps(10) 4.1s 2;
+  animation: write 0.4s steps(10) 4.1s forwards paused, noir 750ms steps(10) 4.1s 2 paused;
 }
 .ffanim__q5::before {
-  animation: write 0.4s steps(7) 4.6s forwards;
+  animation: write 0.4s steps(7) 4.6s forwards paused;
 }
 .ffanim__q5::after {
-  animation: write 0.4s steps(7) 4.6s forwards, noir 750ms steps(7) 4.6s 2;
+  animation: write 0.4s steps(7) 4.6s forwards paused, noir 750ms steps(7) 4.6s 2 paused;
 }
 .ffanim__cvpj::before {
-  animation: write 0.2s steps(1) 7.8s forwards;
+  animation: write 0.2s steps(1) 7.8s forwards paused;
 }
 .ffanim__cvpj::after {
-  animation: write 0.1s steps(2) 7.8s forwards, noir 750ms steps(2) 7.8s 2;
+  animation: write 0.1s steps(2) 7.8s forwards paused, noir 750ms steps(2) 7.8s 2 paused;
 }
 
 @keyframes write {

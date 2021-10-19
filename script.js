@@ -161,66 +161,81 @@ let infoAnim = document.querySelector('.msgfix');
 window.onscroll=function(){
     var anim = document.querySelectorAll('.progress__bar');
     var compe = document.getElementById('compe');
-    var elementPosition = compe.offsetTop - 60;
+    var compePosition = compe.offsetTop - 60;
     var userPosition = document.querySelector("html").scrollTop;
-    // console.log('position de l\'élément compétence(elementPosition) : '+ elementPosition);
-    //console.log('position de l\'utilisateur(userPosition) :' + userPosition);
     for(let i=0; i<anim.length; i++){
-        if(userPosition >= elementPosition){
+        if(userPosition >= compePosition){
             anim[i].style.animationPlayState = 'running';
         }
     }
 }
 
-// window.onscroll=function(){
+const divTexte = document.querySelector('.ff__5__area__txt');
+const texte = divTexte.textContent;
+let sto = 0;
 
+//timer pour l'affichage de chaque lettre
+let timer = 10;
 
-// var animtxt = document.querySelectorAll('.ffanim');
-// var prespos = 887;
-// var user = document.querySelector("html").scrollTop;
-// console.log(prespos);
-// console.log(user);
-// console.log(animtxt[0]);
-// if(user >= prespos){
-//     animtxt[0].style.animationPlayState = 'running';
-// }
-// }
+//split du text
+let txtSplit = texte.split('');
 
-setTimeout(animate_text, 5000);
-function animate_text(){
-    let delay = 11;
-    let del_start = 0;
-    let contents;
-    let letters;
-    let elem = document.querySelector('.ff__5__area__txt');
-    contents = elem.textContent.trim();
-    elem.textContent = "";
-    letters = contents.split("");
-    elem.style.visibility = 'visible';
+function createSpan(letter){
+    const span = document.createElement('span');
+    span.innerText = letter;
+    return span;
+};
 
-    letters.forEach(function(letter, index1){
-        setTimeout(function(){
-            elem.textContent += letter;
-        }, del_start + delay * index1);
-    })
+function showLetter(i){
+    divTexte.appendChild(createSpan(txtSplit[i]));
+    if (i<txtSplit.length-1){
+        sto = setTimeout(function(){ showLetter(++i);}, timer )
+    };
 }
 
-//Lancement des animations de la présentation au moment ou elle s'affichent
-// var typing = document.querySelectorAll('.animpres');
-// var pres = document.getElementById('pres');
+function animateTxt(){
+    // let delay = 50;
+    // let delStart = 0;
+    // let contents;
+    // let letters;
+    let elem = document.querySelector('.ff__5__area__txt');
+    elem.textContent = '';
+    elem.style.visibility = 'visible';
+
+    //lancement du message
+    showLetter(0);
+}
+
+function animform(){
+    var animtxt = document.querySelectorAll('.ffanim');
+    var cr = document.querySelectorAll('.cr');
+    for(let i = 0; i < animtxt.length; i++){            
+        animtxt[i].classList.toggle('is-in-viewport');            
+    }
+    for(let i = 0; i < cr.length; i++){            
+            cr[i].style.animationPlayState = 'running';            
+    }
+    if(!sto){
+        animateTxt();
+    } 
+} 
+
+console.log(screen.height);
+clickPres = document.getElementById('menupres').addEventListener('click', animform);
+
+function check(){
+    var userPosition = document.querySelector('html').scrollTop;
+    console.log(userPosition);
+    if((screen.height <=750 && userPosition >= 612) || (screen.height <= 850 && userPosition >= 714 ) || (screen.height > 850 && userPosition >= 816))
+    {
+        animform();
+    }
+}
+
+window.addEventListener('wheel', check);
 
 
-// window.onscroll=function(){
-//     var typing = document.querySelectorAll('.animpres');
-//     var pres = document.getElementById('pres');
-//     var elementPosition = pres.offsetTop - 60;
-//     var userPosition = document.querySelector("html").scrollTop;
-//     // console.log('position de l\'élément compétence : '+ elementPosition);
-//     // console.log('position de l\'utilisateur :' + userPosition);
-//     for(let i=0; i<typing.length; i++){
-//         if(userPosition >= elementPosition){
-//             typing[i].style.animationPlayState = 'running';
-//             typing[i]
-//         }
-//     }
-// }
+
+
+
+
